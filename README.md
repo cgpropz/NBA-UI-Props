@@ -64,3 +64,37 @@ PP_API_URL = os.environ.get('PP_API_URL')
 DVP_API_URL = os.environ.get('DVP_API_URL')
 BR_USER_AGENT = os.environ.get('BR_USER_AGENT', 'Mozilla/5.0')
 ```
+
+#### Optional secrets/vars
+- `PP_LEAGUE_ID`: Defaults to `7` (NBA).
+- `GAMELOGS_URL`: If you host a CSV for gamelogs, set the URL here.
+- `HTTP_PROXY`: If the PrizePicks API geoblocks CI, set an HTTPS-capable proxy URL; used by `Fetch_PP_Odds.py`.
+- `PP_PER_PAGE` / `PP_PAGE` / `PP_SINGLE_STAT`: Tuning params for odds API (strings: e.g. `"500"`, `"1"`, `"true"`).
+
+#### Quick setup via GitHub UI
+1) Repo → Settings → Secrets and variables → Actions → New repository secret
+2) Add:
+  - Name: `PP_API_URL` → Value: `https://api.prizepicks.com/projections` (or your endpoint)
+  - Name: `DVP_API_URL` → Value: `<your-dvp-endpoint>.json`
+  - Name: `BR_USER_AGENT` → Value: A normal browser UA (e.g., Chrome on macOS)
+  - Name: `PP_API_KEY` → Value: Your key/token (if needed for your endpoint)
+  - (Optional) `GAMELOGS_URL`, `HTTP_PROXY`, `PP_LEAGUE_ID`, `PP_PER_PAGE`, `PP_PAGE`, `PP_SINGLE_STAT`
+
+#### Optional setup via GitHub CLI (gh)
+```bash
+gh secret set PP_API_URL --body "https://api.prizepicks.com/projections"
+gh secret set DVP_API_URL --body "https://example.com/nba_dvp_latest.json"
+gh secret set BR_USER_AGENT --body "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+# If needed
+gh secret set PP_API_KEY --body "<your_pp_key>"
+# Optional
+gh secret set GAMELOGS_URL --body "https://example.com/Full_Gamelogs25.csv"
+gh secret set HTTP_PROXY --body "http://user:pass@proxy-host:port"
+gh secret set PP_LEAGUE_ID --body "7"
+gh secret set PP_PER_PAGE --body "500"
+gh secret set PP_PAGE --body "1"
+gh secret set PP_SINGLE_STAT --body "true"
+```
+
+After adding secrets, you can manually run the workflow:
+- GitHub → Actions → "Update NBA UI Data" → "Run workflow"
