@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Darius Garland • PrizePicks Edge</title>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {--pp-bg:#111317;--pp-surface:#1b1e24;--pp-surface-alt:#1f232a;--pp-border:#2c3138;--pp-text:#f5f7fa;--pp-text-dim:#9aa3af;--pp-accent:#f9c400;--pp-accent-glow:#ffd952;--pp-danger:#d94a4a;--pp-success:#39b369;--pp-radius:18px;--pp-shadow:0 8px 28px -6px rgba(0,0,0,.55);}*{box-sizing:border-box;}body{margin:0;background:var(--pp-bg);color:var(--pp-text);font-family:Roboto,system-ui,sans-serif;padding:30px 30px 90px;-webkit-font-smoothing:antialiased;}a.back{position:fixed;top:16px;left:16px;font-size:.65rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border:1px solid var(--pp-border);border-radius:26px;background:var(--pp-surface-alt);color:var(--pp-text-dim);text-decoration:none;transition:.25s;}a.back:hover{border-color:var(--pp-accent);color:var(--pp-accent);}header{text-align:center;margin:0 0 34px;}header h1{margin:0;font-family:'Orbitron',sans-serif;font-size:2.4rem;letter-spacing:2px;color:var(--pp-accent);text-shadow:0 0 16px rgba(0,0,0,.6),0 0 34px var(--pp-accent-glow);}header .tag{margin-top:10px;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--pp-text-dim);font-weight:600;}.wrap{max-width:1220px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:24px;}.panel{background:linear-gradient(150deg,#1b1e24 0%,#262b33 60%,#1b1e24 100%);padding:26px 26px 30px;border-radius:var(--pp-radius);border:1px solid var(--pp-border);box-shadow:var(--pp-shadow);position:relative;overflow:hidden;}.panel:before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 18% 16%,rgba(249,196,0,.12),transparent 60%);pointer-events:none;}.section-title{margin:0 0 18px;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--pp-text-dim);font-weight:700;}.name{font-size:2.05rem;font-weight:700;margin:0 0 6px;letter-spacing:.6px;color:var(--pp-text);}.meta-line{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:6px 0 16px;}.team{display:inline-block;background:#003322;color:#88ffd1;padding:6px 14px;border-radius:8px;font-weight:600;font-size:.9rem;}.opponent{color:#ff6b6b;font-size:1.1rem;}.prop-line{font-size:1.35rem;color:var(--pp-text);margin:16px 0;}.prop-line strong{color:var(--pp-accent);font-size:1.5rem;}.badge-hot,.badge-cold{display:inline-block;margin-left:12px;padding:4px 10px;border-radius:8px;font-size:.75rem;font-weight:700;}.badge-hot{background:#39b36933;color:var(--pp-success);border:1px solid var(--pp-success);}.badge-cold{background:#d94a4a33;color:var(--pp-danger);border:1px solid var(--pp-danger);}.hitrates{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0;}.rate-box{background:rgba(0,255,150,.08);padding:16px 8px;border-radius:12px;text-align:center;border:1px solid #00ff9d33;transition:.25s;}.rate-box:hover{transform:translateY(-4px);box-shadow:0 8px 20px rgba(0,255,157,.2);}.rate-box .label{font-size:.75rem;color:var(--pp-text-dim);letter-spacing:.1em;text-transform:uppercase;}.rate-box .val{font-size:1.8rem;font-weight:700;color:var(--pp-accent);text-shadow:0 0 12px var(--pp-accent-glow);margin-top:6px;}#chart{height:420px;background:var(--pp-surface-alt);border-radius:var(--pp-radius);margin-top:20px;padding:16px;border:1px solid var(--pp-border);}.player-img-container{text-align:center;margin:28px 0;}.player-img-container img{width:150px;height:150px;object-fit:cover;border-radius:40%;border:6px solid var(--pp-accent);box-shadow:0 0 50px rgba(249,196,0,.6);transition:all .3s;}.player-img-container img:hover{transform:scale(1.08);box-shadow:0 0 80px rgba(249,196,0,.9);} .avatar-fallback{width:170px;height:170px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;border:6px solid var(--pp-accent);box-shadow:0 0 50px rgba(249,196,0,.6);background:radial-gradient(circle at 30% 30%, #2a2f37 0%, #1b1e24 70%);font-family:'Orbitron', sans-serif;color:var(--pp-accent);font-size:1.4rem;letter-spacing:1px;text-transform:uppercase;}
+  </style>
+</head>
+<body>
+  <a href="../index.html" class="back">Dashboard</a>
+
+  <header>
+    <h1>PRIZEPICKS EDGE</h1>
+    <div class="tag">WEAPONIZED STATS.</div>
+  </header>
+
+  <div class="wrap">
+    <div class="panel">
+      <!-- PLAYER IMAGE -->
+      <div class="player-img-container">
+        <img id="playerHeadshot" src="https://www.basketball-reference.com/req/202106291/images/players/garlada01.jpg" alt="Darius Garland">
+      </div>
+
+      <div class="name">Darius Garland</div>
+      <div class="meta-line">
+        <div class="team">CLE</div>
+        <div class="opponent">vs BOS</div>
+      </div>
+      <div class="prop-line">Assists • Line <strong>6.5</strong><span id="edgeBadge"></span></div>
+
+      <div class="hitrates">
+        <div class="rate-box"><div class="label">Last 5</div><div class="val">4/5</div></div>
+        <div class="rate-box"><div class="label">Last 10</div><div class="val">4/10</div></div>
+        <div class="rate-box"><div class="label">Last 20</div><div class="val">4/6</div></div>
+        <div class="rate-box"><div class="label">Season</div><div class="val">4/6</div></div>
+      </div>
+
+      <div id="chart"></div>
+    </div>
+  </div>
+
+  <script>
+    const line = 6.5;
+    const data = [4.0, 9.0, 2.0, 7.0, 8.0, 10.0];
+
+    // Image fallback to an initials avatar if headshot fails to load
+    (function(){
+      const img = document.getElementById('playerHeadshot');
+      if(!img) return;
+      const container = img.parentElement;
+      const initials = ("Darius Garland"||'').split(/\s+/).map(p=>p[0]||'').slice(0,2).join('').toUpperCase();
+      function showFallback(){
+        if(!container) return;
+        const div = document.createElement('div');
+        div.className = 'avatar-fallback';
+        div.textContent = initials || 'PP';
+        try { container.replaceChild(div, img); } catch(e) {}
+      }
+      img.addEventListener('error', showFallback, { once: true });
+    })();
+
+    (function(){
+      const badgeEl = document.getElementById('edgeBadge');
+      if(Array.isArray(data) && data.length){
+        const avg = data.reduce((a,b)=>a+b,0)/data.length;
+        if(avg > line + 0.5) badgeEl.innerHTML = '<span class="badge-hot">STRONG EDGE</span>';
+        else if(avg > line) badgeEl.innerHTML = '<span class="badge-hot">EDGE</span>';
+        else if(avg < line - 0.5) badgeEl.innerHTML = '<span class="badge-cold">UNDER</span>';
+      }
+
+      try {
+        Highcharts.chart('chart', {
+          chart:{backgroundColor:'var(--pp-surface-alt)'},
+          title:{text:'Last 10 Games',style:{color:'var(--pp-text-dim)',fontSize:'14px',fontWeight:'600'}},
+          xAxis:{categories:data.map((_,i)=>'G'+(10-i)),labels:{style:{color:'var(--pp-text-dim)'}}},
+          yAxis:{title:{text:'Assists',style:{color:'var(--pp-text-dim)'}},gridLineColor:'rgba(255,255,255,0.05)',plotLines:[{value:line,color:'var(--pp-accent)',width:3,dashStyle:'Dash',label:{text:'Line '+line,style:{color:'var(--pp-accent)',fontWeight:'700'}}}]},
+          legend:{enabled:false},
+          tooltip:{backgroundColor:'var(--pp-surface)',borderColor:'var(--pp-border)',style:{color:'var(--pp-text)'}},
+          series:[{type:'column',name:'Darius Garland',data:data.map(v=>({y:v,color:v>line?'var(--pp-success)':'var(--pp-danger)'})),borderRadius:4}]
+        });
+      } catch(e){
+        document.getElementById('chart').innerHTML = '<div style="text-align:center;padding:40px;color:#ff6b6b;">Chart failed to load</div>';
+      }
+    })();
+  </script>
+</body>
+</html>

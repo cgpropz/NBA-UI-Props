@@ -1,0 +1,58 @@
+name: Update NBA UI Data
+
+on:
+  schedule:
+    - cron: '*/10 * * * *' # PP odds every 10 minutes
+    - cron: '0 7 * * *'    # Daily 7:00 AM for gamelogs + DVP
+  workflow_dispatch: {}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      PP_API_KEY: ${{ secrets.PP_API_KEY }}
+      PP_API_URL: ${{ secrets.PP_API_URL }}
+      DVP_API_URL: ${{ secrets.DVP_API_URL }}
+      BR_USER_AGENT: ${{ secrets.BR_USER_AGENT }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install requests pandas beautifulsoup4 lxml; fi
+
+      - name: Update PP odds (every run)
+        run: |
+          python Fetch_PP_Odds.py || true
+
+      - name: Update gamelogs (7 AM only)
+        if: "${{ startsWith(github.event.schedule, '0 7') }}"
+        run: |
+          python Fetch_Gamelogs.py || python Gamelogs.py || true
+
+      - name: Update DVP data (7 AM only)
+        if: "${{ startsWith(github.event.schedule, '0 7') }}"
+        run: |
+          python dvp_parser.py || true
+
+      - name: Regenerate player pages
+        run: |
+          python UI_DATA_BUILDER_PERFECT.py || true
+          python generate_players.py || true
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: automated data refresh"
+          file_pattern: |
+            *.json
+            players/**
+            index.html
+            player-template-new.html

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zaccharie Risacher • PrizePicks Edge</title>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {--pp-bg:#111317;--pp-surface:#1b1e24;--pp-surface-alt:#22262d;--pp-border:#2d323a;--pp-text:#e6e9ed;--pp-text-dim:#9aa3af;--pp-accent:#f9c400;--pp-accent-glow:#ffd952;--pp-danger:#d94a4a;--pp-warn:#dcae3a;--pp-success:#39b369;--pp-radius:16px;--pp-shadow:0 8px 24px -6px rgba(0,0,0,.55);--pp-shadow-hover:0 14px 42px -8px rgba(0,0,0,.7);}
+    *{box-sizing:border-box;}body{margin:0;background:var(--pp-bg);color:var(--pp-text);font-family:Roboto,system-ui,sans-serif;padding:30px 26px 70px;-webkit-font-smoothing:antialiased;}
+    a.back{position:fixed;top:18px;left:18px;font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:8px 14px;border:1px solid var(--pp-border);border-radius:30px;background:var(--pp-surface-alt);color:var(--pp-text-dim);text-decoration:none;transition:.25s;}a.back:hover{border-color:var(--pp-accent);color:var(--pp-accent);}
+    header{text-align:center;margin:10px 0 34px;}header h1{margin:0;font-family:'Orbitron',sans-serif;font-size:2.6rem;letter-spacing:2px;color:var(--pp-accent);text-shadow:0 0 18px rgba(0,0,0,.65),0 0 38px var(--pp-accent-glow);}header .tag{margin-top:8px;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--pp-text-dim);font-weight:600;}
+    .container{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:26px;}
+    .panel{background:linear-gradient(160deg,#1b1e24 0%,#262b33 55%,#1b1e24 100%);padding:20px 22px 24px;border-radius:var(--pp-radius);border:1px solid var(--pp-border);box-shadow:var(--pp-shadow);position:relative;overflow:hidden;}
+    .panel:before{content:'';position:absolute;inset:0;background:linear-gradient(110deg,rgba(249,196,0,.07),transparent 55%);pointer-events:none;}
+    .panel h2{margin:0 0 16px;font-size:.9rem;letter-spacing:.14em;text-transform:uppercase;color:var(--pp-text-dim);font-weight:700;}
+    .name{font-size:1.9rem;font-weight:700;margin:4px 0 6px;letter-spacing:.5px;color:var(--pp-text);}
+    .team{display:inline-block;background:rgba(249,196,0,.08);color:var(--pp-accent);font-size:.65rem;font-weight:600;letter-spacing:.18em;padding:6px 14px;border-radius:30px;border:1px solid var(--pp-border);}
+    .opponent{font-size:.8rem;color:var(--pp-text-dim);margin-top:10px;letter-spacing:.05em;font-weight:500;}
+    .prop-line{margin:14px 0 6px;font-size:1.15rem;font-weight:600;color:var(--pp-text);}
+    .hitrates{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin-top:10px;}
+    .rate-box{background:var(--pp-surface-alt);padding:12px 10px 10px;border-radius:12px;border:1px solid var(--pp-border);text-align:center;position:relative;overflow:hidden;}
+    .rate-box:before{content:'';position:absolute;inset:0;background:linear-gradient(140deg,rgba(255,215,0,.05),transparent 60%);}
+    .label{font-size:.55rem;letter-spacing:.14em;font-weight:700;color:var(--pp-text-dim);text-transform:uppercase;margin-bottom:6px;}
+    .val{font-size:1.05rem;font-weight:600;letter-spacing:.5px;}
+    .green{color:var(--pp-success);} .red{color:var(--pp-danger);} .yellow{color:var(--pp-warn);}
+    #chart{height:360px;margin-top:4px;border:1px solid var(--pp-border);border-radius:14px;background:var(--pp-surface-alt);padding:6px;}
+    footer{margin-top:60px;text-align:center;font-size:.6rem;color:var(--pp-text-dim);letter-spacing:.12em;text-transform:uppercase;}
+    @media (max-width:760px){.container{grid-template-columns:1fr;}header h1{font-size:2.1rem;}#chart{height:300px;}}
+  </style>
+</head>
+<body>
+  <a href="../index.html" class="back">Dashboard</a>
+  <header>
+      <div class="team">ATL</div>
+      <div style="color:#ff6b6b; font-size:1.5rem; margin:10px 0;">vs PHI</div>
+      <div class="prop">Points • <strong style="color:#00ff9d;">11.5</strong></div>
+    </div>
+
+    <div class="hitrates">
+      <div class="rate-box"><div class="rate-label">Last 5</div><div class="rate-value">2/5</div></div>
+      <div class="rate-box"><div class="rate-label">Last 10</div><div class="rate-value">5/10</div></div>
+      <div class="rate-box"><div class="rate-label">Last 20</div><div class="rate-value">9/17</div></div>
+      <div class="rate-box"><div class="rate-label">Season</div><div class="rate-value">9/17</div></div>
+    </div>
+
+    <div id="chart"></div>
+  </div>
+
+  <script>
+    const line = 11.5;
+    const data = [19.0, 11.0, 15.0, 11.0, 15.0, 2.0, 8.0, 5.0, 17.0, 14.0];
+
+    Highcharts.chart('chart', {
+      chart: { backgroundColor: '#16213e' },
+      title: { text: 'Last 10 Games vs PrizePicks Line', style: { color: '#00ff9d', fontSize: '18px' } },
+      xAxis: { categories: ['-10', '-9', '-8', '-7', '-6', '-5', '-4', '-3', '-2', '-1'], labels: { style: { color: '#e0e0e0' } } },
+      yAxis: { title: { text: 'Points', style: { color: '#00ff9d' } }, gridLineColor: '#00ff9d22', plotLines: [{ value: line, color: '#ffd700', width: 3, dashStyle: 'Dash', label: { text: 'Line: ' + line, style: { color: '#ffd700' } } }] },
+      legend: { itemStyle: { color: '#e0e0e0' } },
+      series: [{
+        name: 'Zaccharie Risacher',
+        data: data,
+        color: '#00ff9d',
+        zoneAxis: 'y',
+        zones: [{ value: line, color: '#00ff9d' }, { color: '#ff6b6b' }],
+        marker: { radius: 6 }
+      }]
+    });
+ 

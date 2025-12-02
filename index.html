@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PrizePicks Edge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard">
+
+  <div class="header">
+    <img src="Images/CG.jpg" alt="Logo" class="logo">
+    <h1>PRIZEPICKS EDGE</h1>
+    <div class="tagline">WEAPONIZED STATS. <span id="lastUpdated" style="margin-left:10px;color:#ffd43b;font-weight:700"></span> <span id="dvpUpdated" style="margin-left:10px;color:#39d9a9;font-weight:700"></span></div>
+  </div>
+
+    <div class="controls">
+    <input type="text" id="search" list="playerSuggestions" placeholder="Search player name..." />
+    <datalist id="playerSuggestions"></datalist>
+    <select id="statFilter">
+      <option value="">All Props</option>
+      <option value="Points">Points</option>
+      <option value="Rebounds">Rebounds</option>
+      <option value="Assists">Assists</option>
+      <option value="Threes">Threes</option>
+      <option value="Fantasy Score">Fantasy Score</option>
+      <option value="Steals">Steals</option>
+      <option value="Blocks">Blocks</option>
+      <option value="Turnovers">Turnovers</option>
+      <option value="Steals + Blocks">Steals + Blocks</option>
+      <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
+      <option value="Pts+Rebs">Pts+Rebs</option>
+      <option value="Pts+Asts">Pts+Asts</option>
+      <option value="Rebs+Asts">Rebs+Asts</option>
+    </select>
+    <select id="teamFilter">
+      <option value="">All Teams</option>
+    </select>
+    <div style="display:flex; gap:10px; align-items:center;">
+      <label style="color:#00ff9d; font-weight:bold;">Min Hit % →</label>
+      <select id="minHitFilter">
+        <option value="0">Any</option>
+        <option value="60">60%+</option>
+        <option value="70" selected>70%+</option>
+        <option value="80">80%+</option>
+        <option value="90">90%+</option>
+      </select>
+      <select id="hitPeriod">
+        <option value="last_10_pct">Last 10</option>
+        <option value="last_5_pct">Last 5</option>
+        <option value="last_20_pct">Last 20</option>
+        <option value="season_pct">Full Season</option>
+      </select>
+      <div style="display:flex; gap:10px; align-items:center;">
+        <label style="color:#00ff9d; font-weight:bold;">Projection</label>
+        <select id="projectionSort">
+          <option value="none">No Sort</option>
+          <option value="desc">High → Low</option>
+          <option value="asc">Low → High</option>
+        </select>
+        <label style="color:#00ff9d; font-weight:bold;">DVP</label>
+        <select id="dvpSort">
+          <option value="none">No Sort</option>
+          <option value="desc">High → Low</option>
+          <option value="asc">Low → High</option>
+        </select>
+        <label style="color:#00ff9d; font-weight:bold;">Position</label>
+        <select id="positionSort">
+          <option value="none">No Sort</option>
+          <option value="customAsc">PG → SG → PF → SF → C</option>
+          <option value="customDesc">C → SF → PF → SG → PG</option>
+        </select>
+        <label style="color:#00ff9d; font-weight:bold;">Min</label>
+        <input type="number" step="0.1" id="projectionMin" placeholder="e.g. 20.0" style="width:130px;" />
+        <label style="color:#00ff9d; font-weight:bold;">Max</label>
+        <input type="number" step="0.1" id="projectionMax" placeholder="e.g. 30.0" style="width:130px;" />
+      </div>
+    </div>
+  </div>
+
+  <div id="cards" class="cards-container"></div>
+
+  <script>
+    let allPlayers = [];
+    let positionsMap = {};
+    let dvpRankings = [];
+
+    function slugify(name) {
+      return name.toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/(^-|-$)/g, '');
+    }
+
+    function getColor(pct) {
+      if (pct >= 75) return 'hit-green';
+      if (pct >= 60) return 'hit-neutral';
+      if (pct < 45) return 'hit-red';
+      return ''; // between 45 and 59 stays default color
+    }
+
+    function getPositionFor(name){
+      if (!name || !positionsMap) return '';
+      if (positionsMap[name]) return positionsMap[name];
+      const key = Object.keys(positionsMap).find(k => k.toLowerCase() === String(name).toLowerCase());
+      return key ? positionsMap[key] : '';
+    }
+
+    function positionOrderIndex(pos){
+      const p = String(pos||'').toUpperCase();
+      const order = { 'PG': 0, 'SG': 1, 'PF': 2, 'SF': 3, 'C': 4 };
+      return (p in order) ? order[p] : 999;
+    }
+
+    // DVP helpers in global scope
+    function mapStatToDVP(stat){
+      const m = {
+        'Points':'PTS','Rebounds':'REB','Assists':'AST','Threes':'3PM','Steals':'STL','Blocks':'BLK','Turnovers':'TOV',
+        'Pts+Rebs':'PTS+REB','Pts+Asts':'PTS+AST','Rebs+Asts':'REB+AST','Pts+Rebs+Asts':'PTS+REB+AST','Fantasy Score':'FPTS'
+      };
+      return m[stat] || stat;
+    }
+
+    function mapStatToRankField(stat){
+      const s = mapStatToDVP(stat).toUpperCase();
+      const rankMap = {
+        'PTS':'pts_rank',
+        'REB':'reb_rank',
+        'AST':'ast_rank',
+        '3PM':'pt3_rank',
+        'STL':'stl_rank',
+        'BLK':'blk_rank',
+        // combos & fantasy: use DK points rank as proxy
+        'PTS+REB':'dkpts_rank',
+        'PTS+AST':'dkpts_rank',
+        'REB+AST':'dkpts_rank',
+        'PTS+REB+AST':'dkpts_rank',
+        'FPTS':'dkpts_rank'
+      };
+      return rankMap[s] || 'avg_dfs';
+    }
+
+    function normalizeTeamCode(team){
+      const t = String(team||'').toUpperCase();
+      const map = {
+        'BKN':'BRO','BRK':'BRO',
+        'CHA':'CHA','CHO':'CHA',
+        'PHX':'PHO','PHO':'PHO',
+        'NOP':'NOP','NO':'NOP','NOR':'NOP',
+        'UTA':'UTA','UTH':'UTA',
+        'GSW':'GSW','GOL':'GSW',
+        'NYK':'NYK','NY':'NYK'
+      };
+      return map[t] || t;
+    }
+
+    function computeCardDVP(opponent, position, stat){
+      if(!Array.isArray(dvpRankings) || !opponent || !position) return null;
+      const posKey = String(position||'').toUpperCase();
+      const teamKey = normalizeTeamCode(opponent);
+      const rows = dvpRankings.filter(r => String(r.team||'').toUpperCase()===teamKey && String(r.position||'').toUpperCase()===posKey);
+      if(!rows.length) return null;
+      const field = mapStatToRankField(stat);
+      const raw = rows[0][field];
+      if (raw === '-' || raw === undefined || raw === null) return null;
+      const num = typeof raw === 'number' ? raw : Number(raw);
+      return isNaN(num) ? null : num;
+    }
+
+    function dvpClassByRank(rank){
+      if (rank == null) return '';
+      const r = Math.round(Number(rank));
+      if (r <= 8) return 'dvp-red';      // tough
+      if (r <= 22) return 'dvp-neutral'; // middling
+      return 'dvp-green';                 // easy
+    }
+
+    function renderCards(players) {
+      const container = document.getElementById('cards');
+      container.innerHTML = '';
+
+      if (players.length === 0) {
+        container.innerHTML = '<div class="no-results">No edges found. Adjust filters.</div>';
+        return;
+      }
+
+      players.forEach(player => {
+        const slug = slugify(player.name);
+        const playerUrl = `players/${slug}.html`;
+        const pos = positionsMap[player.name] || positionsMap[Object.keys(positionsMap).find(k => k.toLowerCase() === player.name.toLowerCase())] || '';
+        const posHTML = pos ? `<div class="position-chip">${pos}</div>` : '';
+        const dvpVal = computeCardDVP(player.opponent, pos, player.prop);
+        const dvpHTML = dvpVal!=null ? `<div class="dvp-badge ${dvpClassByRank(dvpVal)}">DVP: ${Math.round(Number(dvpVal))}</div>` : '';
+
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          ${dvpHTML}
+          <div class="player-header">
+            <div class="player-name" onclick="window.location.href='${playerUrl}'">${player.name}</div>
+            ${posHTML}
+            <div class="team">${player.team}</div>
+          </div>
+          <div class="opponent">vs ${player.opponent}</div>
+          <div class="prop-line">
+            <span>${player.prop}</span>
+            <span>Line: ${player.line} • Proj: ${
+              typeof player.projection === 'number'
+                ? Number(player.projection).toFixed(1)
+                : (typeof player.projection === 'string' && !isNaN(Number(player.projection))
+                    ? Number(player.projection).toFixed(1)
+                    : 'N/A')
+            }</span>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-box"><div class="label">Last 5</div><div class="value ${getColor(player.last_5_pct)}">${player.last_5} <small>(${player.last_5_pct}%)</small></div></div>
+            <div class="stat-box"><div class="label">Last 10</div><div class="value ${getColor(player.last_10_pct)}">${player.last_10} <small>(${player.last_10_pct}%)</small></div></div>
+            <div class="stat-box"><div class="label">Last 20</div><div class="value ${getColor(player.last_20_pct)}">${player.last_20} <small>(${player.last_20_pct}%)</small></div></div>
+            <div class="stat-box"><div class="label">Full Season</div><div class="value ${getColor(player.season_pct)}">${player.season.split(' ')[0]} <small>(${player.season_pct}%)</small></div></div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function filterAndSort() {
+      const search = document.getElementById('search').value.toLowerCase();
+      const stat = document.getElementById('statFilter').value;
+      const teamSel = document.getElementById('teamFilter').value;
+      const minHit = parseFloat(document.getElementById('minHitFilter').value);
+      const period = document.getElementById('hitPeriod').value;
+      const projSort = document.getElementById('projectionSort').value;
+      const dvpSort = document.getElementById('dvpSort').value;
+      const projMinEl = document.getElementById('projectionMin');
+      const projMaxEl = document.getElementById('projectionMax');
+      const posSort = document.getElementById('positionSort').value;
+      const projMin = projMinEl.value ? parseFloat(projMinEl.value) : null;
+      const projMax = projMaxEl.value ? parseFloat(projMaxEl.value) : null;
+
+      let filtered = allPlayers.filter(p => {
+        const matchesSearch = p.name.toLowerCase().includes(search);
+        const matchesStat = !stat || p.prop === stat;
+        const matchesTeam = !teamSel || String(p.team).toUpperCase() === String(teamSel).toUpperCase();
+        const matchesHit = p[period] >= minHit;
+        const proj = typeof p.projection === 'number' ? p.projection : null;
+        const matchesProjMin = projMin === null || (proj !== null && proj >= projMin);
+        const matchesProjMax = projMax === null || (proj !== null && proj <= projMax);
+        return matchesSearch && matchesStat && matchesTeam && matchesHit && matchesProjMin && matchesProjMax;
+      });
+
+      if (posSort !== 'none') {
+        if (posSort === 'customAsc') {
+          filtered.sort((a,b) => positionOrderIndex(getPositionFor(a.name)) - positionOrderIndex(getPositionFor(b.name)));
+        } else {
+          filtered.sort((a,b) => positionOrderIndex(getPositionFor(b.name)) - positionOrderIndex(getPositionFor(a.name)));
+        }
+      } else if (dvpSort !== 'none') {
+        const dvpOf = (p) => {
+          const pos = getPositionFor(p.name);
+          const val = computeCardDVP(p.opponent, pos, p.prop);
+          return (val==null || isNaN(Number(val))) ? null : Number(val);
+        };
+        if (dvpSort === 'asc') {
+          filtered.sort((a,b) => {
+            const da = dvpOf(a); const db = dvpOf(b);
+            if (da==null && db==null) return 0;
+            if (da==null) return 1; // nulls last
+            if (db==null) return -1;
+            return da - db;
+          });
+        } else {
+          filtered.sort((a,b) => {
+            const da = dvpOf(a); const db = dvpOf(b);
+            if (da==null && db==null) return 0;
+            if (da==null) return 1; // nulls last
+            if (db==null) return -1;
+            return db - da;
+          });
+        }
+      } else if (projSort === 'asc') {
+        filtered.sort((a, b) => {
+          const pa = typeof a.projection === 'number' ? a.projection : Number.POSITIVE_INFINITY;
+          const pb = typeof b.projection === 'number' ? b.projection : Number.POSITIVE_INFINITY;
+          return pa - pb;
+        });
+      } else if (projSort === 'desc') {
+        filtered.sort((a, b) => {
+          const pa = typeof a.projection === 'number' ? a.projection : Number.NEGATIVE_INFINITY;
+          const pb = typeof b.projection === 'number' ? b.projection : Number.NEGATIVE_INFINITY;
+          return pb - pa;
+        });
+      } else {
+        filtered.sort((a, b) => b[period] - a[period]);
+      }
+      renderCards(filtered);
+    }
+
+    // Load data + positions with fallback to WITH_DVP
+    const loadPlayers = async () => {
+      try {
+        const res1 = await fetch('PLAYER_UI_CARDS_PERFECT.json');
+        if (res1.ok) return await res1.json();
+        const res2 = await fetch('PLAYER_UI_CARDS_WITH_DVP.json');
+        if (res2.ok) return await res2.json();
+        throw new Error('Both PLAYER_UI_CARDS_PERFECT.json and PLAYER_UI_CARDS_WITH_DVP.json not found');
+      } catch (e) {
+        console.error('Failed loading player UI cards:', e);
+        throw e;
+      }
+    };
+
+    Promise.all([
+      loadPlayers(),
+      fetch('nba_players_2025_26_positions.json').then(r => r.ok ? r.json() : ({})),
+      fetch('nba_dvp_latest.json').then(r => r.ok ? r.json() : ({})),
+      fetch('PLAYER_UI_CARDS_PERFECT.meta.json').then(r => r.ok ? r.json() : ({}))
+    ])
+      .then(([data, pos, dvp, meta]) => {
+        allPlayers = Array.isArray(data) ? data : (data.players || []);
+        positionsMap = pos || {};
+        dvpRankings = (dvp && dvp.data && dvp.data.team_dvp_rankings) || [];
+        const last = (meta && meta.generated_at) ? new Date(meta.generated_at) : null;
+        const el = document.getElementById('lastUpdated');
+        if (el) {
+          el.textContent = last ? `Last updated: ${last.toLocaleString()}` : '';
+        }
+        const dvpTimeRaw = dvp && dvp.generated_at;
+        const dvpEl = document.getElementById('dvpUpdated');
+        if (dvpEl) {
+          const dt = dvpTimeRaw ? new Date(dvpTimeRaw) : null;
+          dvpEl.textContent = dt ? `DVP: ${dt.toLocaleString()}` : '';
+        }
+        // Populate player suggestions (unique names)
+        const names = Array.from(new Set(allPlayers.map(p => p.name))).sort();
+        const dl = document.getElementById('playerSuggestions');
+        dl.innerHTML = '';
+        names.forEach(n => {
+          const opt = document.createElement('option');
+          opt.value = n;
+          dl.appendChild(opt);
+        });
+        // Populate team filter
+        const teams = Array.from(new Set(allPlayers.map(p => String(p.team)))).filter(Boolean).sort();
+        const teamSelect = document.getElementById('teamFilter');
+        teams.forEach(t => {
+          const opt = document.createElement('option');
+          opt.value = t;
+          opt.textContent = t;
+          teamSelect.appendChild(opt);
+        });
+        filterAndSort();
+      })
+      .catch(err => {
+        console.error('Dashboard init error:', err);
+        const msg = (err && err.message) ? err.message : 'Unknown error loading data';
+        document.getElementById('cards').innerHTML = 
+          `<div style="text-align:center;color:#ff6b6b">
+            <h2>Error loading player data</h2>
+            <div style="margin-top:8px;font-size:14px;opacity:0.9">${msg}</div>
+          </div>`;
+      });
+
+    // Live filtering
+    document.getElementById('search').addEventListener('input', filterAndSort);
+    // Navigate to player page on Enter if exact match
+    document.getElementById('search').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const name = e.target.value.trim();
+        const match = allPlayers.find(p => p.name.toLowerCase() === name.toLowerCase());
+        if (match) {
+          const slug = slugify(match.name);
+          window.location.href = `players/${slug}.html`;
+        } else {
+          filterAndSort();
+        }
+      }
+    });
+    document.getElementById('statFilter').addEventListener('change', filterAndSort);
+    document.getElementById('teamFilter').addEventListener('change', filterAndSort);
+    document.getElementById('minHitFilter').addEventListener('change', filterAndSort);
+    document.getElementById('hitPeriod').addEventListener('change', filterAndSort);
+    document.getElementById('projectionSort').addEventListener('change', filterAndSort);
+    document.getElementById('dvpSort').addEventListener('change', filterAndSort);
+    document.getElementById('positionSort').addEventListener('change', filterAndSort);
+    document.getElementById('projectionMin').addEventListener('input', filterAndSort);
+    document.getElementById('projectionMax').addEventListener('input', filterAndSort);
+  </script>
+</body>
+</html>
