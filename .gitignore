@@ -1,0 +1,20 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Local debug snapshots
+/downloaded_files/
+*.raw.json
+
+# OS files
+.DS_Store
+
+# Not ignoring generated site/data files we intentionally commit
+# (e.g., NBA_PURE_STANDARD_SINGLE.csv, .json, players/, index.html)
