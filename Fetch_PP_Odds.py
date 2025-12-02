@@ -54,31 +54,35 @@ def looks_like_canonical(items):
     return isinstance(sample, dict) and any(k in sample for k in ('Name','Stat','Line'))
 
 if __name__ == '__main__':
-    data = fetch_pp_odds()
-    if not data:
-        exit(0)
+    # Only attempt direct PrizePicks API when a key is provided or explicitly allowed
+    if PP_API_KEY or os.environ.get('ALLOW_UNAUTH_PP', '').lower() == 'true':
+        data = fetch_pp_odds()
+        if data:
+            # Always keep a raw snapshot for debugging
+            os.makedirs('downloaded_files', exist_ok=True)
+            raw_path = os.path.join('downloaded_files', 'pp_odds.raw.json')
+            try:
+                with open(raw_path, 'w') as rf:
+                    json.dump(data, rf, indent=2)
+                print(f'[Fetch_PP_Odds] Saved raw response → {raw_path}')
+            except Exception as e:
+                print(f'[Fetch_PP_Odds] Warning: could not save raw odds: {e}')
 
-    # Always keep a raw snapshot for debugging
-    os.makedirs('downloaded_files', exist_ok=True)
-    raw_path = os.path.join('downloaded_files', 'pp_odds.raw.json')
-    try:
-        with open(raw_path, 'w') as rf:
-            json.dump(data, rf, indent=2)
-        print(f'[Fetch_PP_Odds] Saved raw response → {raw_path}')
-    except Exception as e:
-        print(f'[Fetch_PP_Odds] Warning: could not save raw odds: {e}')
-
-    # Only overwrite canonical file if structure already matches expected format
-    out_path = os.environ.get('PP_LINES_PATH', 'NBA_PURE_STANDARD_SINGLE.json')
-    if looks_like_canonical(data):
-        try:
-            with open(out_path, 'w') as f:
-                json.dump(data, f, indent=2)
-            print(f'[Fetch_PP_Odds] Saved canonical lines → {out_path}')
-        except Exception as e:
-            print(f'[Fetch_PP_Odds] Error saving canonical lines: {e}')
+            # Only overwrite canonical file if structure already matches expected format
+            out_path = os.environ.get('PP_LINES_PATH', 'NBA_PURE_STANDARD_SINGLE.json')
+            if looks_like_canonical(data):
+                try:
+                    with open(out_path, 'w') as f:
+                        json.dump(data, f, indent=2)
+                    print(f'[Fetch_PP_Odds] Saved canonical lines → {out_path}')
+                except Exception as e:
+                    print(f'[Fetch_PP_Odds] Error saving canonical lines: {e}')
+            else:
+                print('[Fetch_PP_Odds] Raw response did not match canonical schema; skipped overwriting NBA_PURE_STANDARD_SINGLE.json')
+        else:
+            print('[Fetch_PP_Odds] No data from direct API.')
     else:
-        print('[Fetch_PP_Odds] Raw response did not match canonical schema; skipped overwriting NBA_PURE_STANDARD_SINGLE.json')
+        print('[Fetch_PP_Odds] Skipping direct PP fetch (no PP_API_KEY). Using partner endpoint instead.')
 # Fetch_Pure_NBA_Odds.py → THE UNBREAKABLE ONE
 import requests
 import pandas as pd
@@ -102,11 +106,18 @@ ALLOWED_STATS = {
 }
 
 def fetch_pure_nba_odds():
-    url = "https://partner-api.prizepicks.com/projections?per_page=1000&league_id=7"  # ← NBA ONLY (league_id=7)
+    url = os.environ.get('PP_PARTNER_URL', "https://partner-api.prizepicks.com/projections?per_page=1000&league_id=7")  # NBA ONLY
     try:
-        data = requests.get(url, timeout=15).json()
-    except:
-        print("API down or blocked. Try again later.")
+        session = build_session()
+        # Reuse browser-like headers to improve reliability
+        partner_headers = dict(HEADERS)
+        partner_headers.setdefault('Origin', 'https://www.prizepicks.com')
+        partner_headers.setdefault('Referer', 'https://www.prizepicks.com/')
+        resp = session.get(url, headers=partner_headers, timeout=30)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        print(f"Partner API down or blocked: {e}. Try again later.")
         return pd.DataFrame()
 
     players = {}
