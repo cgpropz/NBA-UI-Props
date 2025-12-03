@@ -90,6 +90,38 @@ body.dashboard {padding:20px;}
   color: #39d9a9;
   border-color: rgba(57, 217, 169, 0.35);
 }
+/* Minutes badge: top-left corner of player panel */
+.player-page .panel .min-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(57, 217, 169, 0.12);
+  color: #39d9a9;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(57, 217, 169, 0.35);
+  z-index: 2;
+}
+
+/* Reuse the same color scale classes applied via JS:
+   .dvp-green / .dvp-neutral / .dvp-red */
+.player-page .panel .min-badge.dvp-red {
+  background: rgba(248, 114, 114, 0.15);
+  color: #f87272;
+  border-color: rgba(248, 114, 114, 0.35);
+}
+.player-page .panel .min-badge.dvp-neutral {
+  background: rgba(255, 212, 59, 0.12);
+  color: #ffd43b;
+  border-color: rgba(255, 212, 59, 0.35);
+}
+.player-page .panel .min-badge.dvp-green {
+  background: rgba(57, 217, 169, 0.15);
+  color: #39d9a9;
+  border-color: rgba(57, 217, 169, 0.35);
+}
 
 /* Hit rate colors */
 .hit-green { color:var(--pp-success); text-shadow:0 0 10px var(--pp-success); }
