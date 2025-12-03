@@ -17,8 +17,15 @@
   </header>
 
   <div class="wrap">
-    <div class="panel">
-      <div id="dvpBadge" class="dvp-badge" style="display:none;"></div>
+    <div class="panel" style="position:relative;">
+      <div class="panel">
+        <div id="dvpBadge" class="dvp-badge" style="display:none;"></div>
+        <div id="minBadge" class="min-badge" style="display:none;"></div>
+  <div class="player-img-container">
+    <img id="playerHeadshot" src="https://www.basketball-reference.com/req/202106291/images/players/postqu01.jpg" alt="Quinten Post">
+  </div>
+  ...
+</div></div>
       <div class="player-img-container">
         <img id="playerHeadshot" src="https://www.basketball-reference.com/req/202106291/images/players/postqu01.jpg" alt="Quinten Post">
       </div>
@@ -36,6 +43,7 @@
         </select>
         • Line <strong id="lineVal">4.5</strong> 
         • Projection <strong id="projectionVal">3.9</strong>
+        <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
 
@@ -178,6 +186,34 @@
       else if(avg < line - 0.5) badgeEl.innerHTML = '<span class="badge-cold">UNDER</span>';
       else badgeEl.innerHTML = '';
     }
+    function renderMinutesBadge(record){
+      const minutesEl = document.getElementById('minBadge');
+      if (!minutesEl) return;
+      const val = record?.expected_minutes ?? record?.ExpectedMinutes ?? record?.minutes;
+      const tmpl = '{{EXPECTED_MINUTES}}';
+      let m = val;
+      if (m == null || m === '' || m === 'undefined') {
+      m = (tmpl && tmpl !== '{{EXPECTED_MINUTES}}') ? Number(tmpl) : null;
+    }
+    if (m == null || isNaN(Number(m))) {
+      minutesEl.style.display = 'none';
+      minutesEl.textContent = '';
+      minutesEl.className = 'min-badge';
+      return;
+    }
+    const num = Number(m);
+    minutesEl.textContent = `${num.toFixed(1)} MIN`;
+    // Style similar to DVP: green high minutes, neutral mid, red low
+    let cls = 'min-badge ';
+    if (num >= 34) cls += 'dvp-green';
+    else if (num >= 28) cls += 'dvp-neutral';
+    else cls += 'dvp-red';
+
+    minutesEl.className = cls;
+    minutesEl.style.display = 'block';
+}
+
+    
 
     function renderChart(){
       try {
@@ -231,6 +267,7 @@
       projection = record.projection ?? record.Proj ?? record.projected ?? projection;
       document.getElementById('lineVal').textContent = line;
       document.getElementById('projectionVal').textContent = typeof projection === 'number' ? projection.toFixed(1) : (projection ?? 'N/A');
+      renderMinutesBadge(record);
       renderBadge();
       renderHitrates(record);
       renderChart();
@@ -305,8 +342,9 @@
         updateDVPDisplay(selected);
       });
 
-      // Initial DVP
+      // Initial badges
       updateDVPDisplay(current);
+      renderMinutesBadge(records.find(r => (r.Stat || r.stat || r.prop) === (current === 'Pts+Rebs+Asts' ? 'PRA' : current)) || {});
     })();
   </script>
 </body>

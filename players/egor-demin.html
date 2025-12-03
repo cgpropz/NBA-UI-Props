@@ -12,12 +12,20 @@
   <a href="../index.html" class="back">Home</a>
 
   <header>
-    <h1>PRIZEPICKS EDGE</h1>
+    <h1>CGEDGE</h1>
     <div class="tag">WEAPONIZED STATS.</div>
   </header>
 
   <div class="wrap">
-    <div class="panel">
+    <div class="panel" style="position:relative;">
+      <div class="panel">
+        <div id="dvpBadge" class="dvp-badge" style="display:none;"></div>
+        <div id="minBadge" class="min-badge" style="display:none;"></div>
+  <div class="player-img-container">
+    <img id="playerHeadshot" src="https://www.basketball-reference.com/req/202106291/images/players/demineg01.jpg" alt="Egor Dëmin">
+  </div>
+  ...
+</div></div>
       <div class="player-img-container">
         <img id="playerHeadshot" src="https://www.basketball-reference.com/req/202106291/images/players/demineg01.jpg" alt="Egor Dëmin">
       </div>
@@ -26,7 +34,7 @@
       <div class="meta-line">
         <div class="position" id="positionChip"></div>
         <div class="team">BKN</div>
-        <div class="opponent">vs CHA</div>
+        <div class="opponent">vs CHI</div>
       </div>
 
       <div class="prop-line">
@@ -34,18 +42,18 @@
           <option value="Turnovers">Turnovers</option>
         </select>
         • Line <strong id="lineVal">1.5</strong> 
-        • Projection <strong id="projectionVal">1.9</strong>
-        • DVP <strong id="dvpVal">N/A</strong>
+        • Projection <strong id="projectionVal">1.6</strong>
+        <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
 
       <!-- Scroll-snap hitrates with dots -->
       <div class="hitrates-wrapper">
         <div class="hitrates">
-          <div class="rate-box"><div class="label">Last 5</div><div class="val">3/5</div></div>
+          <div class="rate-box"><div class="label">Last 5</div><div class="val">2/5</div></div>
           <div class="rate-box"><div class="label">Last 10</div><div class="val">4/10</div></div>
-          <div class="rate-box"><div class="label">Last 20</div><div class="val">8/17</div></div>
-          <div class="rate-box"><div class="label">Season</div><div class="val">8/17</div></div>
+          <div class="rate-box"><div class="label">Last 20</div><div class="val">8/18</div></div>
+          <div class="rate-box"><div class="label">Season</div><div class="val">8/18</div></div>
         </div>
         <div class="dots">
           <span class="dot active"></span>
@@ -62,9 +70,9 @@
   <!-- Your original script + dot sync (unchanged) -->
   <script>
     let line = Number('1.5');
-    let data = JSON.parse('[1.0, 3.0, 1.0, 1.0, 1.0, 4.0, 1.0, 2.0, 1.0, 3.0]');
-    let dates = JSON.parse('["11/07", "11/09", "11/11", "11/14", "11/16", "11/18", "11/21", "11/23", "11/24", "11/28"]');
-    let projection = Number('1.9');
+    let data = JSON.parse('[3.0, 1.0, 1.0, 1.0, 4.0, 1.0, 2.0, 1.0, 3.0, 0.0]');
+    let dates = JSON.parse('["11/09", "11/11", "11/14", "11/16", "11/18", "11/21", "11/23", "11/24", "11/28", "12/01"]');
+    let projection = Number('1.6');
     const playerName = 'Egor Dëmin';
 
     (function(){
@@ -124,17 +132,49 @@
       return m[stat] || stat;
     }
 
+    function mapStatToRankField(stat){
+      const s = mapStatToDVP(stat).toUpperCase();
+      const rankMap = {
+        'PTS':'pts_rank',
+        'REB':'reb_rank',
+        'AST':'ast_rank',
+        '3PM':'pt3_rank',
+        'STL':'stl_rank',
+        'BLK':'blk_rank',
+        'PTS+REB':'dkpts_rank',
+        'PTS+AST':'dkpts_rank',
+        'REB+AST':'dkpts_rank',
+        'PTS+REB+AST':'dkpts_rank',
+        'FPTS':'dkpts_rank'
+      };
+      return rankMap[s] || 'avg_dfs';
+    }
+
+    function normalizeTeamCode(team){
+      const t = String(team||'').toUpperCase();
+      const map = { 'BKN':'BRO','BRK':'BRO','CHO':'CHA','PHX':'PHO','NO':'NOP','NOR':'NOP','NY':'NYK' };
+      return map[t] || t;
+    }
+
     function computeDVP(rankings, team, position, stat){
       if(!Array.isArray(rankings)) return null;
-      const statKey = mapStatToDVP(stat).toUpperCase();
       const posKey = String(position||'').toUpperCase();
-      const teamKey = String(team||'').toUpperCase();
-      const rows = rankings.filter(r => String(r.team||r.Team||'').toUpperCase()===teamKey && String(r.position||r.pos||'').toUpperCase()===posKey);
+      const teamKey = normalizeTeamCode(team);
+      const rows = rankings.filter(r => String(r.team||'').toUpperCase()===teamKey && String(r.position||'').toUpperCase()===posKey);
       if(!rows.length) return null;
-      // If per-stat DVP present, pick matching; else fallback to generic dvp
-      const statRow = rows.find(r => String(r.stat||r.Stat||'').toUpperCase()===statKey);
-      const value = statRow ? (statRow.dvp ?? statRow.DVP ?? statRow.value) : (rows[0].dvp ?? rows[0].DVP ?? rows[0].value);
-      return typeof value === 'number' ? value : Number(value||0);
+      const field = mapStatToRankField(stat);
+      const raw = rows[0][field];
+      if (raw === '-' || raw == null) return null;
+      const num = typeof raw === 'number' ? raw : Number(raw);
+      return isNaN(num) ? null : num;
+    }
+
+    function dvpClassByRank(rank){
+      if (rank == null) return '';
+      const r = Math.round(Number(rank));
+      if (r <= 8) return 'dvp-red';
+      if (r <= 22) return 'dvp-neutral';
+      return 'dvp-green';
     }
 
     function renderBadge(){
@@ -146,6 +186,34 @@
       else if(avg < line - 0.5) badgeEl.innerHTML = '<span class="badge-cold">UNDER</span>';
       else badgeEl.innerHTML = '';
     }
+    function renderMinutesBadge(record){
+      const minutesEl = document.getElementById('minBadge');
+      if (!minutesEl) return;
+      const val = record?.expected_minutes ?? record?.ExpectedMinutes ?? record?.minutes;
+      const tmpl = '{{EXPECTED_MINUTES}}';
+      let m = val;
+      if (m == null || m === '' || m === 'undefined') {
+      m = (tmpl && tmpl !== '{{EXPECTED_MINUTES}}') ? Number(tmpl) : null;
+    }
+    if (m == null || isNaN(Number(m))) {
+      minutesEl.style.display = 'none';
+      minutesEl.textContent = '';
+      minutesEl.className = 'min-badge';
+      return;
+    }
+    const num = Number(m);
+    minutesEl.textContent = `${num.toFixed(1)} MIN`;
+    // Style similar to DVP: green high minutes, neutral mid, red low
+    let cls = 'min-badge ';
+    if (num >= 34) cls += 'dvp-green';
+    else if (num >= 28) cls += 'dvp-neutral';
+    else cls += 'dvp-red';
+
+    minutesEl.className = cls;
+    minutesEl.style.display = 'block';
+}
+
+    
 
     function renderChart(){
       try {
@@ -167,10 +235,10 @@
       const boxes = document.querySelectorAll('.hitrates .rate-box .val');
       if(boxes.length < 4) return;
       const vals = [
-        record.last_5 || '3/5',
+        record.last_5 || '2/5',
         record.last_10 || '4/10',
-        record.last_20 || '8/17',
-        record.season || '8/17'
+        record.last_20 || '8/18',
+        record.season || '8/18'
       ];
       vals.forEach((v, i) => {
         const { text, pct } = formatPercentFirstWithPct(v);
@@ -199,6 +267,7 @@
       projection = record.projection ?? record.Proj ?? record.projected ?? projection;
       document.getElementById('lineVal').textContent = line;
       document.getElementById('projectionVal').textContent = typeof projection === 'number' ? projection.toFixed(1) : (projection ?? 'N/A');
+      renderMinutesBadge(record);
       renderBadge();
       renderHitrates(record);
       renderChart();
@@ -240,10 +309,15 @@
       // Load DVP rankings
       const dvpRankings = await fetchDVP();
       function updateDVPDisplay(currentStat){
-        const oppTeam = 'CHA'.toUpperCase();
+        const oppTeam = 'CHI'.toUpperCase();
         const dvpVal = computeDVP(dvpRankings, oppTeam, playerPosition, currentStat);
-        const dvpEl = document.getElementById('dvpVal');
-        if(dvpEl){ dvpEl.textContent = (dvpVal!=null? dvpVal.toFixed(2): 'N/A'); }
+        const badge = document.getElementById('dvpBadge');
+        if (!badge) return;
+        if (dvpVal == null) { badge.style.display = 'none'; badge.textContent=''; badge.className='dvp-badge'; return; }
+        const rankInt = Math.round(Number(dvpVal));
+        badge.textContent = `DVP: ${rankInt}`;
+        badge.className = `dvp-badge ${dvpClassByRank(rankInt)}`;
+        badge.style.display = 'block';
       }
 
       const records = await fetchPlayerProps(playerName);
@@ -268,8 +342,9 @@
         updateDVPDisplay(selected);
       });
 
-      // Initial DVP
+      // Initial badges
       updateDVPDisplay(current);
+      renderMinutesBadge(records.find(r => (r.Stat || r.stat || r.prop) === (current === 'Pts+Rebs+Asts' ? 'PRA' : current)) || {});
     })();
   </script>
 </body>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Isaiah Joe • PrizePicks Edge</title>
+  <title>Jaylin Williams • PrizePicks Edge</title>
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../style.css" />
@@ -22,15 +22,15 @@
         <div id="dvpBadge" class="dvp-badge" style="display:none;"></div>
         <div id="minBadge" class="min-badge" style="display:none;"></div>
   <div class="player-img-container">
-    <img id="playerHeadshot" src="https://www.basketball-reference.com/req/202106291/images/players/joeis01.jpg" alt="Isaiah Joe">
+    <img id="playerHeadshot" src="https://www.basketball-reference.com/req/202106291/images/players/willija01.jpg" alt="Jaylin Williams">
   </div>
   ...
 </div></div>
       <div class="player-img-container">
-        <img id="playerHeadshot" src="https://www.basketball-reference.com/req/202106291/images/players/joeis01.jpg" alt="Isaiah Joe">
+        <img id="playerHeadshot" src="https://www.basketball-reference.com/req/202106291/images/players/willija01.jpg" alt="Jaylin Williams">
       </div>
 
-      <div class="name">Isaiah Joe</div>
+      <div class="name">Jaylin Williams</div>
       <div class="meta-line">
         <div class="position" id="positionChip"></div>
         <div class="team">OKC</div>
@@ -39,10 +39,10 @@
 
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Rebounds">Rebounds</option>
+          <option value="Points">Points</option>
         </select>
-        • Line <strong id="lineVal">2.5</strong> 
-        • Projection <strong id="projectionVal">2.4</strong>
+        • Line <strong id="lineVal">4.5</strong> 
+        • Projection <strong id="projectionVal">7.3</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -50,10 +50,10 @@
       <!-- Scroll-snap hitrates with dots -->
       <div class="hitrates-wrapper">
         <div class="hitrates">
-          <div class="rate-box"><div class="label">Last 5</div><div class="val">2/5</div></div>
-          <div class="rate-box"><div class="label">Last 10</div><div class="val">4/10</div></div>
-          <div class="rate-box"><div class="label">Last 20</div><div class="val">8/16</div></div>
-          <div class="rate-box"><div class="label">Season</div><div class="val">8/16</div></div>
+          <div class="rate-box"><div class="label">Last 5</div><div class="val">4/5</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">6/10</div></div>
+          <div class="rate-box"><div class="label">Last 20</div><div class="val">11/20</div></div>
+          <div class="rate-box"><div class="label">Season</div><div class="val">11/20</div></div>
         </div>
         <div class="dots">
           <span class="dot active"></span>
@@ -69,17 +69,17 @@
 
   <!-- Your original script + dot sync (unchanged) -->
   <script>
-    let line = Number('2.5');
-    let data = JSON.parse('[1.0, 2.0, 5.0, 3.0, 2.0, 0.0, 2.0, 0.0, 4.0, 4.0]');
-    let dates = JSON.parse('["11/11", "11/12", "11/15", "11/17", "11/19", "11/21", "11/23", "11/26", "11/28", "11/30"]');
-    let projection = Number('2.4');
-    const playerName = 'Isaiah Joe';
+    let line = Number('4.5');
+    let data = JSON.parse('[0.0, 12.0, 6.0, 0.0, 2.0, 15.0, 5.0, 9.0, 14.0, 4.0]');
+    let dates = JSON.parse('["11/09", "11/11", "11/12", "11/17", "11/19", "11/21", "11/23", "11/26", "11/28", "11/30"]');
+    let projection = Number('7.3');
+    const playerName = 'Jaylin Williams';
 
     (function(){
       const img = document.getElementById('playerHeadshot');
       if(!img) return;
       const container = img.parentElement;
-      const initials = ("Isaiah Joe"||'').split(/\s+/).map(p=>p[0]||'').slice(0,2).join('').toUpperCase();
+      const initials = ("Jaylin Williams"||'').split(/\s+/).map(p=>p[0]||'').slice(0,2).join('').toUpperCase();
       function showFallback(){
         const div = document.createElement('div');
         div.className = 'avatar-fallback';
@@ -224,7 +224,7 @@
           yAxis:{title:{text:document.getElementById('propSelect').value,style:{color:'var(--pp-text-dim)'}},gridLineColor:'rgba(255,255,255,0.05)',plotLines:[{value:line,color:'var(--pp-accent)',width:3,dashStyle:'Dash',label:{text:'Line '+line,style:{color:'var(--pp-accent)',fontWeight:'700'}}}]},
           legend:{enabled:false},
           tooltip:{backgroundColor:'var(--pp-surface)',borderColor:'var(--pp-border)',style:{color:'var(--pp-text)'}},
-          series:[{type:'column',name:'Isaiah Joe',data:data.map(v=>({y:v,color:v>line?'var(--pp-success)':'var(--pp-danger)'})),borderRadius:4}]
+          series:[{type:'column',name:'Jaylin Williams',data:data.map(v=>({y:v,color:v>line?'var(--pp-success)':'var(--pp-danger)'})),borderRadius:4}]
         });
       } catch(e){
         document.getElementById('chart').innerHTML = '<div style="text-align:center;padding:40px;color:#ff6b6b;">Chart failed to load</div>';
@@ -235,10 +235,10 @@
       const boxes = document.querySelectorAll('.hitrates .rate-box .val');
       if(boxes.length < 4) return;
       const vals = [
-        record.last_5 || '2/5',
-        record.last_10 || '4/10',
-        record.last_20 || '8/16',
-        record.season || '8/16'
+        record.last_5 || '4/5',
+        record.last_10 || '6/10',
+        record.last_20 || '11/20',
+        record.season || '11/20'
       ];
       vals.forEach((v, i) => {
         const { text, pct } = formatPercentFirstWithPct(v);
