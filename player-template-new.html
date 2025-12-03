@@ -186,7 +186,6 @@
       else if(avg < line - 0.5) badgeEl.innerHTML = '<span class="badge-cold">UNDER</span>';
       else badgeEl.innerHTML = '';
     }
-
     function renderMinutesBadge(record){
       const minutesEl = document.getElementById('minBadge');
       if (!minutesEl) return;
@@ -194,20 +193,27 @@
       const tmpl = '{{EXPECTED_MINUTES}}';
       let m = val;
       if (m == null || m === '' || m === 'undefined') {
-        m = (tmpl && tmpl !== '{{EXPECTED_MINUTES}}') ? Number(tmpl) : null;
-      }
-      if (m == null || isNaN(Number(m))) {
-        minutesEl.style.display = 'none';
-        minutesEl.textContent = '';
-        minutesEl.className = 'dvp-badge';
-        return;
-      }
-      const num = Number(m);
-      minutesEl.textContent = `${num.toFixed(1)} MIN`;
-      // Style similar to DVP: green for high minutes, neutral mid, red low
-      minutesEl.className = 'dvp-badge ' + (num >= 34 ? 'dvp-green' : num >= 28 ? 'dvp-neutral' : 'dvp-red');
-      minutesEl.style.display = 'block';
+      m = (tmpl && tmpl !== '{{EXPECTED_MINUTES}}') ? Number(tmpl) : null;
     }
+    if (m == null || isNaN(Number(m))) {
+      minutesEl.style.display = 'none';
+      minutesEl.textContent = '';
+      minutesEl.className = 'min-badge';
+      return;
+    }
+    const num = Number(m);
+    minutesEl.textContent = `${num.toFixed(1)} MIN`;
+    // Style similar to DVP: green high minutes, neutral mid, red low
+    let cls = 'min-badge ';
+    if (num >= 34) cls += 'dvp-green';
+    else if (num >= 28) cls += 'dvp-neutral';
+    else cls += 'dvp-red';
+
+    minutesEl.className = cls;
+    minutesEl.style.display = 'block';
+}
+
+    
 
     function renderChart(){
       try {
