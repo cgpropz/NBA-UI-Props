@@ -17,8 +17,9 @@
   </header>
 
   <div class="wrap">
-    <div class="panel">
-      <div id="dvpBadge" class="dvp-badge" style="display:none;"></div>
+    <div class="panel" style="position:relative;">
+      <div id="dvpBadge" class="dvp-badge" style="display:none; position:absolute; right:16px; top:16px; padding:3px 8px; font-size:11px; line-height:1; border-radius:999px; z-index:2; display:inline-block; width:auto; max-width:40%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"></div>
+      <div id="minBadge" class="min-badge" style="display:none; position:absolute; left:16px; top:16px; padding:3px 8px; font-size:11px; line-height:1; border-radius:999px; z-index:2; display:inline-block; width:auto; max-width:10%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:white;"></div>
       <div class="player-img-container">
         <img id="playerHeadshot" src="{{PLAYER_IMAGE}}" alt="{{NAME}}">
       </div>
@@ -36,6 +37,7 @@
         </select>
         • Line <strong id="lineVal">{{LINE}}</strong> 
         • Projection <strong id="projectionVal">{{PROJECTION}}</strong>
+        <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
 
@@ -179,6 +181,28 @@
       else badgeEl.innerHTML = '';
     }
 
+    function renderMinutesBadge(record){
+      const minutesEl = document.getElementById('minBadge');
+      if (!minutesEl) return;
+      const val = record?.expected_minutes ?? record?.ExpectedMinutes ?? record?.minutes;
+      const tmpl = '{{EXPECTED_MINUTES}}';
+      let m = val;
+      if (m == null || m === '' || m === 'undefined') {
+        m = (tmpl && tmpl !== '{{EXPECTED_MINUTES}}') ? Number(tmpl) : null;
+      }
+      if (m == null || isNaN(Number(m))) {
+        minutesEl.style.display = 'none';
+        minutesEl.textContent = '';
+        minutesEl.className = 'dvp-badge';
+        return;
+      }
+      const num = Number(m);
+      minutesEl.textContent = `${num.toFixed(1)} MIN`;
+      // Style similar to DVP: green for high minutes, neutral mid, red low
+      minutesEl.className = 'dvp-badge ' + (num >= 34 ? 'dvp-green' : num >= 28 ? 'dvp-neutral' : 'dvp-red');
+      minutesEl.style.display = 'block';
+    }
+
     function renderChart(){
       try {
         Highcharts.chart('chart', {
@@ -231,6 +255,7 @@
       projection = record.projection ?? record.Proj ?? record.projected ?? projection;
       document.getElementById('lineVal').textContent = line;
       document.getElementById('projectionVal').textContent = typeof projection === 'number' ? projection.toFixed(1) : (projection ?? 'N/A');
+      renderMinutesBadge(record);
       renderBadge();
       renderHitrates(record);
       renderChart();
@@ -305,8 +330,9 @@
         updateDVPDisplay(selected);
       });
 
-      // Initial DVP
+      // Initial badges
       updateDVPDisplay(current);
+      renderMinutesBadge(records.find(r => (r.Stat || r.stat || r.prop) === (current === 'Pts+Rebs+Asts' ? 'PRA' : current)) || {});
     })();
   </script>
 </body>
