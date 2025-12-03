@@ -62,6 +62,36 @@ for prop in pp_lines:
         continue
 
     player_df = player_df.sort_values('GAME DATE', ascending=False)
+    # Minutes-based expectation using gamelog 'MIN' column
+    MIN_COL = 'MIN'
+    minutes_values = []
+    if MIN_COL in player_df.columns:
+        for v in player_df[MIN_COL].tolist():
+            try:
+                fv = float(v)
+            except (TypeError, ValueError):
+                continue
+            if fv < 0:
+                continue
+            minutes_values.append(min(fv, 60.0))
+
+    def minutes_avg(vals, n=None):
+        if not vals:
+            return 0.0
+        slice_vals = vals[:n] if (n is not None and n > 0) else vals
+        return sum(slice_vals) / len(slice_vals) if slice_vals else 0.0
+
+    min_l5 = minutes_avg(minutes_values, 5)
+    min_l10 = minutes_avg(minutes_values, 10)
+    min_l20 = minutes_avg(minutes_values, 20)
+    min_season = minutes_avg(minutes_values, None)
+
+    expected_minutes = round(
+        min_l5 * 0.30 +
+        min_l10 * 0.40 +
+        min_l20 * 0.20 +
+        min_season * 0.10, 1
+    )
     # Build per-game values (sum for combos)
     if len(cols) == 1:
         values = player_df[cols[0]].astype(float).tolist()
@@ -156,7 +186,8 @@ for prop in pp_lines:
         "avg": round(sum(values)/len(values), 1),
         "games": season_games,
         "last_10_values": last_10_values,
-        "projection": combo_projection if combo_projection is not None else weighted_projection
+        "projection": combo_projection if combo_projection is not None else weighted_projection,
+        "expected_minutes": expected_minutes
     }
     ui_cards.append(card)
 
