@@ -91,6 +91,15 @@
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/(^-|-$)/g, '');
     }
+      // Build Basketball-Reference headshot URL from player name
+      function bbrefHeadshot(name){
+        const norm = (name || '').normalize('NFKD').replace(/[\u0300-\u036f]/g,'');
+        const parts = norm.toLowerCase().split(/\s+/).filter(Boolean).map(p=>p.replace(/[^a-z]/g,''));
+        if(parts.length < 2) return '';
+        const first = parts[0], last = parts[parts.length-1];
+        const slug = `${last.slice(0,5)}${first.slice(0,2)}01`;
+        return `https://www.basketball-reference.com/req/202106291/images/players/${slug}.jpg`;
+      }
 
     function getColor(pct) {
       if (pct >= 75) return 'hit-green';
@@ -219,6 +228,16 @@
             <div class="stat-box"><div class="label">Full Season</div><div class="value ${getColor(player.season_pct)}">${player.season.split(' ')[0]} <small>(${player.season_pct}%)</small></div></div>
           </div>
         `;
+        // Add compact player headshot next to the name area
+        const imgUrl = bbrefHeadshot(player.name);
+        if (imgUrl) {
+          const avatarHTML = `
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+              <img src="${imgUrl}" alt="${player.name}" style="width:36px;height:36px;border-radius:8px;object-fit:cover;border:1px solid var(--pp-border);box-shadow:0 2px 8px rgba(0,0,0,0.35);" onerror="this.style.display='none'" />
+              <div class="player-name">${player.name}</div>
+            </div>`;
+          card.insertAdjacentHTML('afterbegin', avatarHTML);
+        }
         container.appendChild(card);
       });
     }
