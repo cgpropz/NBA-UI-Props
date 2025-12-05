@@ -303,8 +303,14 @@
 
       const dvpRankings = await fetchDVP();
       function updateDVPDisplay(currentStat){
-        const oppTeam = '{{OPPONENT}}'.toUpperCase();
-        const dvpVal = computeDVP(dvpRankings, oppTeam, playerPosition, currentStat);
+        let oppTeam = '{{OPPONENT}}';
+        try {
+          const key = (currentStat === 'Pts+Rebs+Asts') ? 'PRA' : currentStat;
+          const rec = (Array.isArray(records) ? records : []).find(r => (r.Stat || r.stat || r.prop) === key) || null;
+          const o = rec && (rec.Versus || rec.Opp || rec.opponent || rec.opp || rec.versus);
+          if (o) oppTeam = o;
+        } catch (e) {}
+        const dvpVal = computeDVP(dvpRankings, String(oppTeam||'').toUpperCase(), playerPosition, currentStat);
         const badge = document.getElementById('dvpBadge');
         if (!badge) return;
         if (dvpVal == null) {
@@ -337,14 +343,31 @@
         const selected = select.value;
         const statKey = selected === 'Pts+Rebs+Asts' ? 'PRA' : selected;
         const rec = records.find(r => (r.Stat || r.stat || r.prop) === statKey);
-        if(rec) updateUI(rec);
+        if(rec) {
+          // Update meta (team/opponent) if present in record
+          const teamEl = document.querySelector('.meta-line .team');
+          if (teamEl && (rec.Team || rec.team)) teamEl.textContent = rec.Team || rec.team;
+          const oppEl = document.querySelector('.meta-line .opponent');
+          const o = rec.Versus || rec.Opp || rec.opponent || rec.opp || rec.versus;
+          if (oppEl && o) oppEl.textContent = 'vs ' + o;
+          updateUI(rec);
+        }
         updateDVPDisplay(selected);
       });
-
-      updateDVPDisplay(current);
-      renderMinutesBadge(
-        records.find(r => (r.Stat || r.stat || r.prop) === (current === 'Pts+Rebs+Asts' ? 'PRA' : current)) || {}
-      );
+      // Initial render using record data if available
+      (function(){
+        const statKey = current === 'Pts+Rebs+Asts' ? 'PRA' : current;
+        const rec = records.find(r => (r.Stat || r.stat || r.prop) === statKey) || records[0];
+        if (rec) {
+          const teamEl = document.querySelector('.meta-line .team');
+          if (teamEl && (rec.Team || rec.team)) teamEl.textContent = rec.Team || rec.team;
+          const oppEl = document.querySelector('.meta-line .opponent');
+          const o = rec.Versus || rec.Opp || rec.opponent || rec.opp || rec.versus;
+          if (oppEl && o) oppEl.textContent = 'vs ' + o;
+          updateUI(rec);
+        }
+        updateDVPDisplay(current);
+      })();
     })();
   </script>
 </body>
