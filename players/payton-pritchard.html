@@ -216,11 +216,9 @@
       const num = Number(m);
       minutesEl.textContent = `${num.toFixed(1)} MIN`;
       let cls = 'min-badge ';
-      // Color scale: 32+ green, 27+ neutral, 25 and under red
-      if (num >= 32) cls += 'dvp-green';
-      else if (num >= 27) cls += 'dvp-neutral';
-      else if (num <= 25) cls += 'dvp-red';
-      else cls += 'dvp-neutral';
+      // Simplified color scale: 30+ minutes → green, otherwise red
+      if (num >= 30) cls += 'dvp-green';
+      else cls += 'dvp-red';
       minutesEl.className = cls;
       minutesEl.style.display = 'block';
     }
