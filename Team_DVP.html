@@ -221,8 +221,10 @@
           let val = r[h.key];
           if (h.key === 'team') {
             const abbr = normalizeTeamCode(r.team);
-            const logo = `assets/team-logos/${abbr}.png`;
-            td.innerHTML = `<div class=\"d-flex align-items-center gap-2\"><img src=\"${logo}\" alt=\"${abbr}\" style=\"width:24px;height:24px;object-fit:contain;border-radius:4px\" onerror=\"this.style.display='none'\"/><span>${val || '-'}<\/span><\/div>`;
+            const primary = `team logos/${abbr}.png`;
+            const fallback = `assets/team-logos/${abbr}.png`;
+            const imgHtml = `<img src=\"${primary}\" data-fallback=\"${fallback}\" alt=\"${abbr}\" style=\"width:24px;height:24px;object-fit:contain;border-radius:4px\" onerror=\"if(this.dataset && this.dataset.fallback && this.src!==this.dataset.fallback){this.src=this.dataset.fallback;}else{this.style.display='none'}\"/>`;
+            td.innerHTML = `<div class=\"d-flex align-items-center gap-2\">${imgHtml}<span>${val || '-'}<\/span><\/div>`;
           } else if (h.key.endsWith('_rank')) {
             const num = Number(val);
             if (isNaN(num)) {
