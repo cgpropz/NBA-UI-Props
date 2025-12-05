@@ -39,6 +39,7 @@ jobs:
           rsync -av --delete --prune-empty-dirs \
             --include 'index.html' \
             --include 'Team_Matchup.html' \
+            --include 'Team_DVP.html' \
             --include '.nojekyll' \
             --include 'player-template-new.html' \
             --include 'players/***' \
