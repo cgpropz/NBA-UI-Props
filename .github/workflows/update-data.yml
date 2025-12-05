@@ -37,6 +37,15 @@ jobs:
         run: |
           python Fetch_PP_Odds.py || true
 
+      - name: Sync root odds JSON (every run)
+        run: |
+          # Ensure a root-level odds file is refreshed every 5 minutes for UI consumption
+          if [ -f data/odds/latest.json ]; then
+            cp -f data/odds/latest.json NBA_PURE_STANDARD_SINGLE.json;
+          else
+            echo "data/odds/latest.json not found; keeping existing NBA_PURE_STANDARD_SINGLE.json";
+          fi
+
       - name: Update gamelogs (7 AM only)
         if: "${{ startsWith(github.event.schedule, '0 7') }}"
         run: |
