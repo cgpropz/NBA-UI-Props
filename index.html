@@ -78,10 +78,6 @@
           <option value="customAsc">PG → SG → PF → SF → C</option>
           <option value="customDesc">C → SF → PF → SG → PG</option>
         </select>
-        <label style="color:#00ff9d; font-weight:bold;">Min</label>
-        <input type="number" step="0.1" id="projectionMin" placeholder="e.g. 20.0" style="width:130px;" />
-        <label style="color:#00ff9d; font-weight:bold;">Max</label>
-        <input type="number" step="0.1" id="projectionMax" placeholder="e.g. 30.0" style="width:130px;" />
       </div>
     </div>
   </div>
@@ -269,21 +265,14 @@
       const period = document.getElementById('hitPeriod').value;
       const projSort = document.getElementById('projectionSort').value;
       const dvpSort = document.getElementById('dvpSort').value;
-      const projMinEl = document.getElementById('projectionMin');
-      const projMaxEl = document.getElementById('projectionMax');
       const posSort = document.getElementById('positionSort').value;
-      const projMin = projMinEl.value ? parseFloat(projMinEl.value) : null;
-      const projMax = projMaxEl.value ? parseFloat(projMaxEl.value) : null;
 
       let filtered = allPlayers.filter(p => {
         const matchesSearch = p.name.toLowerCase().includes(search);
         const matchesStat = !stat || p.prop === stat;
         const matchesTeam = !teamSel || String(p.team).toUpperCase() === String(teamSel).toUpperCase();
         const matchesHit = p[period] >= minHit;
-        const proj = typeof p.projection === 'number' ? p.projection : null;
-        const matchesProjMin = projMin === null || (proj !== null && proj >= projMin);
-        const matchesProjMax = projMax === null || (proj !== null && proj <= projMax);
-        return matchesSearch && matchesStat && matchesTeam && matchesHit && matchesProjMin && matchesProjMax;
+        return matchesSearch && matchesStat && matchesTeam && matchesHit;
       });
 
       if (posSort !== 'none') {
@@ -428,8 +417,6 @@
     document.getElementById('projectionSort').addEventListener('change', filterAndSort);
     document.getElementById('dvpSort').addEventListener('change', filterAndSort);
     document.getElementById('positionSort').addEventListener('change', filterAndSort);
-    document.getElementById('projectionMin').addEventListener('input', filterAndSort);
-    document.getElementById('projectionMax').addEventListener('input', filterAndSort);
   </script>
 </body>
 </html>
