@@ -39,10 +39,10 @@
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Points">Points</option>
+          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
         </select>
-        • Line <strong id="lineVal">14.5</strong> 
-        • Projection <strong id="projectionVal">16.0</strong>
+        • Line <strong id="lineVal">23.5</strong> 
+        • Projection <strong id="projectionVal">26.9</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -51,9 +51,9 @@
       <div class="hitrates-wrapper">
         <div class="hitrates">
           <div class="rate-box"><div class="label">Last 5</div><div class="val">5/5</div></div>
-          <div class="rate-box"><div class="label">Last 10</div><div class="val">6/10</div></div>
-          <div class="rate-box"><div class="label">Last 20</div><div class="val">9/20</div></div>
-          <div class="rate-box"><div class="label">Season</div><div class="val">9/20</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">7/10</div></div>
+          <div class="rate-box"><div class="label">Last 20</div><div class="val">8/20</div></div>
+          <div class="rate-box"><div class="label">Season</div><div class="val">8/20</div></div>
         </div>
         <div class="dots">
           <span class="dot active"></span>
@@ -69,10 +69,10 @@
   </div>
 
   <script>
-    let line = Number('14.5');
-    let data = JSON.parse('[25.0, 11.0, 11.0, 2.0, 4.0, 18.0, 20.0, 18.0, 21.0, 22.0]');
+    let line = Number('23.5');
+    let data = JSON.parse('[36.0, 25.0, 19.0, 6.0, 8.0, 34.0, 36.0, 30.0, 31.0, 36.0]');
     let dates = JSON.parse('["11/12", "11/14", "11/16", "11/19", "11/21", "11/22", "11/24", "11/26", "11/29", "11/30"]');
-    let projection = Number('16.0');
+    let projection = Number('26.9');
     const playerName = 'Saddiq Bey';
 
     (function(){
@@ -233,9 +233,9 @@
       if(boxes.length < 4) return;
       const vals = [
         record.last_5 || '5/5',
-        record.last_10 || '6/10',
-        record.last_20 || '9/20',
-        record.season || '9/20'
+        record.last_10 || '7/10',
+        record.last_20 || '8/20',
+        record.season || '8/20'
       ];
       vals.forEach((v, i) => {
         const { text, pct } = formatPercentFirstWithPct(v);

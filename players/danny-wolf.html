@@ -39,10 +39,10 @@
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Rebounds">Rebounds</option>
+          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
         </select>
-        • Line <strong id="lineVal">5.0</strong> 
-        • Projection <strong id="projectionVal">3.1</strong>
+        • Line <strong id="lineVal">20.5</strong> 
+        • Projection <strong id="projectionVal">11.3</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -69,10 +69,10 @@
   </div>
 
   <script>
-    let line = Number('5.0');
-    let data = JSON.parse('[1.0, 1.0, 0.0, 5.0, 4.0, 7.0]');
+    let line = Number('20.5');
+    let data = JSON.parse('[3.0, 3.0, 0.0, 11.0, 30.0, 18.0]');
     let dates = JSON.parse('["11/03", "11/11", "11/18", "11/28", "11/29", "12/01"]');
-    let projection = Number('3.1');
+    let projection = Number('11.3');
     const playerName = 'Danny Wolf';
 
     (function(){

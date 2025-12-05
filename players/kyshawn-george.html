@@ -39,10 +39,10 @@
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Assists">Assists</option>
+          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
         </select>
-        • Line <strong id="lineVal">4.5</strong> 
-        • Projection <strong id="projectionVal">5.2</strong>
+        • Line <strong id="lineVal">25.5</strong> 
+        • Projection <strong id="projectionVal">24.3</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -50,10 +50,10 @@
       <!-- Hitrates -->
       <div class="hitrates-wrapper">
         <div class="hitrates">
-          <div class="rate-box"><div class="label">Last 5</div><div class="val">3/5</div></div>
-          <div class="rate-box"><div class="label">Last 10</div><div class="val">6/10</div></div>
-          <div class="rate-box"><div class="label">Last 20</div><div class="val">9/17</div></div>
-          <div class="rate-box"><div class="label">Season</div><div class="val">9/17</div></div>
+          <div class="rate-box"><div class="label">Last 5</div><div class="val">2/5</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">4/10</div></div>
+          <div class="rate-box"><div class="label">Last 20</div><div class="val">7/17</div></div>
+          <div class="rate-box"><div class="label">Season</div><div class="val">7/17</div></div>
         </div>
         <div class="dots">
           <span class="dot active"></span>
@@ -69,10 +69,10 @@
   </div>
 
   <script>
-    let line = Number('4.5');
-    let data = JSON.parse('[3.0, 3.0, 6.0, 9.0, 5.0, 7.0, 4.0, 7.0, 4.0, 5.0]');
+    let line = Number('25.5');
+    let data = JSON.parse('[14.0, 15.0, 24.0, 32.0, 40.0, 37.0, 12.0, 36.0, 12.0, 17.0]');
     let dates = JSON.parse('["11/05", "11/08", "11/10", "11/12", "11/16", "11/19", "11/21", "11/22", "11/28", "12/01"]');
-    let projection = Number('5.2');
+    let projection = Number('24.3');
     const playerName = 'Kyshawn George';
 
     (function(){
@@ -232,10 +232,10 @@
       const boxes = document.querySelectorAll('.hitrates .rate-box .val');
       if(boxes.length < 4) return;
       const vals = [
-        record.last_5 || '3/5',
-        record.last_10 || '6/10',
-        record.last_20 || '9/17',
-        record.season || '9/17'
+        record.last_5 || '2/5',
+        record.last_10 || '4/10',
+        record.last_20 || '7/17',
+        record.season || '7/17'
       ];
       vals.forEach((v, i) => {
         const { text, pct } = formatPercentFirstWithPct(v);

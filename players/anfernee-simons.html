@@ -39,10 +39,10 @@
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Steals">Steals</option>
+          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
         </select>
-        • Line <strong id="lineVal">0.5</strong> 
-        • Projection <strong id="projectionVal">0.4</strong>
+        • Line <strong id="lineVal">23.5</strong> 
+        • Projection <strong id="projectionVal">19.1</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -51,7 +51,7 @@
       <div class="hitrates-wrapper">
         <div class="hitrates">
           <div class="rate-box"><div class="label">Last 5</div><div class="val">2/5</div></div>
-          <div class="rate-box"><div class="label">Last 10</div><div class="val">2/10</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">4/10</div></div>
           <div class="rate-box"><div class="label">Last 20</div><div class="val">6/20</div></div>
           <div class="rate-box"><div class="label">Season</div><div class="val">6/20</div></div>
         </div>
@@ -69,10 +69,10 @@
   </div>
 
   <script>
-    let line = Number('0.5');
-    let data = JSON.parse('[0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 1.0]');
+    let line = Number('23.5');
+    let data = JSON.parse('[29.0, 26.0, 17.0, 2.0, 20.0, 30.0, 30.0, 10.0, 7.0, 21.0]');
     let dates = JSON.parse('["11/09", "11/11", "11/12", "11/16", "11/18", "11/21", "11/23", "11/26", "11/29", "11/30"]');
-    let projection = Number('0.4');
+    let projection = Number('19.1');
     const playerName = 'Anfernee Simons';
 
     (function(){
@@ -233,7 +233,7 @@
       if(boxes.length < 4) return;
       const vals = [
         record.last_5 || '2/5',
-        record.last_10 || '2/10',
+        record.last_10 || '4/10',
         record.last_20 || '6/20',
         record.season || '6/20'
       ];

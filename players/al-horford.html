@@ -39,10 +39,10 @@
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Steals">Steals</option>
+          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
         </select>
-        • Line <strong id="lineVal">0.5</strong> 
-        • Projection <strong id="projectionVal">1.2</strong>
+        • Line <strong id="lineVal">14.5</strong> 
+        • Projection <strong id="projectionVal">12.0</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -50,10 +50,10 @@
       <!-- Hitrates -->
       <div class="hitrates-wrapper">
         <div class="hitrates">
-          <div class="rate-box"><div class="label">Last 5</div><div class="val">4/5</div></div>
-          <div class="rate-box"><div class="label">Last 10</div><div class="val">6/10</div></div>
-          <div class="rate-box"><div class="label">Last 20</div><div class="val">7/12</div></div>
-          <div class="rate-box"><div class="label">Season</div><div class="val">7/12</div></div>
+          <div class="rate-box"><div class="label">Last 5</div><div class="val">3/5</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">4/10</div></div>
+          <div class="rate-box"><div class="label">Last 20</div><div class="val">5/12</div></div>
+          <div class="rate-box"><div class="label">Season</div><div class="val">5/12</div></div>
         </div>
         <div class="dots">
           <span class="dot active"></span>
@@ -69,10 +69,10 @@
   </div>
 
   <script>
-    let line = Number('0.5');
-    let data = JSON.parse('[1.0, 0.0, 0.0, 2.0, 0.0, 0.0, 2.0, 2.0, 2.0, 2.0]');
+    let line = Number('14.5');
+    let data = JSON.parse('[6.0, 7.0, 11.0, 9.0, 17.0, 15.0, 3.0, 14.0, 16.0, 16.0]');
     let dates = JSON.parse('["10/28", "10/30", "11/01", "11/05", "11/09", "11/12", "11/14", "11/16", "11/18", "11/21"]');
-    let projection = Number('1.2');
+    let projection = Number('12.0');
     const playerName = 'Al Horford';
 
     (function(){
@@ -232,10 +232,10 @@
       const boxes = document.querySelectorAll('.hitrates .rate-box .val');
       if(boxes.length < 4) return;
       const vals = [
-        record.last_5 || '4/5',
-        record.last_10 || '6/10',
-        record.last_20 || '7/12',
-        record.season || '7/12'
+        record.last_5 || '3/5',
+        record.last_10 || '4/10',
+        record.last_20 || '5/12',
+        record.season || '5/12'
       ];
       vals.forEach((v, i) => {
         const { text, pct } = formatPercentFirstWithPct(v);

@@ -5,11 +5,27 @@ import re
 import unicodedata
 import pandas as pd
 
-print("Generating ELITE player pages with HEADSHOTS...")
+print("Generating player pages from UI cards with HEADSHOTS...")
 
-# Load data
-with open('NBA_PURE_STANDARD_SINGLE.json') as f:
-    pp_lines = json.load(f)
+# Load UI cards as the canonical source for who should have a page
+ui_cards = []
+try:
+    with open('PLAYER_UI_CARDS_PERFECT.json') as f:
+        ui_cards = json.load(f)
+except FileNotFoundError:
+    try:
+        with open('PLAYER_UI_CARDS_WITH_DVP.json') as f:
+            ui_cards = json.load(f)
+    except FileNotFoundError:
+        ui_cards = []
+
+# Fallback to PrizePicks lines if UI cards missing
+pp_lines = []
+try:
+    with open('NBA_PURE_STANDARD_SINGLE.json') as f:
+        pp_lines = json.load(f)
+except FileNotFoundError:
+    pp_lines = []
 
 df_logs = pd.read_csv('Full_Gamelogs25.csv')
 df_logs['GAME DATE'] = pd.to_datetime(df_logs['GAME DATE'])
@@ -23,6 +39,7 @@ STAT_MAP = {
     'Blocks': ['BLK'],
     'Turnovers': ['TOV'],
     'Fantasy Score': ['FP'],
+    'Steals + Blocks': ['STL','BLK'],
     # Combo props (support both legacy and PrizePicks naming)
     'PRA': ['PTS','REB','AST'],
     'Pts+Rebs+Asts': ['PTS','REB','AST'],
@@ -45,12 +62,54 @@ def make_slug(name: str):
     base = normalize_name(name.lower())
     return re.sub(r'[^a-z0-9]+', '-', base).strip('-')
 
-for prop in pp_lines:
-    name = prop['Name']
-    team = prop['Team']
-    stat = prop['Stat']
-    line = prop['Line']
-    opponent = prop.get('Versus', 'N/A')
+def prioritize_prop(records_for_player):
+    # Prefer a good default stat for initial render
+    order = ['Pts+Rebs+Asts','Points','Assists','Rebounds','Threes','Turnovers','Steals + Blocks','Fantasy Score','Steals','Blocks']
+    # Normalize PRA alias during comparison
+    def norm_prop(p):
+        return 'Pts+Rebs+Asts' if p == 'PRA' else p
+    for pref in order:
+        m = next((r for r in records_for_player if norm_prop(str(r.get('prop'))) == pref), None)
+        if m:
+            return m
+    return records_for_player[0] if records_for_player else None
+
+# Build target list from UI cards when available
+targets = []
+if isinstance(ui_cards, list) and ui_cards:
+    by_name = {}
+    for r in ui_cards:
+        nm = r.get('name') or r.get('Name')
+        if not nm:
+            continue
+        by_name.setdefault(nm, []).append({
+            'name': nm,
+            'team': r.get('team') or r.get('Team'),
+            'prop': r.get('prop') or r.get('Stat'),
+            'line': r.get('line') or r.get('Line'),
+            'opponent': r.get('opponent') or r.get('Opp') or r.get('Versus')
+        })
+    for nm, recs in by_name.items():
+        pick = prioritize_prop(recs)
+        if pick:
+            targets.append(pick)
+else:
+    # Fallback: derive from PrizePicks lines
+    for prop in pp_lines:
+        targets.append({
+            'name': prop.get('Name'),
+            'team': prop.get('Team'),
+            'prop': prop.get('Stat'),
+            'line': prop.get('Line'),
+            'opponent': prop.get('Versus', 'N/A')
+        })
+
+for target in targets:
+    name = target['name']
+    team = target.get('team')
+    stat = target.get('prop')
+    line = target.get('line')
+    opponent = target.get('opponent') or 'N/A'
 
     if stat not in STAT_MAP:
         continue
@@ -131,7 +190,7 @@ for prop in pp_lines:
 
     html = template \
         .replace('{{NAME}}', name) \
-        .replace('{{TEAM}}', team) \
+        .replace('{{TEAM}}', team or '') \
         .replace('{{OPPONENT}}', opponent) \
         .replace('{{PROP}}', display_stat) \
         .replace('{{LINE}}', str(line)) \

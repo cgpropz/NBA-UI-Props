@@ -39,10 +39,10 @@
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Turnovers">Turnovers</option>
+          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
         </select>
-        • Line <strong id="lineVal">0.5</strong> 
-        • Projection <strong id="projectionVal">0.6</strong>
+        • Line <strong id="lineVal">12.0</strong> 
+        • Projection <strong id="projectionVal">11.3</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -50,10 +50,10 @@
       <!-- Hitrates -->
       <div class="hitrates-wrapper">
         <div class="hitrates">
-          <div class="rate-box"><div class="label">Last 5</div><div class="val">3/5</div></div>
-          <div class="rate-box"><div class="label">Last 10</div><div class="val">3/10</div></div>
-          <div class="rate-box"><div class="label">Last 20</div><div class="val">5/17</div></div>
-          <div class="rate-box"><div class="label">Season</div><div class="val">5/17</div></div>
+          <div class="rate-box"><div class="label">Last 5</div><div class="val">4/5</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">6/10</div></div>
+          <div class="rate-box"><div class="label">Last 20</div><div class="val">6/17</div></div>
+          <div class="rate-box"><div class="label">Season</div><div class="val">6/17</div></div>
         </div>
         <div class="dots">
           <span class="dot active"></span>
@@ -69,10 +69,10 @@
   </div>
 
   <script>
-    let line = Number('0.5');
-    let data = JSON.parse('[0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 0.0, 1.0, 0.0, 2.0]');
+    let line = Number('12.0');
+    let data = JSON.parse('[0.0, 2.0, 24.0, 13.0, 5.0, 8.0, 15.0, 17.0, 13.0, 16.0]');
     let dates = JSON.parse('["11/14", "11/16", "11/17", "11/19", "11/21", "11/22", "11/24", "11/26", "11/29", "11/30"]');
-    let projection = Number('0.6');
+    let projection = Number('11.3');
     const playerName = 'Micah Peavy';
 
     (function(){
@@ -232,10 +232,10 @@
       const boxes = document.querySelectorAll('.hitrates .rate-box .val');
       if(boxes.length < 4) return;
       const vals = [
-        record.last_5 || '3/5',
-        record.last_10 || '3/10',
-        record.last_20 || '5/17',
-        record.season || '5/17'
+        record.last_5 || '4/5',
+        record.last_10 || '6/10',
+        record.last_20 || '6/17',
+        record.season || '6/17'
       ];
       vals.forEach((v, i) => {
         const { text, pct } = formatPercentFirstWithPct(v);

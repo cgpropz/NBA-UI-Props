@@ -39,10 +39,10 @@
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Turnovers">Turnovers</option>
+          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
         </select>
-        • Line <strong id="lineVal">0.5</strong> 
-        • Projection <strong id="projectionVal">0.6</strong>
+        • Line <strong id="lineVal">10.5</strong> 
+        • Projection <strong id="projectionVal">10.8</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -50,8 +50,8 @@
       <!-- Hitrates -->
       <div class="hitrates-wrapper">
         <div class="hitrates">
-          <div class="rate-box"><div class="label">Last 5</div><div class="val">3/5</div></div>
-          <div class="rate-box"><div class="label">Last 10</div><div class="val">5/10</div></div>
+          <div class="rate-box"><div class="label">Last 5</div><div class="val">2/5</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">4/10</div></div>
           <div class="rate-box"><div class="label">Last 20</div><div class="val">8/17</div></div>
           <div class="rate-box"><div class="label">Season</div><div class="val">8/17</div></div>
         </div>
@@ -69,10 +69,10 @@
   </div>
 
   <script>
-    let line = Number('0.5');
-    let data = JSON.parse('[0.0, 1.0, 0.0, 2.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0]');
+    let line = Number('10.5');
+    let data = JSON.parse('[7.0, 4.0, 6.0, 17.0, 11.0, 10.0, 15.0, 9.0, 16.0, 8.0]');
     let dates = JSON.parse('["11/10", "11/12", "11/14", "11/15", "11/18", "11/23", "11/25", "11/28", "11/30", "12/01"]');
-    let projection = Number('0.6');
+    let projection = Number('10.8');
     const playerName = 'Jaxson Hayes';
 
     (function(){
@@ -232,8 +232,8 @@
       const boxes = document.querySelectorAll('.hitrates .rate-box .val');
       if(boxes.length < 4) return;
       const vals = [
-        record.last_5 || '3/5',
-        record.last_10 || '5/10',
+        record.last_5 || '2/5',
+        record.last_10 || '4/10',
         record.last_20 || '8/17',
         record.season || '8/17'
       ];

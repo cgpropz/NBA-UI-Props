@@ -39,10 +39,10 @@
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Rebounds">Rebounds</option>
+          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
         </select>
-        • Line <strong id="lineVal">6.5</strong> 
-        • Projection <strong id="projectionVal">6.7</strong>
+        • Line <strong id="lineVal">22.5</strong> 
+        • Projection <strong id="projectionVal">20.7</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -50,10 +50,10 @@
       <!-- Hitrates -->
       <div class="hitrates-wrapper">
         <div class="hitrates">
-          <div class="rate-box"><div class="label">Last 5</div><div class="val">3/5</div></div>
-          <div class="rate-box"><div class="label">Last 10</div><div class="val">4/10</div></div>
-          <div class="rate-box"><div class="label">Last 20</div><div class="val">8/18</div></div>
-          <div class="rate-box"><div class="label">Season</div><div class="val">8/18</div></div>
+          <div class="rate-box"><div class="label">Last 5</div><div class="val">4/5</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">5/10</div></div>
+          <div class="rate-box"><div class="label">Last 20</div><div class="val">7/18</div></div>
+          <div class="rate-box"><div class="label">Season</div><div class="val">7/18</div></div>
         </div>
         <div class="dots">
           <span class="dot active"></span>
@@ -69,10 +69,10 @@
   </div>
 
   <script>
-    let line = Number('6.5');
-    let data = JSON.parse('[6.0, 2.0, 2.0, 5.0, 8.0, 10.0, 6.0, 5.0, 9.0, 9.0]');
+    let line = Number('22.5');
+    let data = JSON.parse('[27.0, 8.0, 9.0, 15.0, 22.0, 24.0, 24.0, 23.0, 29.0, 15.0]');
     let dates = JSON.parse('["11/07", "11/09", "11/11", "11/12", "11/14", "11/16", "11/18", "11/21", "11/26", "11/29"]');
-    let projection = Number('6.7');
+    let projection = Number('20.7');
     const playerName = 'Draymond Green';
 
     (function(){
@@ -232,10 +232,10 @@
       const boxes = document.querySelectorAll('.hitrates .rate-box .val');
       if(boxes.length < 4) return;
       const vals = [
-        record.last_5 || '3/5',
-        record.last_10 || '4/10',
-        record.last_20 || '8/18',
-        record.season || '8/18'
+        record.last_5 || '4/5',
+        record.last_10 || '5/10',
+        record.last_20 || '7/18',
+        record.season || '7/18'
       ];
       vals.forEach((v, i) => {
         const { text, pct } = formatPercentFirstWithPct(v);

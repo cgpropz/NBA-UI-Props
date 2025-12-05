@@ -39,10 +39,10 @@
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Assists">Assists</option>
+          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
         </select>
-        • Line <strong id="lineVal">4.0</strong> 
-        • Projection <strong id="projectionVal">3.0</strong>
+        • Line <strong id="lineVal">24.5</strong> 
+        • Projection <strong id="projectionVal">20.6</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -50,10 +50,10 @@
       <!-- Hitrates -->
       <div class="hitrates-wrapper">
         <div class="hitrates">
-          <div class="rate-box"><div class="label">Last 5</div><div class="val">1/5</div></div>
-          <div class="rate-box"><div class="label">Last 10</div><div class="val">1/10</div></div>
-          <div class="rate-box"><div class="label">Last 20</div><div class="val">3/20</div></div>
-          <div class="rate-box"><div class="label">Season</div><div class="val">3/21</div></div>
+          <div class="rate-box"><div class="label">Last 5</div><div class="val">2/5</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">3/10</div></div>
+          <div class="rate-box"><div class="label">Last 20</div><div class="val">5/20</div></div>
+          <div class="rate-box"><div class="label">Season</div><div class="val">5/21</div></div>
         </div>
         <div class="dots">
           <span class="dot active"></span>
@@ -69,10 +69,10 @@
   </div>
 
   <script>
-    let line = Number('4.0');
-    let data = JSON.parse('[1.0, 4.0, 3.0, 3.0, 0.0, 2.0, 3.0, 3.0, 2.0, 6.0]');
+    let line = Number('24.5');
+    let data = JSON.parse('[15.0, 16.0, 16.0, 25.0, 11.0, 30.0, 23.0, 14.0, 20.0, 26.0]');
     let dates = JSON.parse('["11/11", "11/12", "11/14", "11/16", "11/18", "11/19", "11/21", "11/24", "11/26", "11/29"]');
-    let projection = Number('3.0');
+    let projection = Number('20.6');
     const playerName = 'Brandin Podziemski';
 
     (function(){
@@ -232,10 +232,10 @@
       const boxes = document.querySelectorAll('.hitrates .rate-box .val');
       if(boxes.length < 4) return;
       const vals = [
-        record.last_5 || '1/5',
-        record.last_10 || '1/10',
-        record.last_20 || '3/20',
-        record.season || '3/21'
+        record.last_5 || '2/5',
+        record.last_10 || '3/10',
+        record.last_20 || '5/20',
+        record.season || '5/21'
       ];
       vals.forEach((v, i) => {
         const { text, pct } = formatPercentFirstWithPct(v);

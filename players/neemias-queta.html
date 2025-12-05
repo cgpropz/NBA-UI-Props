@@ -39,10 +39,10 @@
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Rebounds">Rebounds</option>
+          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
         </select>
-        • Line <strong id="lineVal">9.5</strong> 
-        • Projection <strong id="projectionVal">9.1</strong>
+        • Line <strong id="lineVal">24.0</strong> 
+        • Projection <strong id="projectionVal">21.8</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -50,7 +50,7 @@
       <!-- Hitrates -->
       <div class="hitrates-wrapper">
         <div class="hitrates">
-          <div class="rate-box"><div class="label">Last 5</div><div class="val">2/5</div></div>
+          <div class="rate-box"><div class="label">Last 5</div><div class="val">3/5</div></div>
           <div class="rate-box"><div class="label">Last 10</div><div class="val">4/10</div></div>
           <div class="rate-box"><div class="label">Last 20</div><div class="val">6/18</div></div>
           <div class="rate-box"><div class="label">Season</div><div class="val">6/18</div></div>
@@ -69,10 +69,10 @@
   </div>
 
   <script>
-    let line = Number('9.5');
-    let data = JSON.parse('[12.0, 8.0, 6.0, 10.0, 8.0, 9.0, 7.0, 12.0, 2.0, 18.0]');
+    let line = Number('24.0');
+    let data = JSON.parse('[32.0, 15.0, 14.0, 20.0, 23.0, 26.0, 15.0, 31.0, 8.0, 37.0]');
     let dates = JSON.parse('["11/05", "11/07", "11/09", "11/11", "11/12", "11/16", "11/18", "11/21", "11/23", "11/29"]');
-    let projection = Number('9.1');
+    let projection = Number('21.8');
     const playerName = 'Neemias Queta';
 
     (function(){
@@ -232,7 +232,7 @@
       const boxes = document.querySelectorAll('.hitrates .rate-box .val');
       if(boxes.length < 4) return;
       const vals = [
-        record.last_5 || '2/5',
+        record.last_5 || '3/5',
         record.last_10 || '4/10',
         record.last_20 || '6/18',
         record.season || '6/18'
