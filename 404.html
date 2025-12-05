@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found • PrizePicks Edge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { display:flex; align-items:center; justify-content:center; min-height:100vh; background:var(--pp-bg); color:var(--pp-text); font-family:Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif; }
+    .card { background:var(--pp-surface); border:1px solid var(--pp-border); border-radius:14px; padding:28px; width:min(680px, 92vw); text-align:center; box-shadow:0 10px 30px rgba(0,0,0,0.25); }
+    h1 { font-family: Orbitron, sans-serif; margin:0 0 6px; letter-spacing:1px; }
+    .muted { color: var(--pp-text-dim); margin-bottom: 16px; }
+    .row { display:flex; gap:10px; justify-content:center; align-items:center; margin-top:14px; }
+    input[type="text"]{ padding:12px 14px; border-radius:10px; border:1px solid var(--pp-border); background:var(--pp-surface-alt); color:var(--pp-text); min-width:280px; }
+    button, a.btn { padding:12px 16px; border-radius:10px; border:1px solid var(--pp-border); background:var(--pp-accent-bg, rgba(255,212,59,0.1)); color:#ffd43b; font-weight:700; text-decoration:none; }
+    small { color: var(--pp-text-dim); display:block; margin-top:10px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>404 — Not Found</h1>
+    <div class="muted">We couldn't find that page. Taking you back to the dashboard.</div>
+    <div class="row">
+      <input id="searchBox" type="text" list="playerSuggestions" placeholder="Search player name…" />
+      <datalist id="playerSuggestions"></datalist>
+      <button id="searchGo">Go</button>
+      <a class="btn" href="./index.html">Dashboard</a>
+    </div>
+    <small id="hint"></small>
+  </div>
+
+  <script>
+    (function(){
+      const path = (location.pathname || '').toLowerCase();
+      const m = path.match(/players\/([^\/]+)\.html$/i);
+      let guess = '';
+      if (m) {
+        const slug = decodeURIComponent(m[1]);
+        guess = slug.split('-').map(s => s ? s[0].toUpperCase() + s.slice(1) : '').join(' ').trim();
+        document.getElementById('hint').textContent = `Tip: Try searching for "${guess}"`;
+      }
+      const target = guess ? `./index.html?search=${encodeURIComponent(guess)}` : './index.html';
+      setTimeout(() => { location.replace(target); }, 1200);
+
+      // Enhance: allow search right from here
+      const box = document.getElementById('searchBox');
+      if (box && guess) box.value = guess;
+      fetch('./PLAYER_UI_CARDS_PERFECT.json').then(r => r.ok ? r.json() : []).then(data => {
+        const names = Array.from(new Set((Array.isArray(data) ? data : (data.players||[])).map(p => p.name))).sort();
+        const dl = document.getElementById('playerSuggestions');
+        names.forEach(n => { const opt = document.createElement('option'); opt.value = n; dl.appendChild(opt); });
+      }).catch(()=>{});
+      document.getElementById('searchGo').addEventListener('click', () => {
+        const v = (document.getElementById('searchBox').value || '').trim();
+        if (!v) { location.href = './index.html'; return; }
+        location.href = `./index.html?search=${encodeURIComponent(v)}`;
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -86,6 +86,18 @@
     let positionsMap = {};
     let dvpRankings = [];
 
+    // Prefill search from query param (?search=Name)
+    (function(){
+      try{
+        const params = new URLSearchParams(window.location.search);
+        const q = params.get('search');
+        if (q) {
+          const el = document.getElementById('search');
+          if (el) el.value = q;
+        }
+      }catch(e){}
+    })();
+
     function slugify(name) {
       return name.toLowerCase()
         .replace(/[^a-z0-9]+/g, '-')
