@@ -5,9 +5,12 @@ on:
     branches: [ main ]
     paths:
       - 'index.html'
+      - 'Team_Matchup.html'
       - 'style.css'
       - 'players/**'
       - 'player-template-new.html'
+      - 'assets/team-logos/**'
+      - 'data/odds/**'
       - '*.json'
       - '*.csv'
       - '.github/workflows/update-data.yml'
@@ -35,9 +38,12 @@ jobs:
           mkdir -p site
           rsync -av --delete --prune-empty-dirs \
             --include 'index.html' \
+            --include 'Team_Matchup.html' \
             --include 'player-template-new.html' \
             --include 'players/***' \
             --include 'Images/***' \
+            --include 'assets/team-logos/***' \
+            --include 'data/odds/***' \
             --include '*.json' \
             --include 'logs/***' \
             --include '*.csv' \
