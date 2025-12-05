@@ -22,12 +22,24 @@
     .logo-img{width:40px;height:40px;object-fit:cover;border-radius:8px}
     .btn-outline-success{border-color:#00ff9d;color:#00ff9d}
     .btn-outline-success.active,.btn-outline-success:hover{background:#00ff9d;color:#0a0f12}
-    .table-dark{--bs-table-bg:#0f171b;--bs-table-striped-bg:#122026;--bs-table-hover-bg:#172a31;color:#e6fff3}
     .card{background:#0f171b;border:1px solid #18333b}
     .form-select,.form-control{background:#0f171b;color:#e6fff3;border-color:#24464f}
     .badge-chip{border:1px solid #00ff9d;color:#00ff9d;background:#002b36;border-radius:10px;padding:2px 8px;font-size:12px}
-    th.sortable{cursor:pointer}
-    th.sortable .sort-icon{margin-left:6px;opacity:0.8}
+    /* Table refinements */
+    .table-wrap{position:relative}
+    .table-dark{--bs-table-bg:#0f171b;--bs-table-striped-bg:#122026;--bs-table-hover-bg:#172a31;color:#e6fff3}
+    #dvpTable thead th{position:sticky;top:0;background:#0f171b;z-index:2}
+    #dvpTable th,#dvpTable td{padding:.5rem .75rem;vertical-align:middle}
+    #dvpTable td:nth-child(n+3){text-align:center}
+    #dvpTable td:first-child{white-space:nowrap}
+    th.sortable{cursor:pointer;user-select:none}
+    th.sortable .sort-icon{margin-left:6px;opacity:0.66}
+    .pos-group .btn{min-width:44px}
+    /* Compact layout on small screens */
+    @media (max-width: 768px){
+      #dvpTable td:nth-child(2), #dvpTable th:nth-child(2){display:none} /* hide Conf on mobile */
+      .dvp-toolbar .card-body{gap:.5rem}
+    }
   </style>
 </head>
 <body class="theme-dark">
@@ -86,8 +98,8 @@
       </div>
     </div>
 
-    <div id="dvpTableWrap" class="card shadow-sm">
-      <div class="table-responsive">
+    <div id="dvpTableWrap" class="card shadow-sm table-wrap">
+      <div class="table-responsive" style="max-height:70vh;overflow:auto">
         <table class="table table-dark table-striped table-hover align-middle mb-0" id="dvpTable">
           <thead></thead>
           <tbody></tbody>
