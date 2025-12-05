@@ -12,7 +12,7 @@
   <a href="../index.html" class="back">Home</a>
 
   <header>
-    <h1>CGEDGE</h1>
+    <h1>PRIZEPICKS EDGE</h1>
     <div class="tag">WEAPONIZED STATS.</div>
   </header>
 
@@ -32,17 +32,17 @@
       <div class="name">Anthony Black</div>
       <div class="meta-line">
         <div class="position" id="positionChip"></div>
-        <div class="team">ORL</div>
-        <div class="opponent">vs SAS</div>
+        <div class="team"></div>
+        <div class="opponent">vs N/A</div>
       </div>
 
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Rebs+Asts">Rebs+Asts</option>
+          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
         </select>
-        • Line <strong id="lineVal">6.5</strong> 
-        • Projection <strong id="projectionVal">6.7</strong>
+        • Line <strong id="lineVal">23.0</strong> 
+        • Projection <strong id="projectionVal">23.0</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -52,8 +52,8 @@
         <div class="hitrates">
           <div class="rate-box"><div class="label">Last 5</div><div class="val">3/5</div></div>
           <div class="rate-box"><div class="label">Last 10</div><div class="val">5/10</div></div>
-          <div class="rate-box"><div class="label">Last 20</div><div class="val">8/20</div></div>
-          <div class="rate-box"><div class="label">Season</div><div class="val">8/21</div></div>
+          <div class="rate-box"><div class="label">Last 20</div><div class="val">6/20</div></div>
+          <div class="rate-box"><div class="label">Season</div><div class="val">6/21</div></div>
         </div>
         <div class="dots">
           <span class="dot active"></span>
@@ -69,10 +69,10 @@
   </div>
 
   <script>
-    let line = Number('6.5');
-    let data = JSON.parse('[6.0, 2.0, 7.0, 6.0, 8.0, 5.0, 8.0, 4.0, 8.0, 12.0]');
+    let line = Number('23.0');
+    let data = JSON.parse('[23.0, 4.0, 25.0, 27.0, 20.0, 16.0, 22.0, 35.0, 24.0, 34.0]');
     let dates = JSON.parse('["11/12", "11/14", "11/16", "11/18", "11/20", "11/22", "11/23", "11/25", "11/28", "12/01"]');
-    let projection = Number('6.7');
+    let projection = Number('23.0');
     const playerName = 'Anthony Black';
 
     (function(){
@@ -234,8 +234,8 @@
       const vals = [
         record.last_5 || '3/5',
         record.last_10 || '5/10',
-        record.last_20 || '8/20',
-        record.season || '8/21'
+        record.last_20 || '6/20',
+        record.season || '6/21'
       ];
       vals.forEach((v, i) => {
         const { text, pct } = formatPercentFirstWithPct(v);
@@ -303,7 +303,7 @@
 
       const dvpRankings = await fetchDVP();
       function updateDVPDisplay(currentStat){
-        const oppTeam = 'SAS'.toUpperCase();
+        const oppTeam = 'N/A'.toUpperCase();
         const dvpVal = computeDVP(dvpRankings, oppTeam, playerPosition, currentStat);
         const badge = document.getElementById('dvpBadge');
         if (!badge) return;

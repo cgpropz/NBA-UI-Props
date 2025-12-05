@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coby White • PrizePicks Edge</title>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="player-page">
+  <a href="../index.html" class="back">Home</a>
+
+  <header>
+    <h1>PRIZEPICKS EDGE</h1>
+    <div class="tag">WEAPONIZED STATS.</div>
+  </header>
+
+  <div class="wrap">
+    <!-- SINGLE panel: everything (badges, image, content) lives in here -->
+    <div class="panel">
+      <!-- Corner badges -->
+      <div id="dvpBadge" class="dvp-badge" style="display:none;"></div>
+      <div id="minBadge" class="min-badge" style="display:none;"></div>
+
+      <!-- Player image -->
+      <div class="player-img-container">
+        <img id="playerHeadshot" src="https://www.basketball-reference.com/req/202106291/images/players/whiteco01.jpg" alt="Coby White">
+      </div>
+
+      <!-- Name + meta -->
+      <div class="name">Coby White</div>
+      <div class="meta-line">
+        <div class="position" id="positionChip"></div>
+        <div class="team"></div>
+        <div class="opponent">vs N/A</div>
+      </div>
+
+      <!-- Prop line -->
+      <div class="prop-line">
+        <select id="propSelect">
+          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
+        </select>
+        • Line <strong id="lineVal">33.4</strong> 
+        • Projection <strong id="projectionVal">33.4</strong>
+        <!-- Exp Min inline removed; now shown as top-left badge -->
+        <span id="edgeBadge"></span>
+      </div>
+
+      <!-- Hitrates -->
+      <div class="hitrates-wrapper">
+        <div class="hitrates">
+          <div class="rate-box"><div class="label">Last 5</div><div class="val">2/5</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">2/10</div></div>
+          <div class="rate-box"><div class="label">Last 20</div><div class="val">2/5</div></div>
+          <div class="rate-box"><div class="label">Season</div><div class="val">2/5</div></div>
+        </div>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- Chart -->
+      <div id="chart"></div>
+    </div>
+  </div>
+
+  <script>
+    let line = Number('33.4');
+    let data = JSON.parse('[39.0, 33.0, 29.0, 35.0, 31.0]');
+    let dates = JSON.parse('["11/16", "11/19", "11/22", "11/24", "11/28"]');
+    let projection = Number('33.4');
+    const playerName = 'Coby White';
+
+    (function(){
+      const img = document.getElementById('playerHeadshot');
+      if(!img) return;
+      const container = img.parentElement;
+      const initials = ("Coby White"||'').split(/\s+/).map(p=>p[0]||'').slice(0,2).join('').toUpperCase();
+      function showFallback(){
+        const div = document.createElement('div');
+        div.className = 'avatar-fallback';
+        div.textContent = initials || 'PP';
+        try { container.replaceChild(div, img); } catch(e) {}
+      }
+      img.addEventListener('error', showFallback, { once: true });
+    })();
+
+    async function fetchPlayerProps(name){
+      try{
+        const res = await fetch('../PLAYER_UI_CARDS_PERFECT.json');
+        const all = await res.json();
+        return all.filter(r => (r.Name || r.name || '').toLowerCase() === String(name).toLowerCase());
+      }catch(e){
+        console.warn('Failed to fetch player props', e);
+        return [];
+      }
+    }
+
+    async function fetchPositions(){
+      try{
+        const res = await fetch('../nba_players_2025_26_positions.json');
+        if(!res.ok) return {};
+        return await res.json();
+      }catch(e){
+        console.warn('Failed to fetch positions', e);
+        return {};
+      }
+    }
+
+    async function fetchDVP(){
+      try{
+        const res = await fetch('../nba_dvp_latest.json');
+        if(!res.ok) return [];
+        const payload = await res.json();
+        const rankings = (payload && payload.data && payload.data.team_dvp_rankings) || [];
+        return rankings;
+      }catch(e){
+        console.warn('Failed to fetch DVP', e);
+        return [];
+      }
+    }
+
+    function mapStatToDVP(stat){
+      const m = {
+        'Points':'PTS','Rebounds':'REB','Assists':'AST','Threes':'3PM','Steals':'STL','Blocks':'BLK','Turnovers':'TOV',
+        'Pts+Rebs':'PTS+REB','Pts+Asts':'PTS+AST','Rebs+Asts':'REB+AST','Pts+Rebs+Asts':'PTS+REB+AST','Fantasy Score':'FPTS'
+      };
+      return m[stat] || stat;
+    }
+
+    function mapStatToRankField(stat){
+      const s = mapStatToDVP(stat).toUpperCase();
+      const rankMap = {
+        'PTS':'pts_rank',
+        'REB':'reb_rank',
+        'AST':'ast_rank',
+        '3PM':'pt3_rank',
+        'STL':'stl_rank',
+        'BLK':'blk_rank',
+        'PTS+REB':'dkpts_rank',
+        'PTS+AST':'dkpts_rank',
+        'REB+AST':'dkpts_rank',
+        'PTS+REB+AST':'dkpts_rank',
+        'FPTS':'dkpts_rank'
+      };
+      return rankMap[s] || 'avg_dfs';
+    }
+
+    function normalizeTeamCode(team){
+      const t = String(team||'').toUpperCase();
+      const map = { 'BKN':'BRO','BRK':'BRO','CHO':'CHA','PHX':'PHO','NO':'NOP','NOR':'NOP','NY':'NYK' };
+      return map[t] || t;
+    }
+
+    function computeDVP(rankings, team, position, stat){
+      if(!Array.isArray(rankings)) return null;
+      const posKey = String(position||'').toUpperCase();
+      const teamKey = normalizeTeamCode(team);
+      const rows = rankings.filter(r => String(r.team||'').toUpperCase()===teamKey && String(r.position||'').toUpperCase()===posKey);
+      if(!rows.length) return null;
+      const field = mapStatToRankField(stat);
+      const raw = rows[0][field];
+      if (raw === '-' || raw == null) return null;
+      const num = typeof raw === 'number' ? raw : Number(raw);
+      return isNaN(num) ? null : num;
+    }
+
+    function dvpClassByRank(rank){
+      if (rank == null) return '';
+      const r = Math.round(Number(rank));
+      if (r <= 8) return 'dvp-red';
+      if (r <= 22) return 'dvp-neutral';
+      return 'dvp-green';
+    }
+
+    function renderBadge(){
+      const badgeEl = document.getElementById('edgeBadge');
+      if(!badgeEl || !Array.isArray(data) || !data.length) return;
+      const avg = data.reduce((a,b)=>a+b,0)/data.length;
+      if(avg > line + 0.5) badgeEl.innerHTML = '<span class="badge-hot">STRONG EDGE</span>';
+      else if(avg > line) badgeEl.innerHTML = '<span class="badge-hot">EDGE</span>';
+      else if(avg < line - 0.5) badgeEl.innerHTML = '<span class="badge-cold">UNDER</span>';
+      else badgeEl.innerHTML = '';
+    }
+
+    function renderMinutesBadge(record){
+      const minutesEl = document.getElementById('minBadge');
+      if (!minutesEl) return;
+      const val = record?.expected_minutes ?? record?.ExpectedMinutes ?? record?.minutes;
+      const tmpl = '{{EXPECTED_MINUTES}}';
+      let m = val;
+      if (m == null || m === '' || m === 'undefined') {
+        m = (tmpl && tmpl !== '{{EXPECTED_MINUTES}}') ? Number(tmpl) : null;
+      }
+      if (m == null || isNaN(Number(m))) {
+        minutesEl.style.display = 'none';
+        minutesEl.textContent = '';
+        minutesEl.className = 'min-badge';
+        return;
+      }
+      const num = Number(m);
+      minutesEl.textContent = `${num.toFixed(1)} MIN`;
+      let cls = 'min-badge ';
+      if (num >= 34) cls += 'dvp-green';
+      else if (num >= 28) cls += 'dvp-neutral';
+      else cls += 'dvp-red';
+      minutesEl.className = cls;
+      minutesEl.style.display = 'block';
+    }
+
+    function renderChart(){
+      try {
+        Highcharts.chart('chart', {
+          chart:{backgroundColor:'var(--pp-surface-alt)'},
+          title:{text:'Last 10 Games',style:{color:'var(--pp-text-dim)',fontSize:'14px',fontWeight:'600'}},
+          xAxis:{categories: (Array.isArray(dates) && dates.length === data.length) ? dates : data.map((_,i)=>'G'+(10-i)), labels:{style:{color:'var(--pp-text-dim)'}}},
+          yAxis:{title:{text:document.getElementById('propSelect').value,style:{color:'var(--pp-text-dim)'}},gridLineColor:'rgba(255,255,255,0.05)',plotLines:[{value:line,color:'var(--pp-accent)',width:3,dashStyle:'Dash',label:{text:'Line '+line,style:{color:'var(--pp-accent)',fontWeight:'700'}}}]},
+          legend:{enabled:false},
+          tooltip:{backgroundColor:'var(--pp-surface)',borderColor:'var(--pp-border)',style:{color:'var(--pp-text)'}},
+          series:[{type:'column',name:'Coby White',data:data.map(v=>({y:v,color:v>line?'var(--pp-success)':'var(--pp-danger)'})),borderRadius:4}]
+        });
+      } catch(e){
+        document.getElementById('chart').innerHTML = '<div style="text-align:center;padding:40px;color:#ff6b6b;">Chart failed to load</div>';
+      }
+    }
+
+    function renderHitrates(record){
+      const boxes = document.querySelectorAll('.hitrates .rate-box .val');
+      if(boxes.length < 4) return;
+      const vals = [
+        record.last_5 || '2/5',
+        record.last_10 || '2/10',
+        record.last_20 || '2/5',
+        record.season || '2/5'
+      ];
+      vals.forEach((v, i) => {
+        const { text, pct } = formatPercentFirstWithPct(v);
+        boxes[i].textContent = text;
+        boxes[i].classList.remove('hit-green','hit-neutral','hit-red');
+        if (pct >= 75) boxes[i].classList.add('hit-green');
+        else if (pct >= 60) boxes[i].classList.add('hit-neutral');
+        else if (pct < 50) boxes[i].classList.add('hit-red');
+        else boxes[i].classList.add('hit-neutral');
+      });
+    }
+
+    function formatPercentFirstWithPct(ratioStr){
+      const m = String(ratioStr).match(/^(\d+)\/(\d+)$/);
+      if(!m) return { text: ratioStr, pct: NaN };
+      const hits = Number(m[1]);
+      const total = Number(m[2]) || 1;
+      const pct = Math.round((hits/total)*100);
+      return { text: `${pct}% • ${ratioStr}` , pct };
+    }
+
+    function updateUI(record){
+      line = Number(record.Line ?? record.line);
+      const series = record.last_10_values ?? record.last10_values ?? record.last_10;
+      data = Array.isArray(series) ? series : data;
+      projection = record.projection ?? record.Proj ?? record.projected ?? projection;
+      document.getElementById('lineVal').textContent = line;
+      document.getElementById('projectionVal').textContent = typeof projection === 'number' ? projection.toFixed(1) : (projection ?? 'N/A');
+      renderMinutesBadge(record);
+      renderBadge();
+      renderHitrates(record);
+      renderChart();
+    }
+
+    const hitratesEl = document.querySelector('.hitrates');
+    const dots = document.querySelectorAll('.dot');
+    function updateDots() {
+      if (!hitratesEl) return;
+      const index = Math.round(hitratesEl.scrollLeft / (hitratesEl.clientWidth + 12));
+      dots.forEach((d, i) => d.classList.toggle('active', i === index));
+    }
+    if (hitratesEl) {
+      hitratesEl.addEventListener('scroll', updateDots);
+      window.addEventListener('resize', updateDots);
+      updateDots();
+    }
+
+    (async function(){
+      renderBadge();
+      renderChart();
+      renderHitrates({});
+
+      const positionsMap = await fetchPositions();
+      const posEl = document.getElementById('positionChip');
+      let playerPosition = '';
+      if (posEl && positionsMap) {
+        const direct = positionsMap[playerName];
+        if (direct) { posEl.textContent = direct; playerPosition = direct; }
+        else {
+          const key = Object.keys(positionsMap).find(k => k.toLowerCase() === playerName.toLowerCase());
+          if (key) { posEl.textContent = positionsMap[key]; playerPosition = positionsMap[key]; }
+          else posEl.style.display = 'none';
+        }
+      }
+
+      const dvpRankings = await fetchDVP();
+      function updateDVPDisplay(currentStat){
+        const oppTeam = 'N/A'.toUpperCase();
+        const dvpVal = computeDVP(dvpRankings, oppTeam, playerPosition, currentStat);
+        const badge = document.getElementById('dvpBadge');
+        if (!badge) return;
+        if (dvpVal == null) {
+          badge.style.display = 'none';
+          badge.textContent='';
+          badge.className='dvp-badge';
+          return;
+        }
+        const rankInt = Math.round(Number(dvpVal));
+        badge.textContent = `DVP: ${rankInt}`;
+        badge.className = `dvp-badge ${dvpClassByRank(rankInt)}`;
+        badge.style.display = 'block';
+      }
+
+      const records = await fetchPlayerProps(playerName);
+      const select = document.getElementById('propSelect');
+      const current = select.value;
+      const uniqueProps = Array.from(new Set(records.map(r => r.Stat || r.stat || r.prop))).filter(Boolean);
+      const displayMap = { 'PRA': 'Pts+Rebs+Asts' };
+      select.innerHTML = '';
+      uniqueProps.forEach(p => {
+        const disp = displayMap[p] || p;
+        const opt = document.createElement('option');
+        opt.value = disp; opt.textContent = disp;
+        if(disp === current) opt.selected = true;
+        select.appendChild(opt);
+      });
+
+      select.addEventListener('change', () => {
+        const selected = select.value;
+        const statKey = selected === 'Pts+Rebs+Asts' ? 'PRA' : selected;
+        const rec = records.find(r => (r.Stat || r.stat || r.prop) === statKey);
+        if(rec) updateUI(rec);
+        updateDVPDisplay(selected);
+      });
+
+      updateDVPDisplay(current);
+      renderMinutesBadge(
+        records.find(r => (r.Stat || r.stat || r.prop) === (current === 'Pts+Rebs+Asts' ? 'PRA' : current)) || {}
+      );
+    })();
+  </script>
+</body>
+</html>

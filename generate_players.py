@@ -104,6 +104,23 @@ else:
             'opponent': prop.get('Versus', 'N/A')
         })
 
+# Ensure we also cover players found in gamelogs (avoid 404 for direct links)
+try:
+    existing = set(t['name'] for t in targets)
+    for nm in sorted(set(df_logs['PLAYER'].dropna().tolist())):
+        if nm in existing:
+            continue
+        # Use a safe default; opponent may be unknown at generation time
+        targets.append({
+            'name': nm,
+            'team': None,
+            'prop': 'Pts+Rebs+Asts',
+            'line': None,
+            'opponent': 'N/A'
+        })
+except Exception:
+    pass
+
 for target in targets:
     name = target['name']
     team = target.get('team')
@@ -124,6 +141,15 @@ for target in targets:
         values = player_games[cols[0]].astype(float)
     else:
         values = player_games[cols].astype(float).sum(axis=1)
+
+    # If no explicit line provided, default to average of last 10
+    if line is None or line == '' or str(line).lower() == 'nan':
+        # compute a reasonable default line
+        try:
+            arr10 = values.head(10).astype(float).tolist()
+            line = round(sum(arr10)/len(arr10), 1) if arr10 else 0.0
+        except Exception:
+            line = 0.0
 
     # Last 10 values (chronological: oldest → newest)
     last10_raw = values.head(10).tolist()

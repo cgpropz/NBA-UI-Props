@@ -12,7 +12,7 @@
   <a href="../index.html" class="back">Home</a>
 
   <header>
-    <h1>CGEDGE</h1>
+    <h1>PRIZEPICKS EDGE</h1>
     <div class="tag">WEAPONIZED STATS.</div>
   </header>
 
@@ -32,17 +32,17 @@
       <div class="name">Cameron Johnson</div>
       <div class="meta-line">
         <div class="position" id="positionChip"></div>
-        <div class="team">DEN</div>
-        <div class="opponent">vs IND</div>
+        <div class="team"></div>
+        <div class="opponent">vs N/A</div>
       </div>
 
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Assists">Assists</option>
+          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
         </select>
-        • Line <strong id="lineVal">2.5</strong> 
-        • Projection <strong id="projectionVal">2.3</strong>
+        • Line <strong id="lineVal">20.2</strong> 
+        • Projection <strong id="projectionVal">20.6</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -50,8 +50,8 @@
       <!-- Hitrates -->
       <div class="hitrates-wrapper">
         <div class="hitrates">
-          <div class="rate-box"><div class="label">Last 5</div><div class="val">2/5</div></div>
-          <div class="rate-box"><div class="label">Last 10</div><div class="val">4/10</div></div>
+          <div class="rate-box"><div class="label">Last 5</div><div class="val">4/5</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">6/10</div></div>
           <div class="rate-box"><div class="label">Last 20</div><div class="val">6/19</div></div>
           <div class="rate-box"><div class="label">Season</div><div class="val">6/19</div></div>
         </div>
@@ -69,10 +69,10 @@
   </div>
 
   <script>
-    let line = Number('2.5');
-    let data = JSON.parse('[2.0, 0.0, 3.0, 5.0, 1.0, 4.0, 1.0, 1.0, 4.0, 2.0]');
+    let line = Number('20.2');
+    let data = JSON.parse('[9.0, 5.0, 26.0, 22.0, 15.0, 29.0, 25.0, 35.0, 23.0, 13.0]');
     let dates = JSON.parse('["11/11", "11/12", "11/17", "11/19", "11/21", "11/22", "11/24", "11/28", "11/29", "12/01"]');
-    let projection = Number('2.3');
+    let projection = Number('20.6');
     const playerName = 'Cameron Johnson';
 
     (function(){
@@ -232,8 +232,8 @@
       const boxes = document.querySelectorAll('.hitrates .rate-box .val');
       if(boxes.length < 4) return;
       const vals = [
-        record.last_5 || '2/5',
-        record.last_10 || '4/10',
+        record.last_5 || '4/5',
+        record.last_10 || '6/10',
         record.last_20 || '6/19',
         record.season || '6/19'
       ];
@@ -303,7 +303,7 @@
 
       const dvpRankings = await fetchDVP();
       function updateDVPDisplay(currentStat){
-        const oppTeam = 'IND'.toUpperCase();
+        const oppTeam = 'N/A'.toUpperCase();
         const dvpVal = computeDVP(dvpRankings, oppTeam, playerPosition, currentStat);
         const badge = document.getElementById('dvpBadge');
         if (!badge) return;

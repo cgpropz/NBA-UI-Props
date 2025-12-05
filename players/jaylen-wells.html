@@ -12,40 +12,48 @@
   <a href="../index.html" class="back">Home</a>
 
   <header>
-    <h1>CGEDGE</h1>
+    <h1>PRIZEPICKS EDGE</h1>
     <div class="tag">WEAPONIZED STATS.</div>
   </header>
 
   <div class="wrap">
+    <!-- SINGLE panel: everything (badges, image, content) lives in here -->
     <div class="panel">
+      <!-- Corner badges -->
       <div id="dvpBadge" class="dvp-badge" style="display:none;"></div>
+      <div id="minBadge" class="min-badge" style="display:none;"></div>
+
+      <!-- Player image -->
       <div class="player-img-container">
         <img id="playerHeadshot" src="https://www.basketball-reference.com/req/202106291/images/players/wellsja01.jpg" alt="Jaylen Wells">
       </div>
 
+      <!-- Name + meta -->
       <div class="name">Jaylen Wells</div>
       <div class="meta-line">
         <div class="position" id="positionChip"></div>
-        <div class="team">MEM</div>
-        <div class="opponent">vs SAS</div>
+        <div class="team"></div>
+        <div class="opponent">vs N/A</div>
       </div>
 
+      <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Assists">Assists</option>
+          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
         </select>
-        • Line <strong id="lineVal">1.5</strong> 
-        • Projection <strong id="projectionVal">1.9</strong>
+        • Line <strong id="lineVal">18.9</strong> 
+        • Projection <strong id="projectionVal">19.5</strong>
+        <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
 
-      <!-- Scroll-snap hitrates with dots -->
+      <!-- Hitrates -->
       <div class="hitrates-wrapper">
         <div class="hitrates">
-          <div class="rate-box"><div class="label">Last 5</div><div class="val">3/5</div></div>
-          <div class="rate-box"><div class="label">Last 10</div><div class="val">6/10</div></div>
-          <div class="rate-box"><div class="label">Last 20</div><div class="val">10/20</div></div>
-          <div class="rate-box"><div class="label">Season</div><div class="val">11/21</div></div>
+          <div class="rate-box"><div class="label">Last 5</div><div class="val">4/5</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">5/10</div></div>
+          <div class="rate-box"><div class="label">Last 20</div><div class="val">6/20</div></div>
+          <div class="rate-box"><div class="label">Season</div><div class="val">7/21</div></div>
         </div>
         <div class="dots">
           <span class="dot active"></span>
@@ -55,16 +63,16 @@
         </div>
       </div>
 
+      <!-- Chart -->
       <div id="chart"></div>
     </div>
   </div>
 
-  <!-- Your original script + dot sync (unchanged) -->
   <script>
-    let line = Number('1.5');
-    let data = JSON.parse('[4.0, 0.0, 0.0, 2.0, 2.0, 4.0, 3.0, 1.0, 2.0, 1.0]');
+    let line = Number('18.9');
+    let data = JSON.parse('[25.0, 9.0, 10.0, 12.0, 16.0, 18.0, 30.0, 29.0, 21.0, 19.0]');
     let dates = JSON.parse('["11/11", "11/12", "11/15", "11/18", "11/20", "11/22", "11/24", "11/26", "11/28", "11/30"]');
-    let projection = Number('1.9');
+    let projection = Number('19.5');
     const playerName = 'Jaylen Wells';
 
     (function(){
@@ -179,6 +187,31 @@
       else badgeEl.innerHTML = '';
     }
 
+    function renderMinutesBadge(record){
+      const minutesEl = document.getElementById('minBadge');
+      if (!minutesEl) return;
+      const val = record?.expected_minutes ?? record?.ExpectedMinutes ?? record?.minutes;
+      const tmpl = '{{EXPECTED_MINUTES}}';
+      let m = val;
+      if (m == null || m === '' || m === 'undefined') {
+        m = (tmpl && tmpl !== '{{EXPECTED_MINUTES}}') ? Number(tmpl) : null;
+      }
+      if (m == null || isNaN(Number(m))) {
+        minutesEl.style.display = 'none';
+        minutesEl.textContent = '';
+        minutesEl.className = 'min-badge';
+        return;
+      }
+      const num = Number(m);
+      minutesEl.textContent = `${num.toFixed(1)} MIN`;
+      let cls = 'min-badge ';
+      if (num >= 34) cls += 'dvp-green';
+      else if (num >= 28) cls += 'dvp-neutral';
+      else cls += 'dvp-red';
+      minutesEl.className = cls;
+      minutesEl.style.display = 'block';
+    }
+
     function renderChart(){
       try {
         Highcharts.chart('chart', {
@@ -199,10 +232,10 @@
       const boxes = document.querySelectorAll('.hitrates .rate-box .val');
       if(boxes.length < 4) return;
       const vals = [
-        record.last_5 || '3/5',
-        record.last_10 || '6/10',
-        record.last_20 || '10/20',
-        record.season || '11/21'
+        record.last_5 || '4/5',
+        record.last_10 || '5/10',
+        record.last_20 || '6/20',
+        record.season || '7/21'
       ];
       vals.forEach((v, i) => {
         const { text, pct } = formatPercentFirstWithPct(v);
@@ -231,6 +264,7 @@
       projection = record.projection ?? record.Proj ?? record.projected ?? projection;
       document.getElementById('lineVal').textContent = line;
       document.getElementById('projectionVal').textContent = typeof projection === 'number' ? projection.toFixed(1) : (projection ?? 'N/A');
+      renderMinutesBadge(record);
       renderBadge();
       renderHitrates(record);
       renderChart();
@@ -252,10 +286,8 @@
     (async function(){
       renderBadge();
       renderChart();
-      // Append % to initial hitrates shown from template
       renderHitrates({});
 
-      // Load positions and set chip
       const positionsMap = await fetchPositions();
       const posEl = document.getElementById('positionChip');
       let playerPosition = '';
@@ -269,14 +301,18 @@
         }
       }
 
-      // Load DVP rankings
       const dvpRankings = await fetchDVP();
       function updateDVPDisplay(currentStat){
-        const oppTeam = 'SAS'.toUpperCase();
+        const oppTeam = 'N/A'.toUpperCase();
         const dvpVal = computeDVP(dvpRankings, oppTeam, playerPosition, currentStat);
         const badge = document.getElementById('dvpBadge');
         if (!badge) return;
-        if (dvpVal == null) { badge.style.display = 'none'; badge.textContent=''; badge.className='dvp-badge'; return; }
+        if (dvpVal == null) {
+          badge.style.display = 'none';
+          badge.textContent='';
+          badge.className='dvp-badge';
+          return;
+        }
         const rankInt = Math.round(Number(dvpVal));
         badge.textContent = `DVP: ${rankInt}`;
         badge.className = `dvp-badge ${dvpClassByRank(rankInt)}`;
@@ -305,8 +341,10 @@
         updateDVPDisplay(selected);
       });
 
-      // Initial DVP
       updateDVPDisplay(current);
+      renderMinutesBadge(
+        records.find(r => (r.Stat || r.stat || r.prop) === (current === 'Pts+Rebs+Asts' ? 'PRA' : current)) || {}
+      );
     })();
   </script>
 </body>

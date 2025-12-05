@@ -12,7 +12,7 @@
   <a href="../index.html" class="back">Home</a>
 
   <header>
-    <h1>CGEDGE</h1>
+    <h1>PRIZEPICKS EDGE</h1>
     <div class="tag">WEAPONIZED STATS.</div>
   </header>
 
@@ -32,17 +32,17 @@
       <div class="name">Ivica Zubac</div>
       <div class="meta-line">
         <div class="position" id="positionChip"></div>
-        <div class="team">LAC</div>
-        <div class="opponent">vs ATL</div>
+        <div class="team"></div>
+        <div class="opponent">vs N/A</div>
       </div>
 
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Rebounds">Rebounds</option>
+          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
         </select>
-        • Line <strong id="lineVal">12.0</strong> 
-        • Projection <strong id="projectionVal">12.5</strong>
+        • Line <strong id="lineVal">33.4</strong> 
+        • Projection <strong id="projectionVal">32.7</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -51,9 +51,9 @@
       <div class="hitrates-wrapper">
         <div class="hitrates">
           <div class="rate-box"><div class="label">Last 5</div><div class="val">2/5</div></div>
-          <div class="rate-box"><div class="label">Last 10</div><div class="val">4/10</div></div>
-          <div class="rate-box"><div class="label">Last 20</div><div class="val">6/20</div></div>
-          <div class="rate-box"><div class="label">Season</div><div class="val">6/21</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">3/10</div></div>
+          <div class="rate-box"><div class="label">Last 20</div><div class="val">5/20</div></div>
+          <div class="rate-box"><div class="label">Season</div><div class="val">5/21</div></div>
         </div>
         <div class="dots">
           <span class="dot active"></span>
@@ -69,10 +69,10 @@
   </div>
 
   <script>
-    let line = Number('12.0');
-    let data = JSON.parse('[11.0, 12.0, 13.0, 19.0, 9.0, 18.0, 10.0, 12.0, 11.0, 13.0]');
+    let line = Number('33.4');
+    let data = JSON.parse('[40.0, 30.0, 28.0, 33.0, 33.0, 55.0, 24.0, 26.0, 34.0, 31.0]');
     let dates = JSON.parse('["11/14", "11/16", "11/17", "11/20", "11/22", "11/23", "11/25", "11/28", "11/29", "12/01"]');
-    let projection = Number('12.5');
+    let projection = Number('32.7');
     const playerName = 'Ivica Zubac';
 
     (function(){
@@ -233,9 +233,9 @@
       if(boxes.length < 4) return;
       const vals = [
         record.last_5 || '2/5',
-        record.last_10 || '4/10',
-        record.last_20 || '6/20',
-        record.season || '6/21'
+        record.last_10 || '3/10',
+        record.last_20 || '5/20',
+        record.season || '5/21'
       ];
       vals.forEach((v, i) => {
         const { text, pct } = formatPercentFirstWithPct(v);
@@ -303,7 +303,7 @@
 
       const dvpRankings = await fetchDVP();
       function updateDVPDisplay(currentStat){
-        const oppTeam = 'ATL'.toUpperCase();
+        const oppTeam = 'N/A'.toUpperCase();
         const dvpVal = computeDVP(dvpRankings, oppTeam, playerPosition, currentStat);
         const badge = document.getElementById('dvpBadge');
         if (!badge) return;

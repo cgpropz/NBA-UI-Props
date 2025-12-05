@@ -12,7 +12,7 @@
   <a href="../index.html" class="back">Home</a>
 
   <header>
-    <h1>CGEDGE</h1>
+    <h1>PRIZEPICKS EDGE</h1>
     <div class="tag">WEAPONIZED STATS.</div>
   </header>
 
@@ -32,17 +32,17 @@
       <div class="name">Precious Achiuwa</div>
       <div class="meta-line">
         <div class="position" id="positionChip"></div>
-        <div class="team">SAC</div>
-        <div class="opponent">vs HOU</div>
+        <div class="team"></div>
+        <div class="opponent">vs N/A</div>
       </div>
 
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Steals">Steals</option>
+          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
         </select>
-        • Line <strong id="lineVal">0.5</strong> 
-        • Projection <strong id="projectionVal">0.7</strong>
+        • Line <strong id="lineVal">14.0</strong> 
+        • Projection <strong id="projectionVal">14.3</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -52,8 +52,8 @@
         <div class="hitrates">
           <div class="rate-box"><div class="label">Last 5</div><div class="val">3/5</div></div>
           <div class="rate-box"><div class="label">Last 10</div><div class="val">5/10</div></div>
-          <div class="rate-box"><div class="label">Last 20</div><div class="val">7/14</div></div>
-          <div class="rate-box"><div class="label">Season</div><div class="val">7/14</div></div>
+          <div class="rate-box"><div class="label">Last 20</div><div class="val">6/14</div></div>
+          <div class="rate-box"><div class="label">Season</div><div class="val">6/14</div></div>
         </div>
         <div class="dots">
           <span class="dot active"></span>
@@ -69,10 +69,10 @@
   </div>
 
   <script>
-    let line = Number('0.5');
-    let data = JSON.parse('[0.0, 3.0, 0.0, 1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0]');
+    let line = Number('14.0');
+    let data = JSON.parse('[17.0, 7.0, 2.0, 27.0, 9.0, 11.0, 18.0, 22.0, 9.0, 18.0]');
     let dates = JSON.parse('["11/12", "11/14", "11/16", "11/19", "11/20", "11/22", "11/24", "11/26", "11/28", "11/30"]');
-    let projection = Number('0.7');
+    let projection = Number('14.3');
     const playerName = 'Precious Achiuwa';
 
     (function(){
@@ -234,8 +234,8 @@
       const vals = [
         record.last_5 || '3/5',
         record.last_10 || '5/10',
-        record.last_20 || '7/14',
-        record.season || '7/14'
+        record.last_20 || '6/14',
+        record.season || '6/14'
       ];
       vals.forEach((v, i) => {
         const { text, pct } = formatPercentFirstWithPct(v);
@@ -303,7 +303,7 @@
 
       const dvpRankings = await fetchDVP();
       function updateDVPDisplay(currentStat){
-        const oppTeam = 'HOU'.toUpperCase();
+        const oppTeam = 'N/A'.toUpperCase();
         const dvpVal = computeDVP(dvpRankings, oppTeam, playerPosition, currentStat);
         const badge = document.getElementById('dvpBadge');
         if (!badge) return;

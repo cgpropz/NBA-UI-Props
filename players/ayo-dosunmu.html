@@ -12,7 +12,7 @@
   <a href="../index.html" class="back">Home</a>
 
   <header>
-    <h1>CGEDGE</h1>
+    <h1>PRIZEPICKS EDGE</h1>
     <div class="tag">WEAPONIZED STATS.</div>
   </header>
 
@@ -32,17 +32,17 @@
       <div class="name">Ayo Dosunmu</div>
       <div class="meta-line">
         <div class="position" id="positionChip"></div>
-        <div class="team">CHI</div>
-        <div class="opponent">vs BKN</div>
+        <div class="team"></div>
+        <div class="opponent">vs N/A</div>
       </div>
 
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Rebs+Asts">Rebs+Asts</option>
+          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
         </select>
-        • Line <strong id="lineVal">8.0</strong> 
-        • Projection <strong id="projectionVal">6.0</strong>
+        • Line <strong id="lineVal">22.2</strong> 
+        • Projection <strong id="projectionVal">21.7</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -50,10 +50,10 @@
       <!-- Hitrates -->
       <div class="hitrates-wrapper">
         <div class="hitrates">
-          <div class="rate-box"><div class="label">Last 5</div><div class="val">1/5</div></div>
-          <div class="rate-box"><div class="label">Last 10</div><div class="val">1/10</div></div>
-          <div class="rate-box"><div class="label">Last 20</div><div class="val">2/18</div></div>
-          <div class="rate-box"><div class="label">Season</div><div class="val">2/18</div></div>
+          <div class="rate-box"><div class="label">Last 5</div><div class="val">3/5</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">6/10</div></div>
+          <div class="rate-box"><div class="label">Last 20</div><div class="val">9/18</div></div>
+          <div class="rate-box"><div class="label">Season</div><div class="val">9/18</div></div>
         </div>
         <div class="dots">
           <span class="dot active"></span>
@@ -69,10 +69,10 @@
   </div>
 
   <script>
-    let line = Number('8.0');
-    let data = JSON.parse('[5.0, 6.0, 8.0, 5.0, 5.0, 6.0, 3.0, 4.0, 8.0, 10.0]');
+    let line = Number('22.2');
+    let data = JSON.parse('[17.0, 24.0, 29.0, 19.0, 28.0, 14.0, 31.0, 9.0, 23.0, 28.0]');
     let dates = JSON.parse('["11/12", "11/16", "11/17", "11/19", "11/21", "11/22", "11/24", "11/28", "11/29", "12/01"]');
-    let projection = Number('6.0');
+    let projection = Number('21.7');
     const playerName = 'Ayo Dosunmu';
 
     (function(){
@@ -232,10 +232,10 @@
       const boxes = document.querySelectorAll('.hitrates .rate-box .val');
       if(boxes.length < 4) return;
       const vals = [
-        record.last_5 || '1/5',
-        record.last_10 || '1/10',
-        record.last_20 || '2/18',
-        record.season || '2/18'
+        record.last_5 || '3/5',
+        record.last_10 || '6/10',
+        record.last_20 || '9/18',
+        record.season || '9/18'
       ];
       vals.forEach((v, i) => {
         const { text, pct } = formatPercentFirstWithPct(v);
@@ -303,7 +303,7 @@
 
       const dvpRankings = await fetchDVP();
       function updateDVPDisplay(currentStat){
-        const oppTeam = 'BKN'.toUpperCase();
+        const oppTeam = 'N/A'.toUpperCase();
         const dvpVal = computeDVP(dvpRankings, oppTeam, playerPosition, currentStat);
         const badge = document.getElementById('dvpBadge');
         if (!badge) return;

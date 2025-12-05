@@ -12,7 +12,7 @@
   <a href="../index.html" class="back">Home</a>
 
   <header>
-    <h1>CGEDGE</h1>
+    <h1>PRIZEPICKS EDGE</h1>
     <div class="tag">WEAPONIZED STATS.</div>
   </header>
 
@@ -32,17 +32,17 @@
       <div class="name">Malik Monk</div>
       <div class="meta-line">
         <div class="position" id="positionChip"></div>
-        <div class="team">SAC</div>
-        <div class="opponent">vs HOU</div>
+        <div class="team"></div>
+        <div class="opponent">vs N/A</div>
       </div>
 
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Points">Points</option>
+          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
         </select>
-        • Line <strong id="lineVal">12.5</strong> 
-        • Projection <strong id="projectionVal">13.3</strong>
+        • Line <strong id="lineVal">16.2</strong> 
+        • Projection <strong id="projectionVal">17.7</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -69,10 +69,10 @@
   </div>
 
   <script>
-    let line = Number('12.5');
-    let data = JSON.parse('[12.0, 0.0, 16.0, 16.0, 2.0, 12.0, 22.0, 15.0, 5.0, 21.0]');
+    let line = Number('16.2');
+    let data = JSON.parse('[15.0, 1.0, 19.0, 21.0, 6.0, 16.0, 26.0, 18.0, 7.0, 33.0]');
     let dates = JSON.parse('["11/11", "11/14", "11/16", "11/19", "11/20", "11/22", "11/24", "11/26", "11/28", "11/30"]');
-    let projection = Number('13.3');
+    let projection = Number('17.7');
     const playerName = 'Malik Monk';
 
     (function(){
@@ -303,7 +303,7 @@
 
       const dvpRankings = await fetchDVP();
       function updateDVPDisplay(currentStat){
-        const oppTeam = 'HOU'.toUpperCase();
+        const oppTeam = 'N/A'.toUpperCase();
         const dvpVal = computeDVP(dvpRankings, oppTeam, playerPosition, currentStat);
         const badge = document.getElementById('dvpBadge');
         if (!badge) return;
