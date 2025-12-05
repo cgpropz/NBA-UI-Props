@@ -29,6 +29,7 @@
         <span id="oddsMeta" style="margin-left:10px;background:#002b36;color:#00ff9d;border:1px solid #00ff9d;border-radius:10px;padding:2px 6px;font-size:12px;vertical-align:middle">Odds: —</span>
         <a href="./Team_DVP.html" style="color:#00ff9d;text-decoration:none;font-weight:700">Team DVP</a>
         <a href="./Team_Rankings.html" style="color:#00ff9d;text-decoration:none;font-weight:700">Team Rankings</a>
+        <button id="refreshBtn" style="margin-left:12px;background:#002b36;color:#00ff9d;border:1px solid #00ff9d;border-radius:10px;padding:2px 10px;font-size:12px;cursor:pointer">Refresh Data</button>
       </nav>
     </div>
   </div>
@@ -158,6 +159,25 @@
         'Pts+Rebs':'PTS+REB','Pts+Asts':'PTS+AST','Rebs+Asts':'REB+AST','Pts+Rebs+Asts':'PTS+REB+AST','Fantasy Score':'FPTS'
       };
       return m[stat] || stat;
+    // Manual refresh button: refetch odds and update badge immediately
+    (function(){
+      const btn = document.getElementById('refreshBtn');
+      if(!btn) return;
+      btn.addEventListener('click', async () => {
+        btn.disabled = true; const old = btn.textContent; btn.textContent = 'Refreshing...';
+        try{
+          const r = await fetch('data/odds/latest.json', { cache: 'no-store' });
+          if (r.ok){
+            const latest = await r.json();
+            const when = latest && latest.meta && latest.meta.generated_at ? new Date(latest.meta.generated_at) : null;
+            const badge = document.getElementById('oddsMeta');
+            if (badge && when) badge.textContent = `Odds: ${when.toLocaleTimeString()}`;
+            console.log('[CGEDGE] Manual odds refresh:', when ? when.toLocaleString() : 'unknown');
+          }
+        } catch(e){ console.warn('[CGEDGE] Manual refresh failed', e); }
+        btn.disabled = false; btn.textContent = old;
+      });
+    })();
     }
 
     function mapStatToRankField(stat){
