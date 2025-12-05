@@ -12,40 +12,48 @@
   <a href="../index.html" class="back">Home</a>
 
   <header>
-    <h1>CGEDGE</h1>
+    <h1>PRIZEPICKS EDGE</h1>
     <div class="tag">WEAPONIZED STATS.</div>
   </header>
 
   <div class="wrap">
+    <!-- SINGLE panel: everything (badges, image, content) lives in here -->
     <div class="panel">
+      <!-- Corner badges -->
       <div id="dvpBadge" class="dvp-badge" style="display:none;"></div>
+      <div id="minBadge" class="min-badge" style="display:none;"></div>
+
+      <!-- Player image -->
       <div class="player-img-container">
         <img id="playerHeadshot" src="https://www.basketball-reference.com/req/202106291/images/players/grimequ01.jpg" alt="Quentin Grimes">
       </div>
 
+      <!-- Name + meta -->
       <div class="name">Quentin Grimes</div>
       <div class="meta-line">
         <div class="position" id="positionChip"></div>
         <div class="team">PHI</div>
-        <div class="opponent">vs WAS</div>
+        <div class="opponent">vs GSW</div>
       </div>
 
+      <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Assists">Assists</option>
+          <option value="Rebounds">Rebounds</option>
         </select>
         • Line <strong id="lineVal">4.0</strong> 
-        • Projection <strong id="projectionVal">4.4</strong>
+        • Projection <strong id="projectionVal">3.8</strong>
+        <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
 
-      <!-- Scroll-snap hitrates with dots -->
+      <!-- Hitrates -->
       <div class="hitrates-wrapper">
         <div class="hitrates">
           <div class="rate-box"><div class="label">Last 5</div><div class="val">1/5</div></div>
-          <div class="rate-box"><div class="label">Last 10</div><div class="val">2/10</div></div>
-          <div class="rate-box"><div class="label">Last 20</div><div class="val">4/19</div></div>
-          <div class="rate-box"><div class="label">Season</div><div class="val">4/19</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">3/10</div></div>
+          <div class="rate-box"><div class="label">Last 20</div><div class="val">7/19</div></div>
+          <div class="rate-box"><div class="label">Season</div><div class="val">7/19</div></div>
         </div>
         <div class="dots">
           <span class="dot active"></span>
@@ -55,16 +63,16 @@
         </div>
       </div>
 
+      <!-- Chart -->
       <div id="chart"></div>
     </div>
   </div>
 
-  <!-- Your original script + dot sync (unchanged) -->
   <script>
     let line = Number('4.0');
-    let data = JSON.parse('[4.0, 4.0, 5.0, 3.0, 2.0, 4.0, 3.0, 4.0, 9.0, 4.0]');
+    let data = JSON.parse('[5.0, 6.0, 1.0, 2.0, 2.0, 4.0, 0.0, 3.0, 3.0, 10.0]');
     let dates = JSON.parse('["11/09", "11/11", "11/14", "11/17", "11/19", "11/20", "11/23", "11/25", "11/28", "11/30"]');
-    let projection = Number('4.4');
+    let projection = Number('3.8');
     const playerName = 'Quentin Grimes';
 
     (function(){
@@ -179,6 +187,31 @@
       else badgeEl.innerHTML = '';
     }
 
+    function renderMinutesBadge(record){
+      const minutesEl = document.getElementById('minBadge');
+      if (!minutesEl) return;
+      const val = record?.expected_minutes ?? record?.ExpectedMinutes ?? record?.minutes;
+      const tmpl = '{{EXPECTED_MINUTES}}';
+      let m = val;
+      if (m == null || m === '' || m === 'undefined') {
+        m = (tmpl && tmpl !== '{{EXPECTED_MINUTES}}') ? Number(tmpl) : null;
+      }
+      if (m == null || isNaN(Number(m))) {
+        minutesEl.style.display = 'none';
+        minutesEl.textContent = '';
+        minutesEl.className = 'min-badge';
+        return;
+      }
+      const num = Number(m);
+      minutesEl.textContent = `${num.toFixed(1)} MIN`;
+      let cls = 'min-badge ';
+      if (num >= 34) cls += 'dvp-green';
+      else if (num >= 28) cls += 'dvp-neutral';
+      else cls += 'dvp-red';
+      minutesEl.className = cls;
+      minutesEl.style.display = 'block';
+    }
+
     function renderChart(){
       try {
         Highcharts.chart('chart', {
@@ -200,9 +233,9 @@
       if(boxes.length < 4) return;
       const vals = [
         record.last_5 || '1/5',
-        record.last_10 || '2/10',
-        record.last_20 || '4/19',
-        record.season || '4/19'
+        record.last_10 || '3/10',
+        record.last_20 || '7/19',
+        record.season || '7/19'
       ];
       vals.forEach((v, i) => {
         const { text, pct } = formatPercentFirstWithPct(v);
@@ -231,6 +264,7 @@
       projection = record.projection ?? record.Proj ?? record.projected ?? projection;
       document.getElementById('lineVal').textContent = line;
       document.getElementById('projectionVal').textContent = typeof projection === 'number' ? projection.toFixed(1) : (projection ?? 'N/A');
+      renderMinutesBadge(record);
       renderBadge();
       renderHitrates(record);
       renderChart();
@@ -252,10 +286,8 @@
     (async function(){
       renderBadge();
       renderChart();
-      // Append % to initial hitrates shown from template
       renderHitrates({});
 
-      // Load positions and set chip
       const positionsMap = await fetchPositions();
       const posEl = document.getElementById('positionChip');
       let playerPosition = '';
@@ -269,14 +301,18 @@
         }
       }
 
-      // Load DVP rankings
       const dvpRankings = await fetchDVP();
       function updateDVPDisplay(currentStat){
-        const oppTeam = 'WAS'.toUpperCase();
+        const oppTeam = 'GSW'.toUpperCase();
         const dvpVal = computeDVP(dvpRankings, oppTeam, playerPosition, currentStat);
         const badge = document.getElementById('dvpBadge');
         if (!badge) return;
-        if (dvpVal == null) { badge.style.display = 'none'; badge.textContent=''; badge.className='dvp-badge'; return; }
+        if (dvpVal == null) {
+          badge.style.display = 'none';
+          badge.textContent='';
+          badge.className='dvp-badge';
+          return;
+        }
         const rankInt = Math.round(Number(dvpVal));
         badge.textContent = `DVP: ${rankInt}`;
         badge.className = `dvp-badge ${dvpClassByRank(rankInt)}`;
@@ -305,8 +341,10 @@
         updateDVPDisplay(selected);
       });
 
-      // Initial DVP
       updateDVPDisplay(current);
+      renderMinutesBadge(
+        records.find(r => (r.Stat || r.stat || r.prop) === (current === 'Pts+Rebs+Asts' ? 'PRA' : current)) || {}
+      );
     })();
   </script>
 </body>

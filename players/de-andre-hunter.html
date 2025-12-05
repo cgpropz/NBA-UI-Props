@@ -12,7 +12,7 @@
   <a href="../index.html" class="back">Home</a>
 
   <header>
-    <h1>CGEDGE</h1>
+    <h1>PRIZEPICKS EDGE</h1>
     <div class="tag">WEAPONIZED STATS.</div>
   </header>
 
@@ -33,16 +33,16 @@
       <div class="meta-line">
         <div class="position" id="positionChip"></div>
         <div class="team">CLE</div>
-        <div class="opponent">vs POR</div>
+        <div class="opponent">vs SAS</div>
       </div>
 
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Rebounds">Rebounds</option>
+          <option value="Turnovers">Turnovers</option>
         </select>
-        • Line <strong id="lineVal">4.5</strong> 
-        • Projection <strong id="projectionVal">4.3</strong>
+        • Line <strong id="lineVal">1.5</strong> 
+        • Projection <strong id="projectionVal">1.8</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -50,10 +50,10 @@
       <!-- Hitrates -->
       <div class="hitrates-wrapper">
         <div class="hitrates">
-          <div class="rate-box"><div class="label">Last 5</div><div class="val">1/5</div></div>
-          <div class="rate-box"><div class="label">Last 10</div><div class="val">3/10</div></div>
-          <div class="rate-box"><div class="label">Last 20</div><div class="val">8/18</div></div>
-          <div class="rate-box"><div class="label">Season</div><div class="val">8/18</div></div>
+          <div class="rate-box"><div class="label">Last 5</div><div class="val">3/5</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">6/10</div></div>
+          <div class="rate-box"><div class="label">Last 20</div><div class="val">11/18</div></div>
+          <div class="rate-box"><div class="label">Season</div><div class="val">11/18</div></div>
         </div>
         <div class="dots">
           <span class="dot active"></span>
@@ -69,10 +69,10 @@
   </div>
 
   <script>
-    let line = Number('4.5');
-    let data = JSON.parse('[6.0, 2.0, 3.0, 5.0, 4.0, 7.0, 4.0, 4.0, 3.0, 3.0]');
+    let line = Number('1.5');
+    let data = JSON.parse('[3.0, 0.0, 0.0, 2.0, 3.0, 1.0, 2.0, 3.0, 2.0, 1.0]');
     let dates = JSON.parse('["11/12", "11/13", "11/15", "11/17", "11/19", "11/21", "11/23", "11/28", "11/30", "12/01"]');
-    let projection = Number('4.3');
+    let projection = Number('1.8');
     const playerName = 'De'Andre Hunter';
 
     (function(){
@@ -232,10 +232,10 @@
       const boxes = document.querySelectorAll('.hitrates .rate-box .val');
       if(boxes.length < 4) return;
       const vals = [
-        record.last_5 || '1/5',
-        record.last_10 || '3/10',
-        record.last_20 || '8/18',
-        record.season || '8/18'
+        record.last_5 || '3/5',
+        record.last_10 || '6/10',
+        record.last_20 || '11/18',
+        record.season || '11/18'
       ];
       vals.forEach((v, i) => {
         const { text, pct } = formatPercentFirstWithPct(v);
@@ -303,7 +303,7 @@
 
       const dvpRankings = await fetchDVP();
       function updateDVPDisplay(currentStat){
-        const oppTeam = 'POR'.toUpperCase();
+        const oppTeam = 'SAS'.toUpperCase();
         const dvpVal = computeDVP(dvpRankings, oppTeam, playerPosition, currentStat);
         const badge = document.getElementById('dvpBadge');
         if (!badge) return;

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tyrese Maxey • PrizePicks Edge</title>
+  <title>Will Riley • PrizePicks Edge</title>
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../style.css" />
@@ -25,24 +25,24 @@
 
       <!-- Player image -->
       <div class="player-img-container">
-        <img id="playerHeadshot" src="https://www.basketball-reference.com/req/202106291/images/players/maxeyty01.jpg" alt="Tyrese Maxey">
+        <img id="playerHeadshot" src="https://www.basketball-reference.com/req/202106291/images/players/rileywi01.jpg" alt="Will Riley">
       </div>
 
       <!-- Name + meta -->
-      <div class="name">Tyrese Maxey</div>
+      <div class="name">Will Riley</div>
       <div class="meta-line">
         <div class="position" id="positionChip"></div>
-        <div class="team">PHI</div>
-        <div class="opponent">vs GSW</div>
+        <div class="team">WAS</div>
+        <div class="opponent">vs BOS</div>
       </div>
 
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Rebounds">Rebounds</option>
+          <option value="Points">Points</option>
         </select>
-        • Line <strong id="lineVal">4.0</strong> 
-        • Projection <strong id="projectionVal">4.8</strong>
+        • Line <strong id="lineVal">6.5</strong> 
+        • Projection <strong id="projectionVal">2.0</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -50,10 +50,10 @@
       <!-- Hitrates -->
       <div class="hitrates-wrapper">
         <div class="hitrates">
-          <div class="rate-box"><div class="label">Last 5</div><div class="val">3/5</div></div>
-          <div class="rate-box"><div class="label">Last 10</div><div class="val">5/10</div></div>
-          <div class="rate-box"><div class="label">Last 20</div><div class="val">10/19</div></div>
-          <div class="rate-box"><div class="label">Season</div><div class="val">10/19</div></div>
+          <div class="rate-box"><div class="label">Last 5</div><div class="val">0/5</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">0/10</div></div>
+          <div class="rate-box"><div class="label">Last 20</div><div class="val">0/13</div></div>
+          <div class="rate-box"><div class="label">Season</div><div class="val">0/13</div></div>
         </div>
         <div class="dots">
           <span class="dot active"></span>
@@ -69,17 +69,17 @@
   </div>
 
   <script>
-    let line = Number('4.0');
-    let data = JSON.parse('[4.0, 5.0, 7.0, 3.0, 2.0, 5.0, 3.0, 1.0, 9.0, 7.0]');
-    let dates = JSON.parse('["11/09", "11/11", "11/14", "11/17", "11/19", "11/20", "11/23", "11/25", "11/28", "11/30"]');
-    let projection = Number('4.8');
-    const playerName = 'Tyrese Maxey';
+    let line = Number('6.5');
+    let data = JSON.parse('[2.0, 2.0, 0.0, 4.0, 0.0, 2.0, 4.0, 0.0, 0.0, 4.0]');
+    let dates = JSON.parse('["10/30", "11/01", "11/03", "11/05", "11/07", "11/12", "11/21", "11/22", "11/25", "11/28"]');
+    let projection = Number('2.0');
+    const playerName = 'Will Riley';
 
     (function(){
       const img = document.getElementById('playerHeadshot');
       if(!img) return;
       const container = img.parentElement;
-      const initials = ("Tyrese Maxey"||'').split(/\s+/).map(p=>p[0]||'').slice(0,2).join('').toUpperCase();
+      const initials = ("Will Riley"||'').split(/\s+/).map(p=>p[0]||'').slice(0,2).join('').toUpperCase();
       function showFallback(){
         const div = document.createElement('div');
         div.className = 'avatar-fallback';
@@ -221,7 +221,7 @@
           yAxis:{title:{text:document.getElementById('propSelect').value,style:{color:'var(--pp-text-dim)'}},gridLineColor:'rgba(255,255,255,0.05)',plotLines:[{value:line,color:'var(--pp-accent)',width:3,dashStyle:'Dash',label:{text:'Line '+line,style:{color:'var(--pp-accent)',fontWeight:'700'}}}]},
           legend:{enabled:false},
           tooltip:{backgroundColor:'var(--pp-surface)',borderColor:'var(--pp-border)',style:{color:'var(--pp-text)'}},
-          series:[{type:'column',name:'Tyrese Maxey',data:data.map(v=>({y:v,color:v>line?'var(--pp-success)':'var(--pp-danger)'})),borderRadius:4}]
+          series:[{type:'column',name:'Will Riley',data:data.map(v=>({y:v,color:v>line?'var(--pp-success)':'var(--pp-danger)'})),borderRadius:4}]
         });
       } catch(e){
         document.getElementById('chart').innerHTML = '<div style="text-align:center;padding:40px;color:#ff6b6b;">Chart failed to load</div>';
@@ -232,10 +232,10 @@
       const boxes = document.querySelectorAll('.hitrates .rate-box .val');
       if(boxes.length < 4) return;
       const vals = [
-        record.last_5 || '3/5',
-        record.last_10 || '5/10',
-        record.last_20 || '10/19',
-        record.season || '10/19'
+        record.last_5 || '0/5',
+        record.last_10 || '0/10',
+        record.last_20 || '0/13',
+        record.season || '0/13'
       ];
       vals.forEach((v, i) => {
         const { text, pct } = formatPercentFirstWithPct(v);
@@ -303,7 +303,7 @@
 
       const dvpRankings = await fetchDVP();
       function updateDVPDisplay(currentStat){
-        const oppTeam = 'GSW'.toUpperCase();
+        const oppTeam = 'BOS'.toUpperCase();
         const dvpVal = computeDVP(dvpRankings, oppTeam, playerPosition, currentStat);
         const badge = document.getElementById('dvpBadge');
         if (!badge) return;
