@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tari Eason • PrizePicks Edge</title>
+  <title>Tari Eason • CGEDGE</title>
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../style.css" />
@@ -12,7 +12,7 @@
   <a href="../index.html" class="back">Home</a>
 
   <header>
-    <h1>PRIZEPICKS EDGE</h1>
+    <h1>CGEDGE</h1>
     <div class="tag">WEAPONIZED STATS.</div>
   </header>
 
@@ -152,7 +152,15 @@
 
     function normalizeTeamCode(team){
       const t = String(team||'').toUpperCase();
-      const map = { 'BKN':'BRO','BRK':'BRO','CHO':'CHA','PHX':'PHO','NO':'NOP','NOR':'NOP','NY':'NYK' };
+      const map = {
+        'BKN':'BRO','BRK':'BRO',
+        'CHO':'CHA','CHA':'CHA',
+        'PHX':'PHO','PHO':'PHO',
+        'NO':'NOP','NOR':'NOP','NOP':'NOP',
+        'NY':'NYK','NYK':'NYK',
+        'UTH':'UTA','UTA':'UTA',
+        'GOL':'GSW','GS':'GSW','GSW':'GSW'
+      };
       return map[t] || t;
     }
 
@@ -303,8 +311,14 @@
 
       const dvpRankings = await fetchDVP();
       function updateDVPDisplay(currentStat){
-        const oppTeam = 'N/A'.toUpperCase();
-        const dvpVal = computeDVP(dvpRankings, oppTeam, playerPosition, currentStat);
+        let oppTeam = 'N/A';
+        try {
+          const key = (currentStat === 'Pts+Rebs+Asts') ? 'PRA' : currentStat;
+          const rec = (Array.isArray(records) ? records : []).find(r => (r.Stat || r.stat || r.prop) === key) || null;
+          const o = rec && (rec.Versus || rec.Opp || rec.opponent || rec.opp || rec.versus);
+          if (o) oppTeam = o;
+        } catch (e) {}
+        const dvpVal = computeDVP(dvpRankings, String(oppTeam||'').toUpperCase(), playerPosition, currentStat);
         const badge = document.getElementById('dvpBadge');
         if (!badge) return;
         if (dvpVal == null) {
@@ -337,14 +351,31 @@
         const selected = select.value;
         const statKey = selected === 'Pts+Rebs+Asts' ? 'PRA' : selected;
         const rec = records.find(r => (r.Stat || r.stat || r.prop) === statKey);
-        if(rec) updateUI(rec);
+        if(rec) {
+          // Update meta (team/opponent) if present in record
+          const teamEl = document.querySelector('.meta-line .team');
+          if (teamEl && (rec.Team || rec.team)) teamEl.textContent = rec.Team || rec.team;
+          const oppEl = document.querySelector('.meta-line .opponent');
+          const o = rec.Versus || rec.Opp || rec.opponent || rec.opp || rec.versus;
+          if (oppEl && o) oppEl.textContent = 'vs ' + o;
+          updateUI(rec);
+        }
         updateDVPDisplay(selected);
       });
-
-      updateDVPDisplay(current);
-      renderMinutesBadge(
-        records.find(r => (r.Stat || r.stat || r.prop) === (current === 'Pts+Rebs+Asts' ? 'PRA' : current)) || {}
-      );
+      // Initial render using record data if available
+      (function(){
+        const statKey = current === 'Pts+Rebs+Asts' ? 'PRA' : current;
+        const rec = records.find(r => (r.Stat || r.stat || r.prop) === statKey) || records[0];
+        if (rec) {
+          const teamEl = document.querySelector('.meta-line .team');
+          if (teamEl && (rec.Team || rec.team)) teamEl.textContent = rec.Team || rec.team;
+          const oppEl = document.querySelector('.meta-line .opponent');
+          const o = rec.Versus || rec.Opp || rec.opponent || rec.opp || rec.versus;
+          if (oppEl && o) oppEl.textContent = 'vs ' + o;
+          updateUI(rec);
+        }
+        updateDVPDisplay(current);
+      })();
     })();
   </script>
 </body>

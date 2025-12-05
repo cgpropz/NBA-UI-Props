@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kris Murray • PrizePicks Edge</title>
+  <title>Kris Murray • CGEDGE</title>
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../style.css" />
@@ -12,7 +12,7 @@
   <a href="../index.html" class="back">Home</a>
 
   <header>
-    <h1>PRIZEPICKS EDGE</h1>
+    <h1>CGEDGE</h1>
     <div class="tag">WEAPONIZED STATS.</div>
   </header>
 
@@ -32,17 +32,17 @@
       <div class="name">Kris Murray</div>
       <div class="meta-line">
         <div class="position" id="positionChip"></div>
-        <div class="team"></div>
-        <div class="opponent">vs N/A</div>
+        <div class="team">POR</div>
+        <div class="opponent">vs DET</div>
       </div>
 
       <!-- Prop line -->
       <div class="prop-line">
         <select id="propSelect">
-          <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
+          <option value="Points">Points</option>
         </select>
-        • Line <strong id="lineVal">13.1</strong> 
-        • Projection <strong id="projectionVal">12.8</strong>
+        • Line <strong id="lineVal">6.5</strong> 
+        • Projection <strong id="projectionVal">6.6</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
       </div>
@@ -51,7 +51,7 @@
       <div class="hitrates-wrapper">
         <div class="hitrates">
           <div class="rate-box"><div class="label">Last 5</div><div class="val">3/5</div></div>
-          <div class="rate-box"><div class="label">Last 10</div><div class="val">5/10</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">4/10</div></div>
           <div class="rate-box"><div class="label">Last 20</div><div class="val">7/19</div></div>
           <div class="rate-box"><div class="label">Season</div><div class="val">7/19</div></div>
         </div>
@@ -69,10 +69,10 @@
   </div>
 
   <script>
-    let line = Number('13.1');
-    let data = JSON.parse('[14.0, 9.0, 13.0, 7.0, 17.0, 10.0, 16.0, 7.0, 17.0, 21.0]');
+    let line = Number('6.5');
+    let data = JSON.parse('[6.0, 5.0, 6.0, 3.0, 9.0, 5.0, 9.0, 2.0, 8.0, 13.0]');
     let dates = JSON.parse('["11/12", "11/14", "11/16", "11/18", "11/19", "11/21", "11/23", "11/24", "11/26", "11/30"]');
-    let projection = Number('12.8');
+    let projection = Number('6.6');
     const playerName = 'Kris Murray';
 
     (function(){
@@ -152,7 +152,15 @@
 
     function normalizeTeamCode(team){
       const t = String(team||'').toUpperCase();
-      const map = { 'BKN':'BRO','BRK':'BRO','CHO':'CHA','PHX':'PHO','NO':'NOP','NOR':'NOP','NY':'NYK' };
+      const map = {
+        'BKN':'BRO','BRK':'BRO',
+        'CHO':'CHA','CHA':'CHA',
+        'PHX':'PHO','PHO':'PHO',
+        'NO':'NOP','NOR':'NOP','NOP':'NOP',
+        'NY':'NYK','NYK':'NYK',
+        'UTH':'UTA','UTA':'UTA',
+        'GOL':'GSW','GS':'GSW','GSW':'GSW'
+      };
       return map[t] || t;
     }
 
@@ -233,7 +241,7 @@
       if(boxes.length < 4) return;
       const vals = [
         record.last_5 || '3/5',
-        record.last_10 || '5/10',
+        record.last_10 || '4/10',
         record.last_20 || '7/19',
         record.season || '7/19'
       ];
@@ -303,8 +311,14 @@
 
       const dvpRankings = await fetchDVP();
       function updateDVPDisplay(currentStat){
-        const oppTeam = 'N/A'.toUpperCase();
-        const dvpVal = computeDVP(dvpRankings, oppTeam, playerPosition, currentStat);
+        let oppTeam = 'DET';
+        try {
+          const key = (currentStat === 'Pts+Rebs+Asts') ? 'PRA' : currentStat;
+          const rec = (Array.isArray(records) ? records : []).find(r => (r.Stat || r.stat || r.prop) === key) || null;
+          const o = rec && (rec.Versus || rec.Opp || rec.opponent || rec.opp || rec.versus);
+          if (o) oppTeam = o;
+        } catch (e) {}
+        const dvpVal = computeDVP(dvpRankings, String(oppTeam||'').toUpperCase(), playerPosition, currentStat);
         const badge = document.getElementById('dvpBadge');
         if (!badge) return;
         if (dvpVal == null) {
@@ -337,14 +351,31 @@
         const selected = select.value;
         const statKey = selected === 'Pts+Rebs+Asts' ? 'PRA' : selected;
         const rec = records.find(r => (r.Stat || r.stat || r.prop) === statKey);
-        if(rec) updateUI(rec);
+        if(rec) {
+          // Update meta (team/opponent) if present in record
+          const teamEl = document.querySelector('.meta-line .team');
+          if (teamEl && (rec.Team || rec.team)) teamEl.textContent = rec.Team || rec.team;
+          const oppEl = document.querySelector('.meta-line .opponent');
+          const o = rec.Versus || rec.Opp || rec.opponent || rec.opp || rec.versus;
+          if (oppEl && o) oppEl.textContent = 'vs ' + o;
+          updateUI(rec);
+        }
         updateDVPDisplay(selected);
       });
-
-      updateDVPDisplay(current);
-      renderMinutesBadge(
-        records.find(r => (r.Stat || r.stat || r.prop) === (current === 'Pts+Rebs+Asts' ? 'PRA' : current)) || {}
-      );
+      // Initial render using record data if available
+      (function(){
+        const statKey = current === 'Pts+Rebs+Asts' ? 'PRA' : current;
+        const rec = records.find(r => (r.Stat || r.stat || r.prop) === statKey) || records[0];
+        if (rec) {
+          const teamEl = document.querySelector('.meta-line .team');
+          if (teamEl && (rec.Team || rec.team)) teamEl.textContent = rec.Team || rec.team;
+          const oppEl = document.querySelector('.meta-line .opponent');
+          const o = rec.Versus || rec.Opp || rec.opponent || rec.opp || rec.versus;
+          if (oppEl && o) oppEl.textContent = 'vs ' + o;
+          updateUI(rec);
+        }
+        updateDVPDisplay(current);
+      })();
     })();
   </script>
 </body>

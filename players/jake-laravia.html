@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jake LaRavia • PrizePicks Edge</title>
+  <title>Jake LaRavia • CGEDGE</title>
   <script src="https://code.highcharts.com/highcharts.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../style.css" />
@@ -12,7 +12,7 @@
   <a href="../index.html" class="back">Home</a>
 
   <header>
-    <h1>PRIZEPICKS EDGE</h1>
+    <h1>CGEDGE</h1>
     <div class="tag">WEAPONIZED STATS.</div>
   </header>
 
@@ -33,7 +33,7 @@
       <div class="meta-line">
         <div class="position" id="positionChip"></div>
         <div class="team">LAL</div>
-        <div class="opponent">vs TOR</div>
+        <div class="opponent">vs BOS</div>
       </div>
 
       <!-- Prop line -->
@@ -41,7 +41,7 @@
         <select id="propSelect">
           <option value="Pts+Rebs+Asts">Pts+Rebs+Asts</option>
         </select>
-        • Line <strong id="lineVal">14.5</strong> 
+        • Line <strong id="lineVal">20.5</strong> 
         • Projection <strong id="projectionVal">10.6</strong>
         <!-- Exp Min inline removed; now shown as top-left badge -->
         <span id="edgeBadge"></span>
@@ -50,10 +50,10 @@
       <!-- Hitrates -->
       <div class="hitrates-wrapper">
         <div class="hitrates">
-          <div class="rate-box"><div class="label">Last 5</div><div class="val">1/5</div></div>
-          <div class="rate-box"><div class="label">Last 10</div><div class="val">2/10</div></div>
-          <div class="rate-box"><div class="label">Last 20</div><div class="val">9/20</div></div>
-          <div class="rate-box"><div class="label">Season</div><div class="val">9/20</div></div>
+          <div class="rate-box"><div class="label">Last 5</div><div class="val">0/5</div></div>
+          <div class="rate-box"><div class="label">Last 10</div><div class="val">1/10</div></div>
+          <div class="rate-box"><div class="label">Last 20</div><div class="val">5/20</div></div>
+          <div class="rate-box"><div class="label">Season</div><div class="val">5/20</div></div>
         </div>
         <div class="dots">
           <span class="dot active"></span>
@@ -69,7 +69,7 @@
   </div>
 
   <script>
-    let line = Number('14.5');
+    let line = Number('20.5');
     let data = JSON.parse('[10.0, 8.0, 9.0, 11.0, 22.0, 8.0, 5.0, 2.0, 17.0, 5.0]');
     let dates = JSON.parse('["11/10", "11/12", "11/14", "11/15", "11/18", "11/23", "11/25", "11/28", "11/30", "12/01"]');
     let projection = Number('10.6');
@@ -152,7 +152,15 @@
 
     function normalizeTeamCode(team){
       const t = String(team||'').toUpperCase();
-      const map = { 'BKN':'BRO','BRK':'BRO','CHO':'CHA','PHX':'PHO','NO':'NOP','NOR':'NOP','NY':'NYK' };
+      const map = {
+        'BKN':'BRO','BRK':'BRO',
+        'CHO':'CHA','CHA':'CHA',
+        'PHX':'PHO','PHO':'PHO',
+        'NO':'NOP','NOR':'NOP','NOP':'NOP',
+        'NY':'NYK','NYK':'NYK',
+        'UTH':'UTA','UTA':'UTA',
+        'GOL':'GSW','GS':'GSW','GSW':'GSW'
+      };
       return map[t] || t;
     }
 
@@ -232,10 +240,10 @@
       const boxes = document.querySelectorAll('.hitrates .rate-box .val');
       if(boxes.length < 4) return;
       const vals = [
-        record.last_5 || '1/5',
-        record.last_10 || '2/10',
-        record.last_20 || '9/20',
-        record.season || '9/20'
+        record.last_5 || '0/5',
+        record.last_10 || '1/10',
+        record.last_20 || '5/20',
+        record.season || '5/20'
       ];
       vals.forEach((v, i) => {
         const { text, pct } = formatPercentFirstWithPct(v);
@@ -303,8 +311,14 @@
 
       const dvpRankings = await fetchDVP();
       function updateDVPDisplay(currentStat){
-        const oppTeam = 'TOR'.toUpperCase();
-        const dvpVal = computeDVP(dvpRankings, oppTeam, playerPosition, currentStat);
+        let oppTeam = 'BOS';
+        try {
+          const key = (currentStat === 'Pts+Rebs+Asts') ? 'PRA' : currentStat;
+          const rec = (Array.isArray(records) ? records : []).find(r => (r.Stat || r.stat || r.prop) === key) || null;
+          const o = rec && (rec.Versus || rec.Opp || rec.opponent || rec.opp || rec.versus);
+          if (o) oppTeam = o;
+        } catch (e) {}
+        const dvpVal = computeDVP(dvpRankings, String(oppTeam||'').toUpperCase(), playerPosition, currentStat);
         const badge = document.getElementById('dvpBadge');
         if (!badge) return;
         if (dvpVal == null) {
@@ -337,14 +351,31 @@
         const selected = select.value;
         const statKey = selected === 'Pts+Rebs+Asts' ? 'PRA' : selected;
         const rec = records.find(r => (r.Stat || r.stat || r.prop) === statKey);
-        if(rec) updateUI(rec);
+        if(rec) {
+          // Update meta (team/opponent) if present in record
+          const teamEl = document.querySelector('.meta-line .team');
+          if (teamEl && (rec.Team || rec.team)) teamEl.textContent = rec.Team || rec.team;
+          const oppEl = document.querySelector('.meta-line .opponent');
+          const o = rec.Versus || rec.Opp || rec.opponent || rec.opp || rec.versus;
+          if (oppEl && o) oppEl.textContent = 'vs ' + o;
+          updateUI(rec);
+        }
         updateDVPDisplay(selected);
       });
-
-      updateDVPDisplay(current);
-      renderMinutesBadge(
-        records.find(r => (r.Stat || r.stat || r.prop) === (current === 'Pts+Rebs+Asts' ? 'PRA' : current)) || {}
-      );
+      // Initial render using record data if available
+      (function(){
+        const statKey = current === 'Pts+Rebs+Asts' ? 'PRA' : current;
+        const rec = records.find(r => (r.Stat || r.stat || r.prop) === statKey) || records[0];
+        if (rec) {
+          const teamEl = document.querySelector('.meta-line .team');
+          if (teamEl && (rec.Team || rec.team)) teamEl.textContent = rec.Team || rec.team;
+          const oppEl = document.querySelector('.meta-line .opponent');
+          const o = rec.Versus || rec.Opp || rec.opponent || rec.opp || rec.versus;
+          if (oppEl && o) oppEl.textContent = 'vs ' + o;
+          updateUI(rec);
+        }
+        updateDVPDisplay(current);
+      })();
     })();
   </script>
 </body>
