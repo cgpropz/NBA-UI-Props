@@ -447,9 +447,9 @@
       localStorage.setItem('ppSlip', raw);
       try{
         const encoded = btoa(unescape(encodeURIComponent(raw)));
-        window.open('https://www.prizepicks.com/#cgpp='+encoded, '_blank');
+        window.open('https://www.prizepicks.com/board#cgpp='+encoded, '_blank');
       }catch(e){
-        window.open('https://www.prizepicks.com', '_blank');
+        window.open('https://www.prizepicks.com/board', '_blank');
       }
     });
 

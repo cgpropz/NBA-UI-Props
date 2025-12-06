@@ -46,6 +46,19 @@
     }
   }
 
+  function isOnBoard(){
+    return location.pathname.startsWith('/board');
+  }
+
+  function redirectToBoardWithHash(){
+    const h = location.hash || '';
+    const target = 'https://www.prizepicks.com/board' + (h || '');
+    if (location.href !== target) {
+      console.log(LOG_PREFIX, 'Redirecting to /board with hash');
+      location.replace(target);
+    }
+  }
+
   function sleep(ms){ return new Promise(res=>setTimeout(res, ms)); }
 
   async function clickByText(text){
@@ -103,6 +116,7 @@
 
   async function run(){
     if (isPlaybookOrArticles()) { redirectToAppWithHash(); return; }
+    if (!isOnBoard()) { redirectToBoardWithHash(); return; }
     const slip = getSlipFromHash() || getSlip();
     if (!slip || !slip.length){ console.log(LOG_PREFIX, 'No slip in localStorage'); return; }
     console.log(LOG_PREFIX, 'Autofilling slip of', slip.length, 'items');
