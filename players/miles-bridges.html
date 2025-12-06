@@ -47,6 +47,12 @@
         <span id="edgeBadge"></span>
       </div>
 
+      <!-- Last N slider -->
+      <div class="lastn" style="display:flex;align-items:center;gap:12px;justify-content:center;margin-top:10px;">
+        <label for="lastNSlider" style="color:var(--pp-accent);font-weight:700">Last <span id="lastNValue">10</span> games</label>
+        <input id="lastNSlider" type="range" min="5" max="20" step="1" value="10" style="width:220px;"/>
+      </div>
+
       <!-- Hitrates -->
       <div class="hitrates-wrapper">
         <div class="hitrates">
@@ -72,6 +78,7 @@
     let line = Number('29.5');
     let data = JSON.parse('[41.0, 23.0, 33.0, 32.0, 24.0, 31.0, 22.0, 37.0, 38.0, 11.0]');
     let dates = JSON.parse('["11/14", "11/15", "11/17", "11/19", "11/22", "11/23", "11/26", "11/28", "11/29", "12/01"]');
+    let lastN = 10;
     let projection = Number('29.4');
     const playerName = 'Miles Bridges';
 
@@ -223,16 +230,26 @@
       minutesEl.style.display = 'block';
     }
 
+    function maxRange(){
+      const len = Array.isArray(data) ? data.length : 0;
+      return Math.min(20, Math.max(5, len || 20));
+    }
+
     function renderChart(){
       try {
+        const n = Math.max(5, Math.min(maxRange(), Number(lastN||10)));
+        const seriesData = Array.isArray(data) ? data.slice(data.length - n) : [];
+        const xCats = (Array.isArray(dates) && dates.length === data.length)
+          ? dates.slice(dates.length - n)
+          : seriesData.map((_,i)=>'G'+(n-i));
         Highcharts.chart('chart', {
           chart:{backgroundColor:'var(--pp-surface-alt)'},
-          title:{text:'Last 10 Games',style:{color:'var(--pp-text-dim)',fontSize:'14px',fontWeight:'600'}},
-          xAxis:{categories: (Array.isArray(dates) && dates.length === data.length) ? dates : data.map((_,i)=>'G'+(10-i)), labels:{style:{color:'var(--pp-text-dim)'}}},
+          title:{text:`Last ${n} Games`,style:{color:'var(--pp-text-dim)',fontSize:'14px',fontWeight:'600'}},
+          xAxis:{categories: xCats, labels:{style:{color:'var(--pp-text-dim)'}}},
           yAxis:{title:{text:document.getElementById('propSelect').value,style:{color:'var(--pp-text-dim)'}},gridLineColor:'rgba(255,255,255,0.05)',plotLines:[{value:line,color:'var(--pp-accent)',width:3,dashStyle:'Dash',label:{text:'Line '+line,style:{color:'var(--pp-accent)',fontWeight:'700'}}}]},
           legend:{enabled:false},
           tooltip:{backgroundColor:'var(--pp-surface)',borderColor:'var(--pp-border)',style:{color:'var(--pp-text)'}},
-          series:[{type:'column',name:'Miles Bridges',data:data.map(v=>({y:v,color:v>line?'var(--pp-success)':'var(--pp-danger)'})),borderRadius:4}]
+          series:[{type:'column',name:'Miles Bridges',data:seriesData.map(v=>({y:v,color:v>line?'var(--pp-success)':'var(--pp-danger)'})),borderRadius:4}]
         });
       } catch(e){
         document.getElementById('chart').innerHTML = '<div style="text-align:center;padding:40px;color:#ff6b6b;">Chart failed to load</div>';
@@ -268,6 +285,16 @@
       return { text: `${pct}% • ${ratioStr}` , pct };
     }
 
+    function syncSliderWithData(){
+      const slider = document.getElementById('lastNSlider');
+      const lbl = document.getElementById('lastNValue');
+      if (!slider || !lbl) return;
+      slider.max = String(maxRange());
+      if (Number(slider.value) > Number(slider.max)) slider.value = slider.max;
+      lastN = Number(slider.value);
+      lbl.textContent = String(lastN);
+    }
+
     function updateUI(record){
       line = Number(record.Line ?? record.line);
       const series = record.last_10_values ?? record.last10_values ?? record.last_10;
@@ -275,6 +302,7 @@
       projection = record.projection ?? record.Proj ?? record.projected ?? projection;
       document.getElementById('lineVal').textContent = line;
       document.getElementById('projectionVal').textContent = typeof projection === 'number' ? projection.toFixed(1) : (projection ?? 'N/A');
+      syncSliderWithData();
       renderMinutesBadge(record);
       renderBadge();
       renderHitrates(record);
@@ -350,6 +378,19 @@
         select.appendChild(opt);
       });
 
+      // Slider wiring: update label and re-render chart
+      const slider = document.getElementById('lastNSlider');
+      const lastLabel = document.getElementById('lastNValue');
+      if (slider && lastLabel){
+        // Initialize slider bounds with dataset length (up to 20)
+        syncSliderWithData();
+        slider.addEventListener('input', () => {
+          lastN = Number(slider.value);
+          lastLabel.textContent = String(lastN);
+          renderChart();
+        });
+      }
+
       select.addEventListener('change', () => {
         const selected = select.value;
         const statKey = selected;
@@ -378,6 +419,8 @@
           updateUI(rec);
         }
         updateDVPDisplay(current);
+        // Ensure slider reflects current dataset
+        syncSliderWithData();
       })();
     })();
   </script>
