@@ -95,8 +95,12 @@
     const card = findPlayerCard(item.name);
     if (!card){ console.warn(LOG_PREFIX, 'Player card not found', item.name); return; }
 
-    // Choose over/under – default Over
-    const overBtn = card.querySelector('[data-testid*="over"], [aria-label*="Over"], button');
+    // Choose Over explicitly
+    let overBtn = card.querySelector('[data-testid*="over"], [aria-label*="Over"], button');
+    // Try text-based match within card if generic button was selected
+    if (overBtn && !/over/i.test(overBtn.textContent||'')) {
+      overBtn = Array.from(card.querySelectorAll('button, [role="button"]')).find(b=>/\bover\b/i.test(b.textContent||'')) || overBtn;
+    }
     if (overBtn){ overBtn.click(); await sleep(300); }
     else { card.click(); await sleep(300); }
 
