@@ -31,6 +31,29 @@
     }
   }
 
+  async function setAuthed(flag){
+    try{ await chrome.storage?.local?.set({ ppAuthed: !!flag }); }catch(e){}
+  }
+  async function isAuthed(){
+    try{ const v = await chrome.storage?.local?.get('ppAuthed'); return !!(v && v.ppAuthed); }catch(e){ return false; }
+  }
+
+  function detectLoggedIn(){
+    // Heuristics: presence of avatar/menu, absence of prominent Log In
+    const hasAvatar = !!document.querySelector('[aria-label*="account" i], [data-testid*="avatar" i], [class*="Avatar" i]');
+    const loginBtn = Array.from(document.querySelectorAll('a,button')).find(el=>/log\s*in/i.test(el.textContent||''));
+    return hasAvatar || !loginBtn;
+  }
+
+  function routeToLoginPreservingHash(){
+    const h = location.hash || '';
+    const target = 'https://www.prizepicks.com/login' + (h || '');
+    if (location.href !== target){
+      console.log(LOG_PREFIX, 'Routing to login with slip hash');
+      location.replace(target);
+    }
+  }
+
   function isPlaybookOrArticles(){
     const host = location.hostname;
     const path = location.pathname;
@@ -128,6 +151,13 @@
     // stay on root; extension will pick tabs and players
     const slip = getSlipFromHash() || getSlip();
     if (!slip || !slip.length){ console.log(LOG_PREFIX, 'No slip in localStorage'); return; }
+    // Persist slip in extension storage to survive navigation/login
+    try{ await chrome.storage?.local?.set({ ppSlip: slip }); }catch(e){}
+    // If not logged in, route to login once and wait for user
+    const logged = detectLoggedIn() || await isAuthed();
+    if (!logged){ routeToLoginPreservingHash(); return; }
+    // Mark authed for future runs
+    await setAuthed(true);
     console.log(LOG_PREFIX, 'Autofilling slip of', slip.length, 'items');
     for (const it of slip){
       try{ await addPick(it); }catch(e){ console.warn(LOG_PREFIX, 'AddPick failed', it, e); }
@@ -137,7 +167,19 @@
 
   // Delay to allow app shell mount
   window.addEventListener('load', ()=>{
-    setTimeout(run, 2000);
+    setTimeout(async ()=>{
+      // If arriving on login or post-login, restore slip from storage
+      try{
+        const st = await chrome.storage?.local?.get(['ppSlip','ppAuthed']);
+        if (st && Array.isArray(st.ppSlip)){
+          // Ensure localStorage has slip on PP origin
+          localStorage.setItem('ppSlip', JSON.stringify({ version:1, items: st.ppSlip }));
+        }
+        // If we detect logged in after login flow, mark authed and run
+        if (detectLoggedIn()) { await setAuthed(true); }
+      }catch(e){}
+      run();
+    }, 2000);
   });
   window.addEventListener('hashchange', ()=> setTimeout(run, 500));
 
