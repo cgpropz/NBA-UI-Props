@@ -50,6 +50,20 @@
 
   function sleep(ms){ return new Promise(res=>setTimeout(res, ms)); }
 
+  function isHome(){
+    return location.pathname === '/' || /All your picks\. One app\./i.test(document.body.textContent||'');
+  }
+
+  async function enterPicksFromHome(){
+    // Try common CTAs on homepage to enter picks
+    const ctas = Array.from(document.querySelectorAll('a,button'));
+    const pickNow = ctas.find(el => /pick\s*now/i.test(el.textContent||''));
+    const playersCta = ctas.find(el => /players/i.test(el.textContent||''));
+    if (pickNow) { pickNow.click(); await sleep(800); return true; }
+    if (playersCta) { playersCta.click(); await sleep(800); return true; }
+    return false;
+  }
+
   async function clickByText(text){
     const candidates = Array.from(document.querySelectorAll('*'));
     const target = candidates.find(el => el.textContent && el.textContent.trim() === text);
@@ -83,6 +97,8 @@
   }
 
   async function addPick(item){
+    // If on homepage, enter the picks area first
+    if (isHome()) { await enterPicksFromHome(); await sleep(600); }
     // Navigate to sport/NBA if needed
     try{ await clickByText('NBA'); }catch(e){}
     await sleep(500);
