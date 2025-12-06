@@ -45,11 +45,11 @@ jobs:
 
       - name: Sync root odds JSON (every run)
         run: |
-          # Ensure a root-level odds file is refreshed every 5 minutes for UI consumption
+          # Keep odds file separate; DO NOT overwrite player props lines
           if [ -f data/odds/latest.json ]; then
-            cp -f data/odds/latest.json NBA_PURE_STANDARD_SINGLE.json;
+            cp -f data/odds/latest.json ODDS_LATEST.json;
           else
-            echo "data/odds/latest.json not found; keeping existing NBA_PURE_STANDARD_SINGLE.json";
+            echo "data/odds/latest.json not found; skipping ODDS_LATEST.json sync";
           fi
 
       - name: Update gamelogs (7 AM only)
@@ -64,7 +64,8 @@ jobs:
 
       - name: Regenerate player pages
         run: |
-          python UI_DATA_BUILDER_PERFECT.py || true
+          # Use canonical props lines produced by Fetch_PP_Odds.py (NBA_PURE_STANDARD_SINGLE.json)
+          PP_LINES_PATH=NBA_PURE_STANDARD_SINGLE.json python UI_DATA_BUILDER_PERFECT.py || true
           python generate_players.py || true
       - name: Write template change note
         if: github.event_name == 'push'
