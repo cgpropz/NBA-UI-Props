@@ -100,6 +100,32 @@
 
   <div id="cards" class="cards-container"></div>
 
+  <!-- Sticky Slip Bar -->
+  <div id="slipBar" style="position:fixed;bottom:16px;left:50%;transform:translateX(-50%);width:min(1100px,94vw);background:rgba(22,27,34,0.85);backdrop-filter:blur(8px);border:1px solid var(--pp-border);border-radius:18px;padding:12px;box-shadow:0 8px 22px rgba(0,0,0,0.45);display:none;z-index:1000">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div style="display:flex;align-items:center;gap:10px;flex:1;flex-wrap:wrap" id="slipItems"></div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <button id="clearSlip" style="background:#2a2f37;color:#ff6b6b;border:1px solid #ff6b6b66;border-radius:10px;padding:6px 10px;font-weight:700;cursor:pointer">Clear</button>
+        <button id="reviewSlip" style="background:#003322;color:#39d9a9;border:1px solid #39d9a966;border-radius:10px;padding:6px 12px;font-weight:700;cursor:pointer">Review Slip</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Review Modal -->
+  <div id="slipModal" style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.55);z-index:1001">
+    <div style="width:min(820px,95vw);background:#161b22;border:1px solid var(--pp-border);border-radius:18px;box-shadow:0 10px 28px rgba(0,0,0,0.6);padding:18px">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px">
+        <div style="font-weight:800;color:#fff;letter-spacing:.6px">Your Slip</div>
+        <button id="closeSlip" style="background:#2a2f37;color:#cbd5e1;border:1px solid #475569;border-radius:10px;padding:6px 10px;cursor:pointer">Close</button>
+      </div>
+      <div id="slipSummary" style="display:grid;grid-template-columns:1fr;gap:8px;margin-bottom:12px"></div>
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end">
+        <button id="copySlip" style="background:#232832;color:#ffd43b;border:1px solid #ffd43b55;border-radius:10px;padding:8px 12px;font-weight:800;cursor:pointer">Copy Slip</button>
+        <button id="openPP" style="background:#003322;color:#39d9a9;border:1px solid #39d9a966;border-radius:10px;padding:8px 12px;font-weight:800;cursor:pointer">Open PrizePicks</button>
+      </div>
+    </div>
+  </div>
+
   <script>
     let allPlayers = [];
     let positionsMap = {};
@@ -256,6 +282,13 @@
 
         const card = document.createElement('div');
         card.className = 'card';
+        card.dataset.player = JSON.stringify({
+          name: player.name,
+          team: player.team,
+          opponent: player.opponent,
+          prop: player.prop,
+          line: player.line
+        });
         const imgUrl = bbrefHeadshot(player.name);
         const avatarTop = imgUrl ? `
           <div style="display:flex;justify-content:center;align-items:center;margin-bottom:10px;">
@@ -271,8 +304,13 @@
             <div class="team">${player.team}</div>
           </div>
           <div class="opponent" style="text-align:center;">vs ${player.opponent}</div>
-          <div class="prop-line" style="justify-content:center;">
-            <span>${player.prop}</span>
+          <div class="prop-line" style="justify-content:center;gap:10px;">
+            <select class="prop-select" style="background:rgba(57,217,169,0.15);border:1px solid var(--pp-success);color:white;border-radius:10px;padding:6px 10px;font-weight:700">
+              <option value="${player.prop}" selected>${player.prop}</option>
+              ${["Points","Rebounds","Assists","Threes","Fantasy Score","Steals","Blocks","Turnovers","Steals + Blocks","Pts+Rebs+Asts","Pts+Rebs","Pts+Asts","Rebs+Asts"]
+                .filter(p=>p!==player.prop)
+                .map(p=>`<option value="${p}">${p}</option>`).join('')}
+            </select>
             <span>Line: ${player.line} • Proj: ${
               typeof player.projection === 'number'
                 ? Number(player.projection).toFixed(1)
@@ -280,6 +318,7 @@
                     ? Number(player.projection).toFixed(1)
                     : 'N/A')
             }</span>
+            <button class="add-to-slip" style="background:#232832;color:#ffd43b;border:1px solid #ffd43b55;border-radius:10px;padding:6px 10px;font-weight:700;cursor:pointer">Add</button>
           </div>
           <div class="stats-grid">
             <div class="stat-box"><div class="label">Last 5</div><div class="value ${getColor(player.last_5_pct)}">${player.last_5} <small>(${player.last_5_pct}%)</small></div></div>
@@ -291,6 +330,85 @@
         container.appendChild(card);
       });
     }
+
+    // Slip builder state
+    const selectedProps = [];
+    function updateSlipBar(){
+      const bar = document.getElementById('slipBar');
+      const items = document.getElementById('slipItems');
+      if (!bar || !items) return;
+      bar.style.display = selectedProps.length ? 'block' : 'none';
+      items.innerHTML = selectedProps.map((it,idx)=>
+        `<div style="display:flex;align-items:center;gap:8px;background:#1a2028;border:1px solid var(--pp-border);border-radius:12px;padding:6px 8px">
+           <span style="color:#fff;font-weight:700">${it.prop}</span>
+           <span style="color:#39d9a9;font-weight:700">${it.name}</span>
+           <span style="color:#ffd43b">${it.line}</span>
+           <button data-remove="${idx}" style="background:#2a2f37;color:#ff6b6b;border:1px solid #ff6b6b66;border-radius:8px;padding:4px 8px;cursor:pointer">Remove</button>
+         </div>`
+      ).join('');
+      localStorage.setItem('ppSlip', JSON.stringify({ version:1, items: selectedProps }));
+    }
+
+    document.addEventListener('click', (e)=>{
+      const addBtn = e.target.closest('.add-to-slip');
+      if (addBtn){
+        // Collect data from card
+        const card = addBtn.closest('.card');
+        if (!card) return;
+        if (selectedProps.length >= 6){ alert('Max 6 props per slip'); return; }
+        const base = JSON.parse(card.dataset.player||'{}');
+        const propSel = card.querySelector('.prop-select');
+        const prop = propSel ? propSel.value : base.prop;
+        const item = { name: base.name, team: base.team, opponent: base.opponent, prop, line: base.line };
+        // Prevent duplicates of same player+prop
+        const exists = selectedProps.some(sp => sp.name===item.name && sp.prop===item.prop);
+        if (!exists){ selectedProps.push(item); updateSlipBar(); }
+      }
+      const rmBtn = e.target.closest('[data-remove]');
+      if (rmBtn){
+        const idx = Number(rmBtn.getAttribute('data-remove'));
+        if (!isNaN(idx)){ selectedProps.splice(idx,1); updateSlipBar(); }
+      }
+    });
+
+    document.getElementById('clearSlip').addEventListener('click', ()=>{
+      selectedProps.splice(0, selectedProps.length);
+      updateSlipBar();
+    });
+
+    // Review modal
+    const slipModal = document.getElementById('slipModal');
+    document.getElementById('reviewSlip').addEventListener('click', ()=>{
+      const sum = document.getElementById('slipSummary');
+      sum.innerHTML = selectedProps.map(it=>
+        `<div style="display:flex;align-items:center;justify-content:space-between;background:#1a2028;border:1px solid var(--pp-border);border-radius:12px;padding:8px 10px">
+           <div style="display:flex;gap:10px;align-items:center">
+             <strong style="color:#39d9a9">${it.name}</strong>
+             <span style="color:#fff">${it.prop}</span>
+             <span style="color:#ffd43b">${it.line}</span>
+             <span style="color:#f87272">vs ${it.opponent}</span>
+           </div>
+        </div>`
+      ).join('');
+      slipModal.style.display = 'flex';
+    });
+    document.getElementById('closeSlip').addEventListener('click', ()=>{ slipModal.style.display='none'; });
+    slipModal.addEventListener('click', (e)=>{ if(e.target===slipModal) slipModal.style.display='none'; });
+
+    // Actions: Copy and Open PrizePicks
+    document.getElementById('copySlip').addEventListener('click', async ()=>{
+      const text = selectedProps.map(it=>`${it.prop} • ${it.name} • ${it.line} • vs ${it.opponent}`).join('\n');
+      const payload = JSON.stringify({ version:1, items:selectedProps }, null, 2);
+      try{
+        await navigator.clipboard.writeText(text + '\n\n' + payload);
+        alert('Slip copied to clipboard');
+      }catch(e){ alert('Copy failed'); }
+    });
+    document.getElementById('openPP').addEventListener('click', ()=>{
+      // Persist and open PP; extension can auto-prefill later
+      localStorage.setItem('ppSlip', JSON.stringify({ version:1, items:selectedProps }));
+      window.open('https://www.prizepicks.com', '_blank');
+    });
 
     function filterAndSort() {
       const search = document.getElementById('search').value.toLowerCase();
