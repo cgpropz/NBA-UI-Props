@@ -105,6 +105,7 @@
   <div id="slipBar" style="position:fixed;bottom:16px;left:50%;transform:translateX(-50%);width:min(1100px,94vw);background:rgba(22,27,34,0.85);backdrop-filter:blur(8px);border:1px solid var(--pp-border);border-radius:18px;padding:12px;box-shadow:0 8px 22px rgba(0,0,0,0.45);display:none;z-index:1000">
     <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
       <div style="display:flex;align-items:center;gap:10px;flex:1;flex-wrap:wrap" id="slipItems"></div>
+      <div id="slipInlineCount" style="background:#002b36;color:#00ff9d;border:1px solid #00ff9d;border-radius:10px;padding:4px 8px;font-size:12px;display:none">0/6 selected</div>
       <div style="display:flex;align-items:center;gap:8px">
         <button id="clearSlip" style="background:#2a2f37;color:#ff6b6b;border:1px solid #ff6b6b66;border-radius:10px;padding:6px 10px;font-weight:700;cursor:pointer">Clear</button>
         <button id="reviewSlip" style="background:#003322;color:#39d9a9;border:1px solid #39d9a966;border-radius:10px;padding:6px 12px;font-weight:700;cursor:pointer">Review Slip</button>
@@ -338,6 +339,7 @@
       const bar = document.getElementById('slipBar');
       const items = document.getElementById('slipItems');
       const countChip = document.getElementById('slipCount');
+      const inlineCount = document.getElementById('slipInlineCount');
       if (!bar || !items) return;
       bar.style.display = selectedProps.length ? 'block' : 'none';
       items.innerHTML = selectedProps.map((it,idx)=>
@@ -353,12 +355,31 @@
         countChip.style.display = 'inline-block';
         countChip.textContent = `Slip: ${selectedProps.length}/6`;
       }
+      if (inlineCount){
+        inlineCount.style.display = selectedProps.length ? 'inline-block' : 'none';
+        inlineCount.textContent = `${selectedProps.length}/6 selected`;
+      }
       // Disable add buttons if at max
       const addButtons = document.querySelectorAll('.add-to-slip');
       addButtons.forEach(btn => {
         btn.disabled = selectedProps.length >= 6;
         btn.style.opacity = selectedProps.length >= 6 ? '0.6' : '1';
         btn.title = selectedProps.length >= 6 ? 'Max 6 props reached' : 'Add to slip';
+      });
+      // Disable buttons for duplicates (same player+prop already in slip)
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        const base = JSON.parse(card.dataset.player||'{}');
+        const propSel = card.querySelector('.prop-select');
+        const prop = propSel ? propSel.value : base.prop;
+        const exists = selectedProps.some(sp => sp.name===base.name && sp.prop===prop);
+        const btn = card.querySelector('.add-to-slip');
+        if (btn){
+          const atMax = selectedProps.length >= 6;
+          btn.disabled = exists || atMax;
+          btn.style.opacity = (exists || atMax) ? '0.6' : '1';
+          btn.title = exists ? 'Already added' : (atMax ? 'Max 6 props reached' : 'Add to slip');
+        }
       });
     }
 
@@ -372,10 +393,12 @@
         const base = JSON.parse(card.dataset.player||'{}');
         const propSel = card.querySelector('.prop-select');
         const prop = propSel ? propSel.value : base.prop;
-        const item = { name: base.name, team: base.team, opponent: base.opponent, prop, line: base.line };
         // Prevent duplicates of same player+prop
-        const exists = selectedProps.some(sp => sp.name===item.name && sp.prop===item.prop);
-        if (!exists){ selectedProps.push(item); updateSlipBar(); }
+        const isDup = selectedProps.some(sp => sp.name===base.name && sp.prop===prop);
+        if (isDup) { return; }
+        const item = { name: base.name, team: base.team, opponent: base.opponent, prop, line: base.line };
+        selectedProps.push(item);
+        updateSlipBar();
       }
       const rmBtn = e.target.closest('[data-remove]');
       if (rmBtn){
