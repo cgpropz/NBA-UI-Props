@@ -535,22 +535,34 @@
     Promise.all([
       loadPlayers(),
       fetch('nba_players_2025_26_positions.json').then(r => r.ok ? r.json() : ({})),
-      fetch('nba_dvp_latest.json').then(r => r.ok ? r.json() : ({})),
+      fetch('nba_dvp_latest.json').then(async r => {
+        if (!r.ok) return {};
+        try {
+          const j = await r.json();
+          // Support multiple shapes: {data:{team_dvp_rankings:[]}}, {team_dvp_rankings:[]}, or []
+          const arr = (j && j.data && Array.isArray(j.data.team_dvp_rankings)) ? j.data.team_dvp_rankings
+                    : (Array.isArray(j.team_dvp_rankings) ? j.team_dvp_rankings
+                    : (Array.isArray(j) ? j : []));
+          return { _raw: j, team_dvp_rankings: arr };
+        } catch(e){ console.warn('[CGEDGE] DVP parse failed', e); return {}; }
+      }),
       fetch('PLAYER_UI_CARDS_PERFECT.meta.json').then(r => r.ok ? r.json() : ({})),
       fetch('data/odds/latest.json').then(r => r.ok ? r.json() : ({ events: [] }))
     ])
       .then(([data, pos, dvp, meta, odds]) => {
         allPlayers = Array.isArray(data) ? data : (data.players || []);
         positionsMap = pos || {};
-        dvpRankings = (dvp && dvp.data && dvp.data.team_dvp_rankings) || [];
+        dvpRankings = (dvp && Array.isArray(dvp.team_dvp_rankings)) ? dvp.team_dvp_rankings : [];
         // Console confirmations for data freshness
         try {
           const last = (meta && meta.generated_at) ? new Date(meta.generated_at) : null;
           if (last) console.log('[CGEDGE] Cards last updated:', last.toLocaleString());
-          const dvpTimeRaw = dvp && dvp.generated_at;
+          const dvpTimeRaw = (dvp && dvp._raw && dvp._raw.generated_at) || (dvp && dvp.generated_at);
           if (dvpTimeRaw) {
             const dt = new Date(dvpTimeRaw);
             console.log('[CGEDGE] DVP updated:', dt.toLocaleString());
+          } else {
+            console.warn('[CGEDGE] DVP rankings empty or missing; badges disabled until data arrives');
           }
           const oddsMeta = (odds && odds.meta && odds.meta.generated_at) ? new Date(odds.meta.generated_at) : null;
           const eventsCount = (odds && Array.isArray(odds.events)) ? odds.events.length : 0;
