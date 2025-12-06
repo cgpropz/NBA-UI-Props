@@ -27,6 +27,12 @@ if isinstance(raw, dict):
 else:
     pp_lines = raw if isinstance(raw, list) else []
 
+    # Guard: if this looks like an odds/events file, warn and produce empty cards gracefully
+    if isinstance(raw, dict) and 'events' in raw and isinstance(raw['events'], list):
+        print("[WARN] PP_LINES_PATH appears to be an odds/events feed (has 'events'). This builder expects player props lines.")
+        print("[HINT] Set PP_LINES_PATH to a player props JSON (e.g., PrizePicks lines export).")
+        # Leave pp_lines as empty list so downstream just writes 0 cards.
+
 df_logs = pd.read_csv(GAMELOGS_PATH)
 df_logs['GAME DATE'] = pd.to_datetime(df_logs['GAME DATE'])
 
@@ -55,6 +61,7 @@ STAT_MAP = {
 }
 
 ui_cards = []
+skipped_missing = 0
 base_projections = {}
 
 def pick(prop, *keys):
@@ -76,6 +83,7 @@ for prop in pp_lines:
 
     # Skip records missing critical fields
     if name is None or stat is None or line is None:
+        skipped_missing += 1
         continue
 
     # Skip if stat not supported
@@ -226,6 +234,8 @@ with open(OUTPUT_PATH, 'w') as f:
     json.dump(ui_cards, f, indent=2)
 
 print(f"\nMASTERPIECE COMPLETE → {len(ui_cards)} elite player cards built!")
+if skipped_missing:
+    print(f"[INFO] Skipped {skipped_missing} records missing name/stat/line (wrong schema or incomplete).")
 print(f"File: {OUTPUT_PATH}")
 
 # Write a simple metadata file with generation timestamp
