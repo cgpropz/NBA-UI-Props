@@ -51,9 +51,18 @@ async function selectNBA(page){
 async function ensureInPicks(page){
   // If on marketing homepage, click Pick Now or Players
   const pickNow = await page.$('xpath=//button[contains(translate(.,"PICK NOW","pick now"),"pick now") or @aria-label="Pick Now"]');
-  if (pickNow) { await pickNow.click(); await page.waitForTimeout(1000); }
+  if (pickNow) { await pickNow.click(); await page.waitForTimeout(1200); }
   const players = await page.$('xpath=//a[contains(translate(.,"PLAYERS","players"),"players")]');
-  if (players) { await players.click(); await page.waitForTimeout(1000); }
+  if (players) { await players.click(); await page.waitForTimeout(1200); }
+  // Fallback direct navigation if content still looks like marketing page
+  const onMarketing = await page.evaluate(()=>/All your picks\. One app\./i.test(document.body.textContent||''));
+  if (onMarketing){ await page.goto('https://www.prizepicks.com/', { waitUntil: 'domcontentloaded' }); }
+  // Wait for tabs/chips to render
+  for (let i=0;i<10;i++){
+    const shellReady = await page.$('[role="tablist"], [data-testid*="chip" i], [data-testid*="players" i]');
+    if (shellReady) break;
+    await page.waitForTimeout(300);
+  }
 }
 
 async function findPlayerCard(page, name){
@@ -113,8 +122,17 @@ async function main(){
   const page = await context.newPage();
 
   await page.goto('https://www.prizepicks.com/', { waitUntil: 'load' });
-  await ensureInPicks(page);
-  await selectNBA(page);
+  // Extra sleeps to move past marketing/landing transitions
+  await page.waitForLoadState('networkidle');
+  await page.waitForTimeout(2000);
+  // Try up to 5 passes to enter picks UI and select NBA
+  for (let i=0; i<5; i++){
+    await ensureInPicks(page);
+    await page.waitForTimeout(1000);
+    const selected = await selectNBA(page);
+    if (selected) break;
+    await page.waitForTimeout(1500);
+  }
 
   for (const it of items){
     try{
