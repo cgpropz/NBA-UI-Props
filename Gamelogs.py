@@ -1,12 +1,25 @@
 from playwright.sync_api import sync_playwright
 import pandas as pd
 from datetime import datetime
-import sys
 
-# NBA season start and today's date for info only (NBA.com loads all, no filter)
-season_start = "10/01/2025"
+# Automatically determine NBA season string for today (ex: '2025-26')
+def current_nba_season_str(today=None):
+    if today is None:
+        today = datetime.now()
+    year = today.year
+    if today.month >= 10:
+        # October–December is start of new season
+        start_year = year
+        end_year = year + 1
+    else:
+        # Jan–Sep is still in previous season's end
+        start_year = year - 1
+        end_year = year
+    return f"{start_year}-{str(end_year)[-2:]}"
+
+nba_season = current_nba_season_str()
 today = datetime.now().strftime("%m/%d/%Y")
-nba_url = "https://www.nba.com/stats/players/boxscores"
+nba_url = f"https://www.nba.com/stats/players/boxscores/?Season={nba_season}&SeasonType=Regular%20Season"
 
 def get_boxscores_table(page, timeout=60):
     """
@@ -17,10 +30,10 @@ def get_boxscores_table(page, timeout=60):
     table = page.query_selector(selector)
     if not table:
         return None
-    # Get outer HTML for pandas
     return table.evaluate('node => node.outerHTML')
 
 def main():
+    print(f"Detected NBA season: {nba_season} • Scraping up to {today}")
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context()
@@ -29,7 +42,7 @@ def main():
         page.goto(nba_url, timeout=90000)
         page.wait_for_timeout(8000)
 
-        # Click cookie/privacy modal if present
+        # Handle cookie/privacy modal if present
         for btn_word in ["accept", "agree", "consent"]:
             try:
                 button = page.query_selector(f'button:has-text("{btn_word}")')
@@ -47,15 +60,15 @@ def main():
         try:
             table_html = get_boxscores_table(page)
             if not table_html:
-                print("ERROR: Could not find NBA boxscores table.", file=sys.stderr)
+                print("ERROR: Could not find NBA boxscores table.")
                 browser.close()
-                sys.exit(2)
+                exit(2)
             df = pd.read_html(table_html)[0]
         except Exception as e:
-            print("ERROR locating/parsing the NBA boxscores table.", file=sys.stderr)
-            print(e, file=sys.stderr)
+            print("ERROR locating/parsing the NBA boxscores table.")
+            print(e)
             browser.close()
-            sys.exit(2)
+            exit(2)
 
         csv_file = "Full_Gamelogs25.csv"
         json_file = "Player_Gamelogs25.json"
@@ -69,10 +82,10 @@ def main():
             else:
                 print("No player-game logs found!")
         except Exception as e:
-            print("ERROR writing output file.", file=sys.stderr)
-            print(e, file=sys.stderr)
+            print("ERROR writing output file.")
+            print(e)
             browser.close()
-            sys.exit(2)
+            exit(2)
         browser.close()
 
 if __name__ == "__main__":
