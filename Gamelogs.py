@@ -1,59 +1,30 @@
 from seleniumbase import Driver
 import pandas as pd
-import time
 
 url = 'https://www.nba.com/stats/players/boxscores'
 
-# PRO TIP: Use undetectable Chrome + extra stealth flags
-driver = Driver(
-    uc=True,
-    headless=True,
-    undetectable=True,           # crucial in 2025
-    incognito=True,
-    disable_csp=True,
-    disable_ws=True,
-    enable_ws=False,
-    no_sandbox=True,
-    disable_gpu=True,
-    user_data_dir=None,
-)
+driver = Driver(uc=True, headless=True)
+driver.get(url)
+driver.sleep(5)
 
-try:
-    print("Opening NBA stats page...")
-    driver.get(url)
-    
-    # Wait for ANY table to appear (not hard-coded path)
-    print("Waiting for player stats table to load...")
-    driver.wait_for_element("div.table-container table", timeout=60)  # much more reliable
-    
-    # Click "All" seasons dropdown properly
-    print("Selecting 'All' seasons...")
-    driver.click("div.ReactTable div.rt-th.rt-resizable-header.-cursor-pointer", by="css selector", timeout=20)
-    time.sleep(1)
-    
-    # Select "All" from the season dropdown
-    driver.select_option_by_text("select", "All")  # simple & works
-    time.sleep(8)  # give it time to load full data
-    
-    # Scroll slowly to trigger lazy loading
-    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-    time.sleep(5)
-    
-    # Grab the actual table (dynamic class, but always one)
-    table = driver.find_element("table")
-    
-    # Convert to pandas
-    df = pd.read_html(table.get_attribute('outerHTML'))[0]
-    
-    # Save
-    df.to_csv('Full_Gamelogs25.csv', index=False)
-    print("FULL GAMELOGS Data Saved Successfully!")
-    print(f"Shape: {df.shape}")
-    print(df.head())
+driver.wait_for_element('xpath', '/html/body/div[1]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[3]/table')
+driver.sleep(6)
 
-except Exception as e:
-    driver.save_screenshot("error_debug.png")  # super helpful in CI logs
-    raise e
+driver.wait_for_element('xpath', '/html/body/div[2]/div[2]/div/div[1]/div/div[2]/div/button').click()
+driver.sleep(1)
 
-finally:
-    driver.quit()
+driver.wait_for_element('xpath', '/html/body/div[1]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select').click()
+driver.sleep(1)
+
+driver.wait_for_element('xpath', '/html/body/div[1]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select/option[1]').click()
+driver.sleep(2)
+
+driver.execute_script("window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });")
+driver.sleep(5)
+
+table = driver.find_element('xpath','/html/body/div[1]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[3]/table')
+
+df = pd.read_html(table.get_attribute('outerHTML'))[0]
+df.to_csv('Full_Gamelogs25.csv', index=False)
+print("FULL GAMELOGS Data Saved...")   
+print(df)
