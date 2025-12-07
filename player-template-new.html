@@ -239,24 +239,76 @@
     }
 
     function renderChart(){
-      try {
-        const n = Math.max(5, Math.min(maxRange(), Number(lastN||10)));
-        const seriesData = Array.isArray(data) ? data.slice(data.length - n) : [];
-        const xCats = (Array.isArray(dates) && dates.length === data.length)
-          ? dates.slice(dates.length - n)
-          : seriesData.map((_,i)=>'G'+(n-i));
-        Highcharts.chart('chart', {
-          chart:{backgroundColor:'var(--pp-surface-alt)'},
-          title:{text:`Last ${n} Games`,style:{color:'var(--pp-text-dim)',fontSize:'14px',fontWeight:'600'}},
-          xAxis:{categories: xCats, labels:{style:{color:'var(--pp-text-dim)'}}},
-          yAxis:{title:{text:document.getElementById('propSelect').value,style:{color:'var(--pp-text-dim)'}},gridLineColor:'rgba(255,255,255,0.05)',plotLines:[{value:line,color:'var(--pp-accent)',width:3,dashStyle:'Dash',label:{text:'Line '+line,style:{color:'var(--pp-accent)',fontWeight:'700'}}}]},
-          legend:{enabled:false},
-          tooltip:{backgroundColor:'var(--pp-surface)',borderColor:'var(--pp-border)',style:{color:'var(--pp-text)'}},
-          series:[{type:'column',name:'{{NAME}}',data:seriesData.map(v=>({y:v,color:v>line?'var(--pp-success)':'var(--pp-danger)'})),borderRadius:4}]
-        });
-      } catch(e){
-        document.getElementById('chart').innerHTML = '<div style="text-align:center;padding:40px;color:#ff6b6b;">Chart failed to load</div>';
-      }
+  try {
+    const n = Math.max(5, Math.min(maxRange(), Number(lastN||10)));
+    const seriesData = Array.isArray(data) ? data.slice(-n) : [];
+    
+    // SMARTER DATE LOGIC — NEVER fall back to G1/G2 again
+    let xCats = [];
+    if (Array.isArray(dates) && dates.length >= n) {
+      xCats = dates.slice(-n).map(d => {
+        const date = new Date(d);
+        if (isNaN(date)) return d.slice(5,10).replace('-','/'); // fallback: 12/06
+        return (date.getMonth()+1) + '/' + date.getDate(); // 12/6
+      });
+    } else {
+      // Final defense: use real game index with opponent if available
+      xCats = seriesData.map((_, i) => {
+        const gameIndex = data.length - n + i;
+        const game = (window.playerGames || [])[gameIndex];
+        if (game && game.opponent) {
+          return game.opponent;
+        }
+        return `G${n-i}`;
+      });
+    }
+
+    Highcharts.chart('chart', {
+      chart: { backgroundColor: 'var(--pp-surface-alt)' },
+      title: { text: `Last ${n} Games`, style: { color: 'var(--pp-text-dim)', fontSize: '14px', fontWeight: '600' } },
+      xAxis: {
+        categories: xCats,
+        labels: {
+          style: { color: 'var(--pp-text-dim)', fontSize: '11px', fontWeight: '500' },
+          rotation: -45,
+          align: 'right'
+        }
+      },
+      yAxis: {
+        title: { text: document.getElementById('propSelect').value, style: { color: 'var(--pp-text-dim)' } },
+        gridLineColor: 'rgba(255,255,255,0.05)',
+        plotLines: [{
+          value: line,
+          color: '#FBBF24',
+          width: 2,
+          dashStyle: 'Dash',
+          label: { text: 'Line ' + line, style: { color: '#FBBF24', fontWeight: 'bold' } }
+        }]
+      },
+      legend: { enabled: false },
+      tooltip: {
+        backgroundColor: 'var(--pp-surface)',
+        borderColor: 'var(--pp-border)',
+        style: { color: 'var(--pp-text)' },
+        formatter: function() {
+          return `<b>${this.y}</b> ${document.getElementById('propSelect').value}<br/>${xCats[this.point.index]}`;
+        }
+      },
+      series: [{
+        type: 'column',
+        name: '{{NAME}}',
+        data: seriesData.map(v => ({
+          y: v,
+          color: v > line ? 'var(--pp-success)' : 'var(--pp-danger)'
+        })),
+        borderRadius: 4
+      }]
+    });
+  } catch(e) {
+    console.error("Chart render failed:", e);
+    document.getElementById('chart').innerHTML = '<div style="text-align:center;padding:40px;color:#ff6b6b;">Chart failed</div>';
+  }
+}
     }
 
     function renderHitrates(record){
