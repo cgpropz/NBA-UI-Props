@@ -2,9 +2,21 @@ name: Update NBA UI Data
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # PP odds every 5 minutes
-    - cron: '0 7 * * *'    # Daily 7:00 AM for gamelogs + DVP
-  workflow_dispatch: {}
+    - cron: '*/5 * * * *'          # PP odds every 5 minutes
+    - cron: '0 7 * * *'            # Legacy daily trigger (kept for safety)
+  workflow_dispatch:
+    inputs:
+      run_gamelogs:
+        description: 'Force run full Gamelogs scrape (Selenium)'
+        required: true
+        default: false
+        type: boolean
+      run_dvp:
+        description: 'Force refresh DVP data'
+        required: true
+        default: false
+        type: boolean
+
   push:
     branches: [ main ]
     paths:
@@ -23,89 +35,79 @@ jobs:
       PP_API_URL: ${{ secrets.PP_API_URL }}
       DVP_API_URL: ${{ secrets.DVP_API_URL }}
       BR_USER_AGENT: ${{ secrets.BR_USER_AGENT }}
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          persist-credentials: true
 
-      - name: Set up Python
+      - name: Set up Python + Chrome
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
-      - name: Install dependencies
-        run: |
+      - run: |
+          sudo apt-get update && sudo apt-get install -y google-chrome-stable
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install requests pandas beautifulsoup4 lxml seleniumbase; fi
+          pip install seleniumbase[undetected] pandas requests beautifulsoup4 lxml
 
-      - name: Update PP odds (every run)
-        run: |
-          python Fetch_PP_Odds.py || true
+      - name: Update PP Odds (always)
+        run: python Fetch_PP_Odds.py || true
 
-      - name: Sync root odds JSON (every run)
+      - name: Sync root odds JSON
         run: |
-          # Keep odds file separate; DO NOT overwrite player props lines
-          if [ -f data/odds/latest.json ]; then
-            cp -f data/odds/latest.json ODDS_LATEST.json;
-          else
-            echo "data/odds/latest.json not found; skipping ODDS_LATEST.json sync";
-          fi
+          [ -f data/odds/latest.json ] && cp -f data/odds/latest.json ODDS_LATEST.json || echo "No latest.json"
 
-      - name: Update gamelogs
+      # MANUAL + DAILY GAMEL0GS TRIGGER
+      - name: Run Full Gamelogs Scrape
+        if: >
+          github.event_name == 'workflow_dispatch' && inputs.run_gamelogs == 'true' ||
+          (github.event_name == 'schedule' && startsWith(github.event.schedule, '0 7'))
         run: |
-          python Gamelogs.py || python Fetch_Gamelogs.py || true
+          echo "Forcing full Gamelogs scrape (manual or daily)..."
+          python Gamelogs.py && echo "Gamelogs scraped!" || (
+            echo "Gamelogs failed → trying backup"
+            python Fetch_Gamelogs.py || true
+          )
 
-      - name: Update DVP data (daily at 7 AM)
-        if: "${{ startsWith(github.event.schedule, '0 7') }}"
-        run: |
-          python dvp_parser.py || true
+      # MANUAL DVP TRIGGER
+      - name: Force DVP Refresh
+        if: github.event_name == 'workflow_dispatch' && inputs.run_dvp == 'true'
+        run: python dvp_parser.py || true
 
-      - name: Refresh DVP if missing or stale (>6h) (every run)
+      # AUTO DVP (daily + stale check)
+      - name: Auto DVP Refresh (daily or stale)
+        if: github.event_name != 'workflow_dispatch' || inputs.run_dvp != 'true'
         run: |
-          set -e
           if [ ! -f nba_dvp_latest.json ]; then
-            echo "DVP file missing → running parser";
-            python dvp_parser.py || true;
+            echo "DVP missing → fetching"
+            python dvp_parser.py || true
           else
-            AGE_HOURS=$(( ( $(date +%s) - $(date -r nba_dvp_latest.json +%s) ) / 3600 ))
-            echo "DVP file age: ${AGE_HOURS}h";
-            if [ "$AGE_HOURS" -ge 6 ]; then
-              echo "DVP stale → running parser";
-              python dvp_parser.py || true;
+            AGE=$(( ($(date +%s) - $(stat -c %Y nba_dvp_latest.json)) / 3600 ))
+            if [ $AGE -ge 6 ]; then
+              echo "DVP stale (${AGE}h) → refreshing"
+              python dvp_parser.py || true
             else
-              echo "DVP fresh (<6h) → keeping current";
+              echo "DVP fresh (${AGE}h) → skipping"
             fi
           fi
 
       - name: Regenerate player pages
         run: |
-          # Use canonical props lines produced by Fetch_PP_Odds.py (NBA_PURE_STANDARD_SINGLE.json)
           PP_LINES_PATH=NBA_PURE_STANDARD_SINGLE.json python UI_DATA_BUILDER_PERFECT.py || true
           python generate_players.py || true
-      - name: Write template change note
-        if: github.event_name == 'push'
-        run: |
-          mkdir -p logs
-          echo "$(date -u +'%Y-%m-%dT%H:%M:%SZ') • template changed via push • run_id=${GITHUB_RUN_ID}" >> logs/update_data.log
 
-      - name: Write run log summary
+      - name: Log summary
         run: |
           mkdir -p logs
-          echo "$(date -u +'%Y-%m-%dT%H:%M:%SZ') • run_id=${GITHUB_RUN_ID} • event=${{ github.event_name }} • ref=${{ github.ref }}" >> logs/update_data.log
-          echo "PP odds updated: $(test -f NBA_PURE_STANDARD_SINGLE.json && echo yes || echo no)" >> logs/update_data.log
-          echo "Cards rebuilt: $(test -f PLAYER_UI_CARDS_PERFECT.json && echo yes || echo no)" >> logs/update_data.log
-          echo "Players regenerated: $(ls -1 players | wc -l) files" >> logs/update_data.log
-          echo "DVP file present: $(test -f nba_dvp_latest.json && echo yes || echo no)" >> logs/update_data.log
+          echo "$(date -u) • ${{ github.event_name }} • run_id=${{ github.run_id }}" >> logs/update_data.log
+          echo "Gamelogs: $( [ -f Full_Gamelogs25.csv ] && echo yes || echo no )" >> logs/update_data.log
+          echo "Players: $(ls -1 players 2>/dev/null | wc -l) files" >> logs/update_data.log
           echo "---" >> logs/update_data.log
 
-      - name: Commit and push changes
+      - name: Commit & push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: automated data refresh"
+          commit_message: "chore: data refresh (gamelogs: ${{ github.event_name == 'workflow_dispatch' && inputs.run_gamelogs == 'true' && 'manual' || 'auto' }})"
           file_pattern: |
-            *.json
+            *.json *.csv
             players/**
-            index.html
-            player-template-new.html
             logs/**
