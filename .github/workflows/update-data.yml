@@ -52,10 +52,9 @@ jobs:
             echo "data/odds/latest.json not found; skipping ODDS_LATEST.json sync";
           fi
 
-      - name: Update gamelogs (7 AM only)
-        if: "${{ startsWith(github.event.schedule, '0 7') }}"
+      - name: Update gamelogs
         run: |
-          python Fetch_Gamelogs.py || python Gamelogs.py || true
+          python Gamelogs.py || python Fetch_Gamelogs.py || true
 
       - name: Update DVP data (daily at 7 AM)
         if: "${{ startsWith(github.event.schedule, '0 7') }}"
