@@ -6,7 +6,7 @@
     "Line": 39.0,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Pascal Siakam",
@@ -15,7 +15,7 @@
     "Line": 36.5,
     "Versus": "SAC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Anthony Edwards",
@@ -24,16 +24,7 @@
     "Line": 34.5,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Julius Randle",
-    "Team": "MIN",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 33.5,
-    "Versus": "PHX",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Anthony Edwards",
@@ -42,7 +33,7 @@
     "Line": 33.5,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "De'Aaron Fox",
@@ -51,7 +42,16 @@
     "Line": 33.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Julius Randle",
+    "Team": "MIN",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 32.5,
+    "Versus": "PHX",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Pascal Siakam",
@@ -60,7 +60,7 @@
     "Line": 32.5,
     "Versus": "SAC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Trey Murphy",
@@ -69,7 +69,7 @@
     "Line": 31.0,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Bennedict Mathurin",
@@ -78,7 +78,7 @@
     "Line": 29.5,
     "Versus": "SAC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Pascal Siakam",
@@ -87,16 +87,7 @@
     "Line": 29.5,
     "Versus": "SAC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Anthony Edwards",
-    "Team": "MIN",
-    "Stat": "Points",
-    "Line": 29.5,
-    "Versus": "PHX",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "De'Aaron Fox",
@@ -105,7 +96,16 @@
     "Line": 29.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Anthony Edwards",
+    "Team": "MIN",
+    "Stat": "Points",
+    "Line": 28.5,
+    "Versus": "PHX",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Dillon Brooks",
@@ -114,34 +114,7 @@
     "Line": 28.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Zach LaVine",
-    "Team": "SAC",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 27.5,
-    "Versus": "IND",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Trey Murphy",
-    "Team": "NOP",
-    "Stat": "Pts+Rebs",
-    "Line": 27.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "De'Aaron Fox",
-    "Team": "SAS",
-    "Stat": "Pts+Rebs",
-    "Line": 27.5,
-    "Versus": "NOP",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Russell Westbrook",
@@ -150,16 +123,16 @@
     "Line": 27.5,
     "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
-    "Name": "Julius Randle",
-    "Team": "MIN",
+    "Name": "De'Aaron Fox",
+    "Team": "SAS",
     "Stat": "Pts+Rebs",
     "Line": 27.5,
-    "Versus": "PHX",
+    "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Bennedict Mathurin",
@@ -168,16 +141,34 @@
     "Line": 27.5,
     "Versus": "SAC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
-    "Name": "DeMar DeRozan",
+    "Name": "Julius Randle",
+    "Team": "MIN",
+    "Stat": "Pts+Rebs",
+    "Line": 27.5,
+    "Versus": "PHX",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Zach LaVine",
     "Team": "SAC",
     "Stat": "Pts+Rebs+Asts",
-    "Line": 26.5,
+    "Line": 27.5,
     "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Trey Murphy",
+    "Team": "NOP",
+    "Stat": "Pts+Rebs",
+    "Line": 27.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Andrew Nembhard",
@@ -186,7 +177,7 @@
     "Line": 26.5,
     "Versus": "SAC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Stephon Castle",
@@ -195,7 +186,16 @@
     "Line": 26.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "DeMar DeRozan",
+    "Team": "SAC",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 26.5,
+    "Versus": "IND",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Dillon Brooks",
@@ -204,25 +204,7 @@
     "Line": 26.0,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Julius Randle",
-    "Team": "MIN",
-    "Stat": "Pts+Asts",
-    "Line": 25.5,
-    "Versus": "PHX",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Saddiq Bey",
-    "Team": "NOP",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 25.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Collin Gillespie",
@@ -231,7 +213,16 @@
     "Line": 25.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Julius Randle",
+    "Team": "MIN",
+    "Stat": "Pts+Asts",
+    "Line": 25.5,
+    "Versus": "PHX",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Pascal Siakam",
@@ -240,7 +231,16 @@
     "Line": 25.5,
     "Versus": "SAC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Saddiq Bey",
+    "Team": "NOP",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 25.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Trey Murphy",
@@ -249,7 +249,7 @@
     "Line": 25.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Dillon Brooks",
@@ -258,7 +258,7 @@
     "Line": 25.0,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Keegan Murray",
@@ -267,16 +267,7 @@
     "Line": 24.5,
     "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Zach LaVine",
-    "Team": "SAC",
-    "Stat": "Pts+Asts",
-    "Line": 24.5,
-    "Versus": "IND",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Zach LaVine",
@@ -285,7 +276,16 @@
     "Line": 24.5,
     "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Zach LaVine",
+    "Team": "SAC",
+    "Stat": "Pts+Asts",
+    "Line": 24.5,
+    "Versus": "IND",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Derik Queen",
@@ -294,7 +294,7 @@
     "Line": 24.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jeremiah Fears",
@@ -303,16 +303,7 @@
     "Line": 24.0,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "De'Aaron Fox",
-    "Team": "SAS",
-    "Stat": "Points",
-    "Line": 23.5,
-    "Versus": "NOP",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Bennedict Mathurin",
@@ -321,7 +312,16 @@
     "Line": 23.5,
     "Versus": "SAC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "De'Aaron Fox",
+    "Team": "SAS",
+    "Stat": "Points",
+    "Line": 23.5,
+    "Versus": "NOP",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Andrew Nembhard",
@@ -330,7 +330,7 @@
     "Line": 23.5,
     "Versus": "SAC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Naz Reid",
@@ -339,25 +339,16 @@
     "Line": 23.0,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "DeMar DeRozan",
-    "Team": "SAC",
-    "Stat": "Pts+Asts",
-    "Line": 22.5,
-    "Versus": "IND",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Keegan Murray",
     "Team": "SAC",
     "Stat": "Pts+Rebs",
     "Line": 22.5,
     "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Rudy Gobert",
@@ -366,16 +357,7 @@
     "Line": 22.5,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Dillon Brooks",
-    "Team": "PHX",
-    "Stat": "Points",
-    "Line": 22.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Grayson Allen",
@@ -384,7 +366,16 @@
     "Line": 22.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Dillon Brooks",
+    "Team": "PHX",
+    "Stat": "Points",
+    "Line": 22.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Devin Vassell",
@@ -393,16 +384,25 @@
     "Line": 22.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "DeMar DeRozan",
+    "Team": "SAC",
+    "Stat": "Pts+Asts",
+    "Line": 22.5,
+    "Versus": "IND",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Keegan Murray",
     "Team": "SAC",
     "Stat": "Pts+Rebs",
     "Line": 22.5,
     "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Saddiq Bey",
@@ -411,25 +411,7 @@
     "Line": 22.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Stephon Castle",
-    "Team": "SAS",
-    "Stat": "Pts+Asts",
-    "Line": 21.5,
-    "Versus": "NOP",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Zach LaVine",
-    "Team": "SAC",
-    "Stat": "Points",
-    "Line": 21.5,
-    "Versus": "IND",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Trey Murphy",
@@ -438,7 +420,25 @@
     "Line": 21.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Stephon Castle",
+    "Team": "SAS",
+    "Stat": "Pts+Asts",
+    "Line": 21.5,
+    "Versus": "NOP",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Mark Williams",
+    "Team": "PHX",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 21.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Collin Gillespie",
@@ -447,7 +447,7 @@
     "Line": 21.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Bennedict Mathurin",
@@ -456,16 +456,16 @@
     "Line": 21.5,
     "Versus": "SAC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
-    "Name": "Mark Williams",
-    "Team": "PHX",
-    "Stat": "Pts+Rebs+Asts",
+    "Name": "Zach LaVine",
+    "Team": "SAC",
+    "Stat": "Points",
     "Line": 21.5,
-    "Versus": "MIN",
+    "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Donte DiVincenzo",
@@ -474,7 +474,7 @@
     "Line": 21.5,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jaden McDaniels",
@@ -483,16 +483,7 @@
     "Line": 21.0,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Mark Williams",
-    "Team": "PHX",
-    "Stat": "Pts+Rebs",
-    "Line": 20.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Naz Reid",
@@ -501,7 +492,7 @@
     "Line": 20.5,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Julius Randle",
@@ -510,16 +501,7 @@
     "Line": 20.5,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Grayson Allen",
-    "Team": "PHX",
-    "Stat": "Pts+Asts",
-    "Line": 20.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jeremiah Fears",
@@ -528,7 +510,16 @@
     "Line": 20.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Mark Williams",
+    "Team": "PHX",
+    "Stat": "Pts+Rebs",
+    "Line": 20.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Russell Westbrook",
@@ -537,7 +528,7 @@
     "Line": 20.5,
     "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Russell Westbrook",
@@ -546,7 +537,7 @@
     "Line": 20.5,
     "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Stephon Castle",
@@ -555,7 +546,7 @@
     "Line": 20.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Rudy Gobert",
@@ -564,7 +555,7 @@
     "Line": 20.0,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Collin Gillespie",
@@ -573,7 +564,7 @@
     "Line": 20.0,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Derik Queen",
@@ -582,16 +573,7 @@
     "Line": 20.0,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Devin Vassell",
-    "Team": "SAS",
-    "Stat": "Pts+Rebs",
-    "Line": 20.0,
-    "Versus": "NOP",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jeremiah Fears",
@@ -600,7 +582,16 @@
     "Line": 20.0,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Devin Vassell",
+    "Team": "SAS",
+    "Stat": "Pts+Rebs",
+    "Line": 20.0,
+    "Versus": "NOP",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Grayson Allen",
@@ -609,25 +600,7 @@
     "Line": 19.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Maxime Raynaud",
-    "Team": "SAC",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 19.5,
-    "Versus": "IND",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Keldon Johnson",
-    "Team": "SAS",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 19.5,
-    "Versus": "NOP",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Saddiq Bey",
@@ -636,16 +609,34 @@
     "Line": 19.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
-    "Name": "DeMar DeRozan",
+    "Name": "Grayson Allen",
+    "Team": "PHX",
+    "Stat": "Pts+Asts",
+    "Line": 19.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Keldon Johnson",
+    "Team": "SAS",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 19.5,
+    "Versus": "NOP",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Maxime Raynaud",
     "Team": "SAC",
-    "Stat": "Points",
+    "Stat": "Pts+Rebs+Asts",
     "Line": 19.5,
     "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Andrew Nembhard",
@@ -654,16 +645,7 @@
     "Line": 19.5,
     "Versus": "SAC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Maxime Raynaud",
-    "Team": "SAC",
-    "Stat": "Pts+Rebs",
-    "Line": 18.5,
-    "Versus": "IND",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jay Huff",
@@ -672,16 +654,16 @@
     "Line": 18.5,
     "Versus": "SAC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
-    "Name": "Keldon Johnson",
-    "Team": "SAS",
-    "Stat": "Pts+Rebs",
+    "Name": "DeMar DeRozan",
+    "Team": "SAC",
+    "Stat": "Points",
     "Line": 18.5,
-    "Versus": "NOP",
+    "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Harrison Barnes",
@@ -690,7 +672,25 @@
     "Line": 18.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Keldon Johnson",
+    "Team": "SAS",
+    "Stat": "Pts+Rebs",
+    "Line": 18.5,
+    "Versus": "NOP",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Maxime Raynaud",
+    "Team": "SAC",
+    "Stat": "Pts+Rebs",
+    "Line": 18.5,
+    "Versus": "IND",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jaden McDaniels",
@@ -699,16 +699,7 @@
     "Line": 18.5,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Royce O'Neale",
-    "Team": "PHX",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 18.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Luke Kornet",
@@ -717,52 +708,16 @@
     "Line": 18.0,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
-    "Name": "Dylan Harper",
-    "Team": "SAS",
-    "Stat": "Pts+Asts",
-    "Line": 17.5,
-    "Versus": "NOP",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Donte DiVincenzo",
-    "Team": "MIN",
-    "Stat": "Pts+Rebs",
-    "Line": 17.5,
-    "Versus": "PHX",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Devin Vassell",
-    "Team": "SAS",
-    "Stat": "Pts+Asts",
-    "Line": 17.5,
-    "Versus": "NOP",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Keegan Murray",
-    "Team": "SAC",
-    "Stat": "Pts+Asts",
-    "Line": 17.5,
-    "Versus": "IND",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "T.J. McConnell",
-    "Team": "IND",
+    "Name": "Royce O'Neale",
+    "Team": "PHX",
     "Stat": "Pts+Rebs+Asts",
     "Line": 17.5,
-    "Versus": "SAC",
+    "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Naz Reid",
@@ -771,7 +726,52 @@
     "Line": 17.5,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Donte DiVincenzo",
+    "Team": "MIN",
+    "Stat": "Pts+Rebs",
+    "Line": 17.5,
+    "Versus": "PHX",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "T.J. McConnell",
+    "Team": "IND",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 17.5,
+    "Versus": "SAC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Keegan Murray",
+    "Team": "SAC",
+    "Stat": "Pts+Asts",
+    "Line": 17.5,
+    "Versus": "IND",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Dylan Harper",
+    "Team": "SAS",
+    "Stat": "Pts+Asts",
+    "Line": 17.5,
+    "Versus": "NOP",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Devin Vassell",
+    "Team": "SAS",
+    "Stat": "Pts+Asts",
+    "Line": 17.5,
+    "Versus": "NOP",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Saddiq Bey",
@@ -780,16 +780,70 @@
     "Line": 17.0,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
-    "Name": "Donte DiVincenzo",
-    "Team": "MIN",
+    "Name": "Jeremiah Fears",
+    "Team": "NOP",
+    "Stat": "Points",
+    "Line": 16.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Dylan Harper",
+    "Team": "SAS",
+    "Stat": "Pts+Rebs",
+    "Line": 16.5,
+    "Versus": "NOP",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Devin Vassell",
+    "Team": "SAS",
+    "Stat": "Points",
+    "Line": 16.5,
+    "Versus": "NOP",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Derik Queen",
+    "Team": "NOP",
     "Stat": "Pts+Asts",
     "Line": 16.5,
-    "Versus": "PHX",
+    "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Harrison Barnes",
+    "Team": "SAS",
+    "Stat": "Pts+Rebs",
+    "Line": 16.5,
+    "Versus": "NOP",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Jay Huff",
+    "Team": "IND",
+    "Stat": "Pts+Rebs",
+    "Line": 16.5,
+    "Versus": "SAC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Andrew Nembhard",
+    "Team": "IND",
+    "Stat": "Points",
+    "Line": 16.5,
+    "Versus": "SAC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Grayson Allen",
@@ -798,79 +852,16 @@
     "Line": 16.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
-    "Name": "Collin Gillespie",
-    "Team": "PHX",
-    "Stat": "Points",
-    "Line": 16.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Jeremiah Fears",
-    "Team": "NOP",
-    "Stat": "Points",
-    "Line": 16.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Harrison Barnes",
-    "Team": "SAS",
-    "Stat": "Pts+Rebs",
-    "Line": 16.5,
-    "Versus": "NOP",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Dylan Harper",
-    "Team": "SAS",
-    "Stat": "Pts+Rebs",
-    "Line": 16.5,
-    "Versus": "NOP",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Andrew Nembhard",
-    "Team": "IND",
-    "Stat": "Points",
-    "Line": 16.5,
-    "Versus": "SAC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Jay Huff",
-    "Team": "IND",
-    "Stat": "Pts+Rebs",
-    "Line": 16.5,
-    "Versus": "SAC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Devin Vassell",
-    "Team": "SAS",
-    "Stat": "Points",
-    "Line": 16.5,
-    "Versus": "NOP",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Derik Queen",
-    "Team": "NOP",
+    "Name": "Donte DiVincenzo",
+    "Team": "MIN",
     "Stat": "Pts+Asts",
     "Line": 16.5,
-    "Versus": "SAS",
+    "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jaden McDaniels",
@@ -879,16 +870,16 @@
     "Line": 16.0,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
-    "Name": "Stephon Castle",
-    "Team": "SAS",
+    "Name": "Collin Gillespie",
+    "Team": "PHX",
     "Stat": "Points",
     "Line": 15.5,
-    "Versus": "NOP",
+    "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Luke Kornet",
@@ -897,7 +888,7 @@
     "Line": 15.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Keegan Murray",
@@ -906,7 +897,25 @@
     "Line": 15.5,
     "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Royce O'Neale",
+    "Team": "PHX",
+    "Stat": "Pts+Rebs",
+    "Line": 15.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Stephon Castle",
+    "Team": "SAS",
+    "Stat": "Points",
+    "Line": 15.5,
+    "Versus": "NOP",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "T.J. McConnell",
@@ -915,7 +924,7 @@
     "Line": 14.5,
     "Versus": "SAC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Harrison Barnes",
@@ -924,7 +933,7 @@
     "Line": 14.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Naz Reid",
@@ -933,16 +942,7 @@
     "Line": 14.5,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Royce O'Neale",
-    "Team": "PHX",
-    "Stat": "Pts+Rebs",
-    "Line": 14.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Russell Westbrook",
@@ -951,7 +951,7 @@
     "Line": 14.5,
     "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jose Alvarado",
@@ -960,7 +960,7 @@
     "Line": 14.0,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Dylan Harper",
@@ -969,7 +969,16 @@
     "Line": 14.0,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Julian Champagnie",
+    "Team": "SAS",
+    "Stat": "Pts+Rebs",
+    "Line": 13.5,
+    "Versus": "NOP",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jaden McDaniels",
@@ -978,7 +987,7 @@
     "Line": 13.5,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Russell Westbrook",
@@ -987,16 +996,7 @@
     "Line": 13.5,
     "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Keldon Johnson",
-    "Team": "SAS",
-    "Stat": "Pts+Asts",
-    "Line": 13.5,
-    "Versus": "NOP",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Malik Monk",
@@ -1005,16 +1005,16 @@
     "Line": 13.5,
     "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
-    "Name": "Julian Champagnie",
+    "Name": "Keldon Johnson",
     "Team": "SAS",
-    "Stat": "Pts+Rebs",
-    "Line": 13.0,
+    "Stat": "Pts+Asts",
+    "Line": 13.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Donte DiVincenzo",
@@ -1023,16 +1023,16 @@
     "Line": 13.0,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
-    "Name": "Jay Huff",
-    "Team": "IND",
-    "Stat": "Pts+Asts",
+    "Name": "Harrison Barnes",
+    "Team": "SAS",
+    "Stat": "Points",
     "Line": 12.5,
-    "Versus": "SAC",
+    "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Yves Missi",
@@ -1041,16 +1041,7 @@
     "Line": 12.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Harrison Barnes",
-    "Team": "SAS",
-    "Stat": "Points",
-    "Line": 12.5,
-    "Versus": "NOP",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Herbert Jones",
@@ -1059,43 +1050,7 @@
     "Line": 12.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Isaiah Jackson",
-    "Team": "IND",
-    "Stat": "Pts+Rebs",
-    "Line": 12.5,
-    "Versus": "SAC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Mark Williams",
-    "Team": "PHX",
-    "Stat": "Pts+Asts",
-    "Line": 12.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Royce O'Neale",
-    "Team": "PHX",
-    "Stat": "Pts+Asts",
-    "Line": 12.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Julius Randle",
-    "Team": "MIN",
-    "Stat": "Rebs+Asts",
-    "Line": 12.5,
-    "Versus": "PHX",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Derik Queen",
@@ -1104,7 +1059,52 @@
     "Line": 12.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Rudy Gobert",
+    "Team": "MIN",
+    "Stat": "Rebs+Asts",
+    "Line": 12.5,
+    "Versus": "PHX",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Royce O'Neale",
+    "Team": "PHX",
+    "Stat": "Pts+Asts",
+    "Line": 12.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Julius Randle",
+    "Team": "MIN",
+    "Stat": "Rebs+Asts",
+    "Line": 12.5,
+    "Versus": "PHX",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Mark Williams",
+    "Team": "PHX",
+    "Stat": "Pts+Asts",
+    "Line": 12.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Jay Huff",
+    "Team": "IND",
+    "Stat": "Pts+Asts",
+    "Line": 12.5,
+    "Versus": "SAC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Maxime Raynaud",
@@ -1113,7 +1113,16 @@
     "Line": 12.5,
     "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Isaiah Jackson",
+    "Team": "IND",
+    "Stat": "Pts+Rebs",
+    "Line": 12.5,
+    "Versus": "SAC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Mark Williams",
@@ -1122,16 +1131,7 @@
     "Line": 12.0,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Maxime Raynaud",
-    "Team": "SAC",
-    "Stat": "Points",
-    "Line": 11.5,
-    "Versus": "IND",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Pascal Siakam",
@@ -1140,7 +1140,25 @@
     "Line": 11.5,
     "Versus": "SAC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Maxime Raynaud",
+    "Team": "SAC",
+    "Stat": "Points",
+    "Line": 11.5,
+    "Versus": "IND",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Ryan Dunn",
+    "Team": "PHX",
+    "Stat": "Pts+Rebs",
+    "Line": 11.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Derik Queen",
@@ -1149,7 +1167,7 @@
     "Line": 11.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Keldon Johnson",
@@ -1158,7 +1176,7 @@
     "Line": 11.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jose Alvarado",
@@ -1167,16 +1185,7 @@
     "Line": 11.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Ryan Dunn",
-    "Team": "PHX",
-    "Stat": "Pts+Rebs",
-    "Line": 11.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jose Alvarado",
@@ -1185,7 +1194,7 @@
     "Line": 11.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Stephon Castle",
@@ -1194,7 +1203,7 @@
     "Line": 10.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Herbert Jones",
@@ -1203,16 +1212,7 @@
     "Line": 10.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Luke Kornet",
-    "Team": "SAS",
-    "Stat": "Pts+Asts",
-    "Line": 10.5,
-    "Versus": "NOP",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Herbert Jones",
@@ -1221,7 +1221,7 @@
     "Line": 10.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jay Huff",
@@ -1230,7 +1230,7 @@
     "Line": 10.5,
     "Versus": "SAC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Royce O'Neale",
@@ -1239,7 +1239,43 @@
     "Line": 10.0,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "De'Aaron Fox",
+    "Team": "SAS",
+    "Stat": "Rebs+Asts",
+    "Line": 9.5,
+    "Versus": "NOP",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Mark Williams",
+    "Team": "PHX",
+    "Stat": "Rebs+Asts",
+    "Line": 9.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Anthony Edwards",
+    "Team": "MIN",
+    "Stat": "Rebs+Asts",
+    "Line": 9.5,
+    "Versus": "PHX",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Julian Champagnie",
+    "Team": "SAS",
+    "Stat": "Pts+Asts",
+    "Line": 9.5,
+    "Versus": "NOP",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "T.J. McConnell",
@@ -1248,61 +1284,25 @@
     "Line": 9.5,
     "Versus": "SAC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Anthony Edwards",
-    "Team": "MIN",
-    "Stat": "Rebs+Asts",
-    "Line": 9.5,
-    "Versus": "PHX",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Mark Williams",
-    "Team": "PHX",
-    "Stat": "Rebs+Asts",
-    "Line": 9.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Julian Champagnie",
-    "Team": "SAS",
-    "Stat": "Pts+Asts",
-    "Line": 9.5,
-    "Versus": "NOP",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "De'Aaron Fox",
-    "Team": "SAS",
-    "Stat": "Rebs+Asts",
-    "Line": 9.5,
-    "Versus": "NOP",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Julian Champagnie",
     "Team": "SAS",
     "Stat": "Points",
-    "Line": 8.5,
+    "Line": 9.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
-    "Name": "Maxime Raynaud",
-    "Team": "SAC",
-    "Stat": "Rebs+Asts",
+    "Name": "Mark Williams",
+    "Team": "PHX",
+    "Stat": "Rebounds",
     "Line": 8.5,
-    "Versus": "IND",
+    "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jose Alvarado",
@@ -1311,7 +1311,16 @@
     "Line": 8.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Maxime Raynaud",
+    "Team": "SAC",
+    "Stat": "Rebs+Asts",
+    "Line": 8.5,
+    "Versus": "IND",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Saddiq Bey",
@@ -1320,7 +1329,7 @@
     "Line": 8.0,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Luke Kornet",
@@ -1329,7 +1338,52 @@
     "Line": 8.0,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Jeremiah Fears",
+    "Team": "NOP",
+    "Stat": "Rebs+Asts",
+    "Line": 7.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Pascal Siakam",
+    "Team": "IND",
+    "Stat": "Rebounds",
+    "Line": 7.5,
+    "Versus": "SAC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Herbert Jones",
+    "Team": "NOP",
+    "Stat": "Points",
+    "Line": 7.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Donte DiVincenzo",
+    "Team": "MIN",
+    "Stat": "Rebs+Asts",
+    "Line": 7.5,
+    "Versus": "PHX",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Isaiah Jackson",
+    "Team": "IND",
+    "Stat": "Points",
+    "Line": 7.5,
+    "Versus": "SAC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Mike Conley",
@@ -1338,43 +1392,16 @@
     "Line": 7.5,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
-    "Name": "Jeremiah Fears",
-    "Team": "NOP",
-    "Stat": "Rebs+Asts",
-    "Line": 7.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Isaiah Jackson",
-    "Team": "IND",
-    "Stat": "Points",
-    "Line": 7.5,
-    "Versus": "SAC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Pascal Siakam",
-    "Team": "IND",
+    "Name": "Keldon Johnson",
+    "Team": "SAS",
     "Stat": "Rebounds",
-    "Line": 7.5,
-    "Versus": "SAC",
+    "Line": 6.5,
+    "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Herbert Jones",
-    "Team": "NOP",
-    "Stat": "Points",
-    "Line": 7.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Keegan Murray",
@@ -1383,16 +1410,7 @@
     "Line": 6.5,
     "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Keldon Johnson",
-    "Team": "SAS",
-    "Stat": "Rebounds",
-    "Line": 6.5,
-    "Versus": "NOP",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Ryan Dunn",
@@ -1401,7 +1419,7 @@
     "Line": 6.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jordan Hawkins",
@@ -1410,7 +1428,7 @@
     "Line": 6.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Stephon Castle",
@@ -1419,34 +1437,7 @@
     "Line": 5.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Naz Reid",
-    "Team": "MIN",
-    "Stat": "Rebounds",
-    "Line": 5.5,
-    "Versus": "PHX",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Dillon Brooks",
-    "Team": "PHX",
-    "Stat": "Rebs+Asts",
-    "Line": 5.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Julian Champagnie",
-    "Team": "SAS",
-    "Stat": "Rebs+Asts",
-    "Line": 5.5,
-    "Versus": "NOP",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "De'Aaron Fox",
@@ -1455,7 +1446,34 @@
     "Line": 5.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Dillon Brooks",
+    "Team": "PHX",
+    "Stat": "Rebs+Asts",
+    "Line": 5.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Naz Reid",
+    "Team": "MIN",
+    "Stat": "Rebounds",
+    "Line": 5.5,
+    "Versus": "PHX",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Julius Randle",
+    "Team": "MIN",
+    "Stat": "Assists",
+    "Line": 5.0,
+    "Versus": "PHX",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Stephon Castle",
@@ -1464,25 +1482,16 @@
     "Line": 5.0,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
-    "Name": "Julius Randle",
-    "Team": "MIN",
-    "Stat": "Assists",
-    "Line": 5.0,
-    "Versus": "PHX",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Jaden McDaniels",
-    "Team": "MIN",
-    "Stat": "Rebounds",
+    "Name": "Herbert Jones",
+    "Team": "NOP",
+    "Stat": "Rebs+Asts",
     "Line": 4.5,
-    "Versus": "PHX",
+    "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Oso Ighodaro",
@@ -1491,7 +1500,25 @@
     "Line": 4.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Jaden McDaniels",
+    "Team": "MIN",
+    "Stat": "Rebounds",
+    "Line": 4.5,
+    "Versus": "PHX",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Julian Champagnie",
+    "Team": "SAS",
+    "Stat": "Rebounds",
+    "Line": 4.5,
+    "Versus": "NOP",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Ryan Dunn",
@@ -1500,25 +1527,7 @@
     "Line": 4.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Herbert Jones",
-    "Team": "NOP",
-    "Stat": "Rebs+Asts",
-    "Line": 4.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Julian Champagnie",
-    "Team": "SAS",
-    "Stat": "Rebounds",
-    "Line": 4.5,
-    "Versus": "NOP",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Collin Gillespie",
@@ -1527,16 +1536,7 @@
     "Line": 4.0,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "DeMar DeRozan",
-    "Team": "SAC",
-    "Stat": "Rebounds",
-    "Line": 3.5,
-    "Versus": "IND",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "DeMar DeRozan",
@@ -1545,7 +1545,16 @@
     "Line": 3.5,
     "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "DeMar DeRozan",
+    "Team": "SAC",
+    "Stat": "Rebounds",
+    "Line": 3.5,
+    "Versus": "IND",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jeremiah Fears",
@@ -1554,16 +1563,7 @@
     "Line": 3.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Trey Murphy",
-    "Team": "NOP",
-    "Stat": "Assists",
-    "Line": 3.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Micah Peavy",
@@ -1572,7 +1572,7 @@
     "Line": 3.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Donte DiVincenzo",
@@ -1581,7 +1581,16 @@
     "Line": 3.5,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Trey Murphy",
+    "Team": "NOP",
+    "Stat": "Assists",
+    "Line": 3.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Zach LaVine",
@@ -1590,43 +1599,7 @@
     "Line": 3.5,
     "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Zach LaVine",
-    "Team": "SAC",
-    "Stat": "3-PT",
-    "Line": 2.5,
-    "Versus": "IND",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Zach LaVine",
-    "Team": "SAC",
-    "Stat": "Assists",
-    "Line": 2.5,
-    "Versus": "IND",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Herbert Jones",
-    "Team": "NOP",
-    "Stat": "Rebounds",
-    "Line": 2.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Jaden McDaniels",
-    "Team": "MIN",
-    "Stat": "Assists",
-    "Line": 2.5,
-    "Versus": "PHX",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jeremiah Fears",
@@ -1635,16 +1608,43 @@
     "Line": 2.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
-    "Name": "Devin Vassell",
-    "Team": "SAS",
+    "Name": "Herbert Jones",
+    "Team": "NOP",
+    "Stat": "Rebounds",
+    "Line": 2.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Zach LaVine",
+    "Team": "SAC",
     "Stat": "3-PT",
     "Line": 2.5,
-    "Versus": "NOP",
+    "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Jaden McDaniels",
+    "Team": "MIN",
+    "Stat": "Assists",
+    "Line": 2.5,
+    "Versus": "PHX",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Zach LaVine",
+    "Team": "SAC",
+    "Stat": "Assists",
+    "Line": 2.5,
+    "Versus": "IND",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Mark Williams",
@@ -1653,7 +1653,7 @@
     "Line": 2.0,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Pascal Siakam",
@@ -1662,16 +1662,7 @@
     "Line": 1.5,
     "Versus": "SAC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Donte DiVincenzo",
-    "Team": "MIN",
-    "Stat": "Turnovers",
-    "Line": 1.5,
-    "Versus": "PHX",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Andrew Nembhard",
@@ -1680,7 +1671,7 @@
     "Line": 1.5,
     "Versus": "SAC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Keldon Johnson",
@@ -1689,7 +1680,7 @@
     "Line": 1.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jose Alvarado",
@@ -1698,7 +1689,7 @@
     "Line": 1.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Trey Murphy",
@@ -1707,16 +1698,16 @@
     "Line": 1.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
-    "Name": "Julius Randle",
+    "Name": "Donte DiVincenzo",
     "Team": "MIN",
-    "Stat": "3-PT",
+    "Stat": "Turnovers",
     "Line": 1.5,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jose Alvarado",
@@ -1725,16 +1716,16 @@
     "Line": 1.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
-    "Name": "Jaden McDaniels",
+    "Name": "Julius Randle",
     "Team": "MIN",
-    "Stat": "Turnovers",
+    "Stat": "3-PT",
     "Line": 1.5,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Dylan Harper",
@@ -1743,7 +1734,7 @@
     "Line": 1.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Harrison Barnes",
@@ -1752,25 +1743,7 @@
     "Line": 1.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Maxime Raynaud",
-    "Team": "SAC",
-    "Stat": "Blocked Shots",
-    "Line": 0.5,
-    "Versus": "IND",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
-  },
-  {
-    "Name": "Isaiah Jackson",
-    "Team": "IND",
-    "Stat": "Dunks",
-    "Line": 0.5,
-    "Versus": "SAC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Zach LaVine",
@@ -1779,7 +1752,25 @@
     "Line": 0.5,
     "Versus": "IND",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Isaiah Jackson",
+    "Team": "IND",
+    "Stat": "Dunks",
+    "Line": 0.5,
+    "Versus": "SAC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
+  },
+  {
+    "Name": "Maxime Raynaud",
+    "Team": "SAC",
+    "Stat": "Blocked Shots",
+    "Line": 0.5,
+    "Versus": "IND",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Anthony Edwards",
@@ -1788,7 +1779,7 @@
     "Line": 0.5,
     "Versus": "PHX",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Jordan Hawkins",
@@ -1797,7 +1788,7 @@
     "Line": 0.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Julian Champagnie",
@@ -1806,7 +1797,7 @@
     "Line": 0.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Micah Peavy",
@@ -1815,7 +1806,7 @@
     "Line": 0.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   },
   {
     "Name": "Keldon Johnson",
@@ -1824,6 +1815,6 @@
     "Line": 0.5,
     "Versus": "NOP",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-08 11:32"
+    "Scraped_At": "2025-12-08 11:45"
   }
 ]
