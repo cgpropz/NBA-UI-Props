@@ -1,102 +1,30 @@
-from playwright.sync_api import sync_playwright
+from seleniumbase import Driver
 import pandas as pd
-from datetime import datetime
-import sys
 
-def current_nba_season_str(today=None):
-    if today is None:
-        today = datetime.now()
-    year = today.year
-    if today.month >= 10:
-        start_year = year
-        end_year = year + 1
-    else:
-        start_year = year - 1
-        end_year = year
-    return f"{start_year}-{str(end_year)[-2:]}"
+url = 'https://www.nba.com/stats/players/boxscores'
 
-nba_season = current_nba_season_str()
-today_str = datetime.now().strftime("%m/%d/%Y")
-nba_url = f"https://www.nba.com/stats/players/boxscores/?Season={nba_season}&SeasonType=Regular%20Season"
+driver = Driver(uc=True, headless=True)
+driver.get(url)
+driver.sleep(5)
 
-def get_boxscores_table(page, timeout=120):
-    selector = 'table[class^="Crom_table"]'
-    page.wait_for_selector(selector, timeout=timeout * 1000)
-    table = page.query_selector(selector)
-    if not table:
-        return None
-    return table.evaluate('node => node.outerHTML')
+driver.wait_for_element('xpath', '/html/body/div[1]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[3]/table')
+driver.sleep(6)
 
-def main():
-    print(f"Detected NBA season: {nba_season} • Scraping up to {today_str}")
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(
-            viewport={"width": 1920, "height": 1080},
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
-            locale="en-US"
-        )
-        page = context.new_page()
+driver.wait_for_element('xpath', '/html/body/div[2]/div[2]/div/div[1]/div/div[2]/div/button').click()
+driver.sleep(1)
 
-        print(f"Loading {nba_url} ...")
-        page.goto(nba_url, timeout=180000)
-        page.wait_for_timeout(12000)
+driver.wait_for_element('xpath', '/html/body/div[1]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select').click()
+driver.sleep(1)
 
-        # Accept privacy/cookie modal
-        for btn_word in ["accept", "agree", "consent"]:
-            try:
-                button = page.query_selector(f'button:has-text("{btn_word}")')
-                if button:
-                    button.click()
-                    print(f"Clicked '{btn_word}' button.")
-                    page.wait_for_timeout(2500)
-                    break
-            except Exception:
-                pass
+driver.wait_for_element('xpath', '/html/body/div[1]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select/option[1]').click()
+driver.sleep(2)
 
-        page.wait_for_timeout(6000)
-        page.evaluate('window.scrollTo(0, document.body.scrollHeight)')
-        page.wait_for_timeout(3000)
+driver.execute_script("window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });")
+driver.sleep(5)
 
-        try:
-            table_html = get_boxscores_table(page, timeout=120)
-            if not table_html:
-                print("ERROR: Could not find NBA boxscores table.", file=sys.stderr)
-                # Print an HTML snippet for debugging
-                print("DEBUG: Dumping first 10,000 chars of page HTML:")
-                print(page.content()[:10000])
-                context.close()
-                browser.close()
-                sys.exit(2)
-            df = pd.read_html(table_html)[0]
-        except Exception as e:
-            print("ERROR locating/parsing the NBA boxscores table.", file=sys.stderr)
-            print(e, file=sys.stderr)
-            print("DEBUG: Dumping first 10,000 chars of page HTML:")
-            print(page.content()[:10000])
-            context.close()
-            browser.close()
-            sys.exit(2)
+table = driver.find_element('xpath','/html/body/div[1]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[3]/table')
 
-        csv_file = "Full_Gamelogs25.csv"
-        json_file = "Player_Gamelogs25.json"
-        try:
-            df.to_csv(csv_file, index=False)
-            df.to_json(json_file, orient="records")
-            print(f"Saved {len(df)} player-game logs to {csv_file} and {json_file}")
-            if len(df) > 0:
-                print("First game in dataset:")
-                print(df.head(1).to_dict(orient="records")[0])
-            else:
-                print("No player-game logs found!")
-        except Exception as e:
-            print("ERROR writing output file.", file=sys.stderr)
-            print(e, file=sys.stderr)
-            context.close()
-            browser.close()
-            sys.exit(2)
-        context.close()
-        browser.close()
-
-if __name__ == "__main__":
-    main()
+df = pd.read_html(table.get_attribute('outerHTML'))[0]
+df.to_csv('Full_Gamelogs25.csv', index=False)
+print("FULL GAMELOGS Data Saved...")   
+print(df)
