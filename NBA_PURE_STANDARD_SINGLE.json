@@ -6,7 +6,7 @@
     "Line": 38.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Karl-Anthony Towns",
@@ -15,7 +15,7 @@
     "Line": 38.0,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Jalen Brunson",
@@ -24,7 +24,7 @@
     "Line": 35.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Karl-Anthony Towns",
@@ -33,7 +33,7 @@
     "Line": 34.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Scottie Barnes",
@@ -42,7 +42,7 @@
     "Line": 33.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Brandon Ingram",
@@ -51,7 +51,7 @@
     "Line": 32.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Desmond Bane",
@@ -60,7 +60,7 @@
     "Line": 32.0,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Jalen Brunson",
@@ -69,16 +69,7 @@
     "Line": 31.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Tyler Herro",
-    "Team": "MIA",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 30.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Paolo Banchero",
@@ -87,7 +78,7 @@
     "Line": 29.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Bam Adebayo",
@@ -96,7 +87,16 @@
     "Line": 29.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Tyler Herro",
+    "Team": "MIA",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 29.5,
+    "Versus": "ORL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Brandon Ingram",
@@ -105,7 +105,7 @@
     "Line": 28.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Jalen Brunson",
@@ -114,16 +114,7 @@
     "Line": 28.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Scottie Barnes",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs",
-    "Line": 28.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Immanuel Quickley",
@@ -132,7 +123,16 @@
     "Line": 28.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Scottie Barnes",
+    "Team": "TOR",
+    "Stat": "Pts+Rebs",
+    "Line": 28.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Brandon Ingram",
@@ -141,7 +141,7 @@
     "Line": 27.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Bam Adebayo",
@@ -150,16 +150,7 @@
     "Line": 27.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Desmond Bane",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs",
-    "Line": 27.5,
-    "Versus": "MIA",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Josh Hart",
@@ -168,7 +159,7 @@
     "Line": 27.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Norman Powell",
@@ -177,7 +168,7 @@
     "Line": 27.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Desmond Bane",
@@ -186,16 +177,7 @@
     "Line": 26.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Paolo Banchero",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs",
-    "Line": 26.5,
-    "Versus": "MIA",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Jalen Suggs",
@@ -204,16 +186,16 @@
     "Line": 26.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
-    "Name": "Karl-Anthony Towns",
-    "Team": "NYK",
-    "Stat": "Pts+Asts",
+    "Name": "Desmond Bane",
+    "Team": "ORL",
+    "Stat": "Pts+Rebs",
     "Line": 26.5,
-    "Versus": "TOR",
+    "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Tyler Herro",
@@ -222,7 +204,25 @@
     "Line": 26.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Paolo Banchero",
+    "Team": "ORL",
+    "Stat": "Pts+Rebs",
+    "Line": 26.5,
+    "Versus": "MIA",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Karl-Anthony Towns",
+    "Team": "NYK",
+    "Stat": "Pts+Asts",
+    "Line": 26.5,
+    "Versus": "TOR",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Scottie Barnes",
@@ -231,7 +231,7 @@
     "Line": 25.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Immanuel Quickley",
@@ -240,7 +240,7 @@
     "Line": 24.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Norman Powell",
@@ -249,7 +249,7 @@
     "Line": 24.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Tyler Herro",
@@ -258,7 +258,7 @@
     "Line": 24.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Norman Powell",
@@ -267,7 +267,7 @@
     "Line": 23.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Karl-Anthony Towns",
@@ -276,7 +276,7 @@
     "Line": 23.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Brandon Ingram",
@@ -285,16 +285,16 @@
     "Line": 23.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
-    "Name": "Jalen Suggs",
+    "Name": "Anthony Black",
     "Team": "ORL",
-    "Stat": "Pts+Asts",
+    "Stat": "Pts+Rebs+Asts",
     "Line": 22.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Desmond Bane",
@@ -303,7 +303,7 @@
     "Line": 22.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Paolo Banchero",
@@ -312,16 +312,7 @@
     "Line": 22.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Jalen Suggs",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs",
-    "Line": 22.5,
-    "Versus": "MIA",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Mikal Bridges",
@@ -330,34 +321,25 @@
     "Line": 22.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
-    "Name": "Anthony Black",
+    "Name": "Jalen Suggs",
     "Team": "ORL",
-    "Stat": "Pts+Rebs+Asts",
+    "Stat": "Pts+Asts",
     "Line": 22.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
-    "Name": "Andrew Wiggins",
-    "Team": "MIA",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 21.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Wendell Carter",
+    "Name": "Jalen Suggs",
     "Team": "ORL",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 21.5,
+    "Stat": "Pts+Rebs",
+    "Line": 22.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Tyler Herro",
@@ -366,7 +348,7 @@
     "Line": 21.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Norman Powell",
@@ -375,7 +357,16 @@
     "Line": 21.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Andrew Wiggins",
+    "Team": "MIA",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 21.5,
+    "Versus": "ORL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Immanuel Quickley",
@@ -384,7 +375,7 @@
     "Line": 21.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Josh Hart",
@@ -393,16 +384,16 @@
     "Line": 21.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
-    "Name": "Scottie Barnes",
-    "Team": "TOR",
-    "Stat": "Points",
-    "Line": 20.5,
-    "Versus": "NYK",
+    "Name": "Wendell Carter",
+    "Team": "ORL",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 21.5,
+    "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Bam Adebayo",
@@ -411,25 +402,16 @@
     "Line": 20.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
-    "Name": "OG Anunoby",
-    "Team": "NYK",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 19.5,
-    "Versus": "TOR",
+    "Name": "Scottie Barnes",
+    "Team": "TOR",
+    "Stat": "Points",
+    "Line": 20.5,
+    "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Wendell Carter",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs",
-    "Line": 19.5,
-    "Versus": "MIA",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Paolo Banchero",
@@ -438,7 +420,7 @@
     "Line": 19.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Anthony Black",
@@ -447,7 +429,7 @@
     "Line": 19.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Jakob Poeltl",
@@ -456,7 +438,25 @@
     "Line": 19.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Wendell Carter",
+    "Team": "ORL",
+    "Stat": "Pts+Rebs",
+    "Line": 19.5,
+    "Versus": "MIA",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "OG Anunoby",
+    "Team": "NYK",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 19.5,
+    "Versus": "TOR",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Josh Hart",
@@ -465,25 +465,7 @@
     "Line": 19.0,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Davion Mitchell",
-    "Team": "MIA",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 18.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Bam Adebayo",
-    "Team": "MIA",
-    "Stat": "Points",
-    "Line": 18.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Andrew Wiggins",
@@ -492,25 +474,25 @@
     "Line": 18.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
-    "Name": "Jaime Jaquez",
+    "Name": "Bam Adebayo",
+    "Team": "MIA",
+    "Stat": "Points",
+    "Line": 18.5,
+    "Versus": "ORL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Davion Mitchell",
     "Team": "MIA",
     "Stat": "Pts+Rebs+Asts",
     "Line": 18.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "OG Anunoby",
-    "Team": "NYK",
-    "Stat": "Pts+Rebs",
-    "Line": 18.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Mikal Bridges",
@@ -519,7 +501,7 @@
     "Line": 18.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Jakob Poeltl",
@@ -528,7 +510,7 @@
     "Line": 18.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Immanuel Quickley",
@@ -537,7 +519,7 @@
     "Line": 18.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Mikal Bridges",
@@ -546,7 +528,16 @@
     "Line": 18.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "OG Anunoby",
+    "Team": "NYK",
+    "Stat": "Pts+Rebs",
+    "Line": 18.5,
+    "Versus": "TOR",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Jalen Suggs",
@@ -555,16 +546,16 @@
     "Line": 18.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
-    "Name": "Anthony Black",
-    "Team": "ORL",
-    "Stat": "Pts+Asts",
-    "Line": 17.5,
-    "Versus": "MIA",
+    "Name": "Jaime Jaquez",
+    "Team": "MIA",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 18.5,
+    "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Kel'el Ware",
@@ -573,16 +564,16 @@
     "Line": 17.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
-    "Name": "Andrew Wiggins",
-    "Team": "MIA",
+    "Name": "Anthony Black",
+    "Team": "ORL",
     "Stat": "Pts+Asts",
-    "Line": 16.5,
-    "Versus": "ORL",
+    "Line": 17.5,
+    "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Kel'el Ware",
@@ -591,7 +582,25 @@
     "Line": 16.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Andrew Wiggins",
+    "Team": "MIA",
+    "Stat": "Pts+Asts",
+    "Line": 16.5,
+    "Versus": "ORL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "OG Anunoby",
+    "Team": "NYK",
+    "Stat": "Pts+Asts",
+    "Line": 15.5,
+    "Versus": "TOR",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Davion Mitchell",
@@ -600,16 +609,7 @@
     "Line": 15.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "OG Anunoby",
-    "Team": "NYK",
-    "Stat": "Pts+Asts",
-    "Line": 15.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Anthony Black",
@@ -618,7 +618,7 @@
     "Line": 14.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Jaime Jaquez",
@@ -627,25 +627,7 @@
     "Line": 14.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Tristan Silva",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 14.5,
-    "Versus": "MIA",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Mikal Bridges",
-    "Team": "NYK",
-    "Stat": "Points",
-    "Line": 14.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Karl-Anthony Towns",
@@ -654,7 +636,7 @@
     "Line": 14.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Jamal Shead",
@@ -663,7 +645,7 @@
     "Line": 14.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "OG Anunoby",
@@ -672,7 +654,25 @@
     "Line": 14.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Mikal Bridges",
+    "Team": "NYK",
+    "Stat": "Points",
+    "Line": 14.5,
+    "Versus": "TOR",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Tristan Silva",
+    "Team": "ORL",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 14.5,
+    "Versus": "MIA",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Wendell Carter",
@@ -681,7 +681,7 @@
     "Line": 13.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Tristan Silva",
@@ -690,16 +690,7 @@
     "Line": 13.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Jaime Jaquez",
-    "Team": "MIA",
-    "Stat": "Pts+Asts",
-    "Line": 13.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Andrew Wiggins",
@@ -708,16 +699,7 @@
     "Line": 13.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Sandro Mamukelashvili",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs",
-    "Line": 13.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Scottie Barnes",
@@ -726,16 +708,25 @@
     "Line": 13.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
-    "Name": "Jamal Shead",
+    "Name": "Sandro Mamukelashvili",
     "Team": "TOR",
-    "Stat": "Pts+Asts",
-    "Line": 12.5,
+    "Stat": "Pts+Rebs",
+    "Line": 13.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Jaime Jaquez",
+    "Team": "MIA",
+    "Stat": "Pts+Asts",
+    "Line": 13.5,
+    "Versus": "ORL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Goga Bitadze",
@@ -744,7 +735,7 @@
     "Line": 12.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Josh Hart",
@@ -753,16 +744,25 @@
     "Line": 12.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
-    "Name": "Karl-Anthony Towns",
+    "Name": "Jamal Shead",
+    "Team": "TOR",
+    "Stat": "Pts+Asts",
+    "Line": 12.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Jordan Clarkson",
     "Team": "NYK",
-    "Stat": "Rebounds",
+    "Stat": "Pts+Rebs",
     "Line": 11.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Jakob Poeltl",
@@ -771,25 +771,7 @@
     "Line": 11.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Jordan Clarkson",
-    "Team": "NYK",
-    "Stat": "Pts+Rebs",
-    "Line": 11.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Wendell Carter",
-    "Team": "ORL",
-    "Stat": "Points",
-    "Line": 11.5,
-    "Versus": "MIA",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Goga Bitadze",
@@ -798,7 +780,16 @@
     "Line": 11.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Wendell Carter",
+    "Team": "ORL",
+    "Stat": "Points",
+    "Line": 11.5,
+    "Versus": "MIA",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Bam Adebayo",
@@ -807,25 +798,16 @@
     "Line": 11.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
-    "Name": "Jakob Poeltl",
-    "Team": "TOR",
-    "Stat": "Rebs+Asts",
-    "Line": 10.5,
-    "Versus": "NYK",
+    "Name": "Karl-Anthony Towns",
+    "Team": "NYK",
+    "Stat": "Rebounds",
+    "Line": 11.5,
+    "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Jaime Jaquez",
-    "Team": "MIA",
-    "Stat": "Points",
-    "Line": 10.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Paolo Banchero",
@@ -834,7 +816,25 @@
     "Line": 10.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Jaime Jaquez",
+    "Team": "MIA",
+    "Stat": "Points",
+    "Line": 10.5,
+    "Versus": "ORL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Jakob Poeltl",
+    "Team": "TOR",
+    "Stat": "Rebs+Asts",
+    "Line": 10.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Davion Mitchell",
@@ -843,25 +843,7 @@
     "Line": 10.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Ja'Kobe Walter",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs",
-    "Line": 9.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Jalen Brunson",
-    "Team": "NYK",
-    "Stat": "Rebs+Asts",
-    "Line": 9.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Jakob Poeltl",
@@ -870,7 +852,25 @@
     "Line": 9.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Ja'Kobe Walter",
+    "Team": "TOR",
+    "Stat": "Pts+Rebs",
+    "Line": 9.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Desmond Bane",
+    "Team": "ORL",
+    "Stat": "Rebs+Asts",
+    "Line": 9.5,
+    "Versus": "MIA",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Bam Adebayo",
@@ -879,16 +879,7 @@
     "Line": 9.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Kel'el Ware",
-    "Team": "MIA",
-    "Stat": "Rebs+Asts",
-    "Line": 9.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Wendell Carter",
@@ -897,7 +888,16 @@
     "Line": 9.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Kel'el Ware",
+    "Team": "MIA",
+    "Stat": "Rebs+Asts",
+    "Line": 9.5,
+    "Versus": "ORL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Jordan Clarkson",
@@ -906,25 +906,16 @@
     "Line": 9.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
-    "Name": "Tristan Silva",
-    "Team": "ORL",
-    "Stat": "Points",
-    "Line": 8.5,
-    "Versus": "MIA",
+    "Name": "Jalen Brunson",
+    "Team": "NYK",
+    "Stat": "Rebs+Asts",
+    "Line": 9.5,
+    "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Davion Mitchell",
-    "Team": "MIA",
-    "Stat": "Points",
-    "Line": 8.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Jalen Suggs",
@@ -933,7 +924,16 @@
     "Line": 8.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Tristan Silva",
+    "Team": "ORL",
+    "Stat": "Points",
+    "Line": 8.5,
+    "Versus": "MIA",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Jamal Shead",
@@ -942,7 +942,7 @@
     "Line": 8.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Josh Hart",
@@ -951,7 +951,7 @@
     "Line": 8.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Sandro Mamukelashvili",
@@ -960,7 +960,16 @@
     "Line": 8.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Davion Mitchell",
+    "Team": "MIA",
+    "Stat": "Points",
+    "Line": 8.5,
+    "Versus": "ORL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Wendell Carter",
@@ -969,7 +978,7 @@
     "Line": 8.0,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Mikal Bridges",
@@ -978,25 +987,7 @@
     "Line": 7.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Scottie Barnes",
-    "Team": "TOR",
-    "Stat": "Rebounds",
-    "Line": 7.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Ochai Agbaji",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs",
-    "Line": 7.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Davion Mitchell",
@@ -1005,7 +996,25 @@
     "Line": 7.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Andrew Wiggins",
+    "Team": "MIA",
+    "Stat": "Rebs+Asts",
+    "Line": 7.5,
+    "Versus": "ORL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Kel'el Ware",
+    "Team": "MIA",
+    "Stat": "Points",
+    "Line": 7.5,
+    "Versus": "ORL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Goga Bitadze",
@@ -1014,52 +1023,25 @@
     "Line": 7.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
-    "Name": "Andrew Wiggins",
-    "Team": "MIA",
-    "Stat": "Rebs+Asts",
-    "Line": 7.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Kel'el Ware",
-    "Team": "MIA",
-    "Stat": "Points",
-    "Line": 7.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Ja'Kobe Walter",
+    "Name": "Ochai Agbaji",
     "Team": "TOR",
-    "Stat": "Points",
-    "Line": 6.5,
+    "Stat": "Pts+Rebs",
+    "Line": 7.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
-    "Name": "Jalen Brunson",
-    "Team": "NYK",
-    "Stat": "Assists",
-    "Line": 6.5,
-    "Versus": "TOR",
+    "Name": "Scottie Barnes",
+    "Team": "TOR",
+    "Stat": "Rebounds",
+    "Line": 7.5,
+    "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Goga Bitadze",
-    "Team": "ORL",
-    "Stat": "Rebs+Asts",
-    "Line": 6.5,
-    "Versus": "MIA",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Immanuel Quickley",
@@ -1068,7 +1050,34 @@
     "Line": 6.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Ja'Kobe Walter",
+    "Team": "TOR",
+    "Stat": "Points",
+    "Line": 6.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Jalen Brunson",
+    "Team": "NYK",
+    "Stat": "Assists",
+    "Line": 6.5,
+    "Versus": "TOR",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Goga Bitadze",
+    "Team": "ORL",
+    "Stat": "Rebs+Asts",
+    "Line": 6.5,
+    "Versus": "MIA",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Norman Powell",
@@ -1077,16 +1086,7 @@
     "Line": 5.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Tristan Silva",
-    "Team": "ORL",
-    "Stat": "Rebs+Asts",
-    "Line": 5.5,
-    "Versus": "MIA",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Josh Hart",
@@ -1095,7 +1095,7 @@
     "Line": 5.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Mitchell Robinson",
@@ -1104,7 +1104,7 @@
     "Line": 5.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Scottie Barnes",
@@ -1113,7 +1113,7 @@
     "Line": 5.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Goga Bitadze",
@@ -1122,7 +1122,16 @@
     "Line": 5.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Tristan Silva",
+    "Team": "ORL",
+    "Stat": "Rebs+Asts",
+    "Line": 5.5,
+    "Versus": "MIA",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Desmond Bane",
@@ -1131,7 +1140,25 @@
     "Line": 4.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Desmond Bane",
+    "Team": "ORL",
+    "Stat": "Rebounds",
+    "Line": 4.5,
+    "Versus": "MIA",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Tyler Herro",
+    "Team": "MIA",
+    "Stat": "Rebounds",
+    "Line": 4.5,
+    "Versus": "ORL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Tristan Silva",
@@ -1140,43 +1167,7 @@
     "Line": 4.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Andrew Wiggins",
-    "Team": "MIA",
-    "Stat": "Rebounds",
-    "Line": 4.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Desmond Bane",
-    "Team": "ORL",
-    "Stat": "Rebounds",
-    "Line": 4.5,
-    "Versus": "MIA",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Tyler Herro",
-    "Team": "MIA",
-    "Stat": "Rebounds",
-    "Line": 4.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Anthony Black",
-    "Team": "ORL",
-    "Stat": "Rebounds",
-    "Line": 4.5,
-    "Versus": "MIA",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Jalen Suggs",
@@ -1185,7 +1176,16 @@
     "Line": 4.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Anthony Black",
+    "Team": "ORL",
+    "Stat": "Rebounds",
+    "Line": 4.5,
+    "Versus": "MIA",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Sandro Mamukelashvili",
@@ -1194,25 +1194,16 @@
     "Line": 4.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
-    "Name": "Mikal Bridges",
-    "Team": "NYK",
-    "Stat": "Assists",
-    "Line": 3.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Tyler Herro",
+    "Name": "Andrew Wiggins",
     "Team": "MIA",
-    "Stat": "Assists",
-    "Line": 3.5,
+    "Stat": "Rebounds",
+    "Line": 4.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "OG Anunoby",
@@ -1221,7 +1212,25 @@
     "Line": 3.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Mikal Bridges",
+    "Team": "NYK",
+    "Stat": "Assists",
+    "Line": 3.5,
+    "Versus": "TOR",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Tyler Herro",
+    "Team": "MIA",
+    "Stat": "Assists",
+    "Line": 3.5,
+    "Versus": "ORL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Ja'Kobe Walter",
@@ -1230,25 +1239,7 @@
     "Line": 2.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Jalen Brunson",
-    "Team": "NYK",
-    "Stat": "3-PT",
-    "Line": 2.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Jalen Brunson",
-    "Team": "NYK",
-    "Stat": "Rebounds",
-    "Line": 2.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Karl-Anthony Towns",
@@ -1257,61 +1248,7 @@
     "Line": 2.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Jalen Suggs",
-    "Team": "ORL",
-    "Stat": "3-PT",
-    "Line": 2.5,
-    "Versus": "MIA",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Tyler Herro",
-    "Team": "MIA",
-    "Stat": "Turnovers",
-    "Line": 2.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Jalen Brunson",
-    "Team": "NYK",
-    "Stat": "Turnovers",
-    "Line": 2.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Davion Mitchell",
-    "Team": "MIA",
-    "Stat": "Rebounds",
-    "Line": 2.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Tyler Herro",
-    "Team": "MIA",
-    "Stat": "3-PT",
-    "Line": 2.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Jalen Suggs",
-    "Team": "ORL",
-    "Stat": "Turnovers",
-    "Line": 2.5,
-    "Versus": "MIA",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Andrew Wiggins",
@@ -1320,16 +1257,70 @@
     "Line": 2.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
-    "Name": "Kel'el Ware",
+    "Name": "Jalen Brunson",
+    "Team": "NYK",
+    "Stat": "3-PT",
+    "Line": 2.5,
+    "Versus": "TOR",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Jalen Brunson",
+    "Team": "NYK",
+    "Stat": "Turnovers",
+    "Line": 2.5,
+    "Versus": "TOR",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Jalen Suggs",
+    "Team": "ORL",
+    "Stat": "Turnovers",
+    "Line": 2.5,
+    "Versus": "MIA",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Tyler Herro",
     "Team": "MIA",
-    "Stat": "Dunks",
-    "Line": 1.5,
+    "Stat": "Turnovers",
+    "Line": 2.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Tyler Herro",
+    "Team": "MIA",
+    "Stat": "3-PT",
+    "Line": 2.5,
+    "Versus": "ORL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Jalen Suggs",
+    "Team": "ORL",
+    "Stat": "3-PT",
+    "Line": 2.5,
+    "Versus": "MIA",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Davion Mitchell",
+    "Team": "MIA",
+    "Stat": "Rebounds",
+    "Line": 2.5,
+    "Versus": "ORL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "OG Anunoby",
@@ -1338,16 +1329,7 @@
     "Line": 1.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Jamal Shead",
-    "Team": "TOR",
-    "Stat": "Rebounds",
-    "Line": 1.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Wendell Carter",
@@ -1356,16 +1338,25 @@
     "Line": 1.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
-    "Name": "Wendell Carter",
-    "Team": "ORL",
-    "Stat": "Steals",
-    "Line": 0.5,
-    "Versus": "MIA",
+    "Name": "Kel'el Ware",
+    "Team": "MIA",
+    "Stat": "Dunks",
+    "Line": 1.5,
+    "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Jamal Shead",
+    "Team": "TOR",
+    "Stat": "Rebounds",
+    "Line": 1.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Anthony Black",
@@ -1374,43 +1365,7 @@
     "Line": 0.5,
     "Versus": "MIA",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Jalen Suggs",
-    "Team": "ORL",
-    "Stat": "Blocked Shots",
-    "Line": 0.5,
-    "Versus": "MIA",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Paolo Banchero",
-    "Team": "ORL",
-    "Stat": "Dunks",
-    "Line": 0.5,
-    "Versus": "MIA",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Goga Bitadze",
-    "Team": "ORL",
-    "Stat": "Turnovers",
-    "Line": 0.5,
-    "Versus": "MIA",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
-  },
-  {
-    "Name": "Jaime Jaquez",
-    "Team": "MIA",
-    "Stat": "Steals",
-    "Line": 0.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Kel'el Ware",
@@ -1419,7 +1374,43 @@
     "Line": 0.5,
     "Versus": "ORL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Jalen Suggs",
+    "Team": "ORL",
+    "Stat": "Blocked Shots",
+    "Line": 0.5,
+    "Versus": "MIA",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Jaime Jaquez",
+    "Team": "MIA",
+    "Stat": "Steals",
+    "Line": 0.5,
+    "Versus": "ORL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Paolo Banchero",
+    "Team": "ORL",
+    "Stat": "Dunks",
+    "Line": 0.5,
+    "Versus": "MIA",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
+  },
+  {
+    "Name": "Wendell Carter",
+    "Team": "ORL",
+    "Stat": "Steals",
+    "Line": 0.5,
+    "Versus": "MIA",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Mikal Bridges",
@@ -1428,7 +1419,7 @@
     "Line": 0.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "RJ Barrett",
@@ -1437,7 +1428,7 @@
     "Line": 0.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Jakob Poeltl",
@@ -1446,7 +1437,7 @@
     "Line": 0.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Brandon Ingram",
@@ -1455,7 +1446,7 @@
     "Line": 0.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Jakob Poeltl",
@@ -1464,7 +1455,7 @@
     "Line": 0.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "OG Anunoby",
@@ -1473,7 +1464,7 @@
     "Line": 0.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Karl-Anthony Towns",
@@ -1482,7 +1473,7 @@
     "Line": 0.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Mitchell Robinson",
@@ -1491,7 +1482,7 @@
     "Line": 0.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   },
   {
     "Name": "Tyler Kolek",
@@ -1500,6 +1491,6 @@
     "Line": 0.5,
     "Versus": "TOR",
     "Odds_Type": "Standard",
-    "Scraped_At": "2025-12-09 01:57"
+    "Scraped_At": "2025-12-09 01:59"
   }
 ]
