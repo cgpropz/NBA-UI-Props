@@ -17,4 +17,4 @@ venv/
 .DS_Store
 
 # Not ignoring generated site/data files we intentionally commit
-# (e.g., NBA_PURE_STANDARD_SINGLE.csv, .json, players/, index.html)
+# (e.g., NBA_PURE_STANDARD_SINGLE.csv, .json, players/, index.html)Full_Gamelogs25.csv
