@@ -58,7 +58,7 @@ jobs:
       - name: Install Python dependencies
         run: |
           pip install --upgrade pip
-          pip install pandas undetected-chromedriver
+          pip install pandas undetected-chromedriver nba_api
           pip install playwright seleniumbase
           python -m playwright install
 
