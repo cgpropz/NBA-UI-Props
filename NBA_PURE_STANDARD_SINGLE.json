@@ -6,7 +6,7 @@
     "Line": 58.0,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Shai Gilgeous-Alexander",
@@ -15,34 +15,7 @@
     "Line": 52.0,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Cade Cunningham",
-    "Team": "DET",
-    "Stat": "Fantasy Score",
-    "Line": 51.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Scottie Barnes",
-    "Team": "TOR",
-    "Stat": "Fantasy Score",
-    "Line": 47.0,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Cade Cunningham",
-    "Team": "DET",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 44.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Shai Gilgeous-Alexander",
@@ -51,16 +24,7 @@
     "Line": 43.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Paolo Banchero",
-    "Team": "ORL",
-    "Stat": "Fantasy Score",
-    "Line": 43.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Victor Wembanyama",
@@ -69,7 +33,7 @@
     "Line": 42.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Joel Embiid",
@@ -78,7 +42,7 @@
     "Line": 41.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "LeBron James",
@@ -87,7 +51,16 @@
     "Line": 41.0,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Shai Gilgeous-Alexander",
+    "Team": "OKC",
+    "Stat": "Pts+Asts",
+    "Line": 39.5,
+    "Versus": "LAL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Victor Wembanyama",
@@ -96,16 +69,7 @@
     "Line": 39.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Evan Mobley",
-    "Team": "CLE",
-    "Stat": "Fantasy Score",
-    "Line": 39.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Chet Holmgren",
@@ -114,43 +78,7 @@
     "Line": 39.0,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Shai Gilgeous-Alexander",
-    "Team": "OKC",
-    "Stat": "Pts+Asts",
-    "Line": 38.5,
-    "Versus": "LAL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Donovan Mitchell",
-    "Team": "CLE",
-    "Stat": "Fantasy Score",
-    "Line": 38.0,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "James Harden",
-    "Team": "CLE",
-    "Stat": "Fantasy Score",
-    "Line": 37.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Paolo Banchero",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 37.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Jalen Brunson",
@@ -159,43 +87,25 @@
     "Line": 37.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Cade Cunningham",
-    "Team": "DET",
-    "Stat": "Pts+Asts",
-    "Line": 37.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "RJ Barrett",
-    "Team": "TOR",
-    "Stat": "Fantasy Score",
+    "Name": "Shai Gilgeous-Alexander",
+    "Team": "OKC",
+    "Stat": "Pts+Rebs",
     "Line": 36.5,
-    "Versus": "CLE",
+    "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Tyrese Maxey",
+    "Name": "Joel Embiid",
     "Team": "PHI",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 36.5,
+    "Stat": "Pts+Rebs",
+    "Line": 36.0,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Scottie Barnes",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 36.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Austin Reaves",
@@ -204,7 +114,7 @@
     "Line": 36.0,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Karl-Anthony Towns",
@@ -213,34 +123,7 @@
     "Line": 35.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Joel Embiid",
-    "Team": "PHI",
-    "Stat": "Pts+Rebs",
-    "Line": 35.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Julius Randle",
-    "Team": "MIN",
-    "Stat": "Fantasy Score",
-    "Line": 35.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Shai Gilgeous-Alexander",
-    "Team": "OKC",
-    "Stat": "Pts+Rebs",
-    "Line": 35.5,
-    "Versus": "LAL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "LeBron James",
@@ -249,16 +132,16 @@
     "Line": 35.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Cade Cunningham",
-    "Team": "DET",
-    "Stat": "Pts+Rebs",
+    "Name": "Tyrese Maxey",
+    "Team": "PHI",
+    "Stat": "Pts+Rebs+Asts",
     "Line": 35.5,
-    "Versus": "ORL",
+    "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Jalen Brunson",
@@ -267,79 +150,25 @@
     "Line": 34.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Donovan Mitchell",
-    "Team": "CLE",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 33.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "RJ Barrett",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 33.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Julius Randle",
     "Team": "MIN",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 33.5,
+    "Stat": "Fantasy Score",
+    "Line": 34.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Tyrese Maxey",
     "Team": "PHI",
     "Stat": "Pts+Asts",
-    "Line": 32.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Tobias Harris",
-    "Team": "DET",
-    "Stat": "Fantasy Score",
-    "Line": 32.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Joel Embiid",
-    "Team": "PHI",
-    "Stat": "Pts+Asts",
-    "Line": 32.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Desmond Bane",
-    "Team": "ORL",
-    "Stat": "Fantasy Score",
     "Line": 32.0,
-    "Versus": "DET",
+    "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Karl-Anthony Towns",
-    "Team": "NYK",
-    "Stat": "Pts+Rebs",
-    "Line": 31.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Austin Reaves",
@@ -348,7 +177,25 @@
     "Line": 31.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Victor Wembanyama",
+    "Team": "SAS",
+    "Stat": "Pts+Asts",
+    "Line": 31.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Joel Embiid",
+    "Team": "PHI",
+    "Stat": "Pts+Asts",
+    "Line": 31.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Shai Gilgeous-Alexander",
@@ -357,25 +204,16 @@
     "Line": 31.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Rudy Gobert",
+    "Name": "Julius Randle",
     "Team": "MIN",
-    "Stat": "Fantasy Score",
+    "Stat": "Pts+Rebs+Asts",
     "Line": 31.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "James Harden",
-    "Team": "CLE",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 31.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Ayo Dosunmu",
@@ -384,25 +222,7 @@
     "Line": 31.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Paolo Banchero",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs",
-    "Line": 31.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ausar Thompson",
-    "Team": "DET",
-    "Stat": "Fantasy Score",
-    "Line": 31.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Jalen Williams",
@@ -411,25 +231,7 @@
     "Line": 31.0,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "RJ Barrett",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs",
-    "Line": 30.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Suggs",
-    "Team": "ORL",
-    "Stat": "Fantasy Score",
-    "Line": 30.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Jaden McDaniels",
@@ -438,25 +240,7 @@
     "Line": 30.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Tyrese Maxey",
-    "Team": "PHI",
-    "Stat": "Pts+Rebs",
-    "Line": 30.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Brunson",
-    "Team": "NYK",
-    "Stat": "Pts+Rebs",
-    "Line": 30.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Stephon Castle",
@@ -465,124 +249,52 @@
     "Line": 30.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Victor Wembanyama",
-    "Team": "SAS",
-    "Stat": "Pts+Asts",
-    "Line": 30.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Duren",
-    "Team": "DET",
+    "Name": "Rudy Gobert",
+    "Team": "MIN",
     "Stat": "Fantasy Score",
-    "Line": 30.0,
-    "Versus": "ORL",
+    "Line": 30.5,
+    "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Jalen Brunson",
+    "Team": "NYK",
+    "Stat": "Pts+Rebs",
+    "Line": 30.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Karl-Anthony Towns",
+    "Team": "NYK",
+    "Stat": "Pts+Rebs",
+    "Line": 30.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Tyrese Maxey",
+    "Team": "PHI",
+    "Stat": "Pts+Rebs",
+    "Line": 29.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "LeBron James",
     "Team": "LAL",
     "Stat": "Pts+Asts",
-    "Line": 29.5,
+    "Line": 28.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Scottie Barnes",
-    "Team": "TOR",
-    "Stat": "Pts+Asts",
-    "Line": 29.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Donovan Mitchell",
-    "Team": "CLE",
-    "Stat": "Pts+Asts",
-    "Line": 29.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Collin Murray-Boyles",
-    "Team": "TOR",
-    "Stat": "Fantasy Score",
-    "Line": 29.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Donovan Mitchell",
-    "Team": "CLE",
-    "Stat": "Pts+Rebs",
-    "Line": 29.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Cade Cunningham",
-    "Team": "DET",
-    "Stat": "Points",
-    "Line": 29.0,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jarrett Allen",
-    "Team": "CLE",
-    "Stat": "Fantasy Score",
-    "Line": 28.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Julius Randle",
-    "Team": "MIN",
-    "Stat": "Pts+Rebs",
-    "Line": 28.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Scottie Barnes",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs",
-    "Line": 28.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Paolo Banchero",
-    "Team": "ORL",
-    "Stat": "Pts+Asts",
-    "Line": 28.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Evan Mobley",
-    "Team": "CLE",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 28.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "LeBron James",
@@ -591,25 +303,7 @@
     "Line": 28.0,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Austin Reaves",
-    "Team": "LAL",
-    "Stat": "Pts+Asts",
-    "Line": 27.5,
-    "Versus": "OKC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Wendell Carter",
-    "Team": "ORL",
-    "Stat": "Fantasy Score",
-    "Line": 27.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Jalen Brunson",
@@ -618,34 +312,16 @@
     "Line": 27.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "James Harden",
-    "Team": "CLE",
-    "Stat": "Pts+Asts",
+    "Name": "Julius Randle",
+    "Team": "MIN",
+    "Stat": "Pts+Rebs",
     "Line": 27.5,
-    "Versus": "TOR",
+    "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "RJ Barrett",
-    "Team": "TOR",
-    "Stat": "Pts+Asts",
-    "Line": 27.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Victor Wembanyama",
-    "Team": "SAS",
-    "Stat": "Points",
-    "Line": 27.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Chet Holmgren",
@@ -654,7 +330,25 @@
     "Line": 27.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Austin Reaves",
+    "Team": "LAL",
+    "Stat": "Pts+Asts",
+    "Line": 27.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Victor Wembanyama",
+    "Team": "SAS",
+    "Stat": "Points",
+    "Line": 27.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "De'Aaron Fox",
@@ -663,34 +357,16 @@
     "Line": 27.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Desmond Bane",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs+Asts",
+    "Name": "Chet Holmgren",
+    "Team": "OKC",
+    "Stat": "Pts+Rebs",
     "Line": 26.5,
-    "Versus": "DET",
+    "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ayo Dosunmu",
-    "Team": "MIN",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 26.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "OG Anunoby",
-    "Team": "NYK",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 26.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Joel Embiid",
@@ -699,70 +375,34 @@
     "Line": 26.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Ayo Dosunmu",
+    "Team": "MIN",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 26.0,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "OG Anunoby",
+    "Team": "NYK",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 25.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Tyrese Maxey",
     "Team": "PHI",
     "Stat": "Points",
-    "Line": 26.5,
+    "Line": 25.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Austin Reaves",
-    "Team": "LAL",
-    "Stat": "Pts+Rebs",
-    "Line": 26.5,
-    "Versus": "OKC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Tobias Harris",
-    "Team": "DET",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 26.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Stephon Castle",
-    "Team": "SAS",
-    "Stat": "Pts+Asts",
-    "Line": 25.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Chet Holmgren",
-    "Team": "OKC",
-    "Stat": "Pts+Rebs",
-    "Line": 25.5,
-    "Versus": "LAL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Evan Mobley",
-    "Team": "CLE",
-    "Stat": "Pts+Rebs",
-    "Line": 25.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Donovan Mitchell",
-    "Team": "CLE",
-    "Stat": "Points",
-    "Line": 25.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Julius Randle",
@@ -771,34 +411,52 @@
     "Line": 25.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Austin Reaves",
+    "Team": "LAL",
+    "Stat": "Pts+Rebs",
+    "Line": 25.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Stephon Castle",
+    "Team": "SAS",
+    "Stat": "Pts+Asts",
+    "Line": 24.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Jaden McDaniels",
+    "Team": "MIN",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 24.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Jalen Williams",
     "Team": "OKC",
     "Stat": "Pts+Rebs+Asts",
-    "Line": 25.0,
+    "Line": 24.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "James Harden",
-    "Team": "CLE",
-    "Stat": "Pts+Rebs",
-    "Line": 24.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Paul George",
-    "Team": "PHI",
+    "Name": "Josh Hart",
+    "Team": "NYK",
     "Stat": "Pts+Rebs+Asts",
     "Line": 24.5,
-    "Versus": "NYK",
+    "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "OG Anunoby",
@@ -807,52 +465,7 @@
     "Line": 24.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Tobias Harris",
-    "Team": "DET",
-    "Stat": "Pts+Rebs",
-    "Line": 24.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Duren",
-    "Team": "DET",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 24.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Anthony Black",
-    "Team": "ORL",
-    "Stat": "Fantasy Score",
-    "Line": 24.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Josh Hart",
-    "Team": "NYK",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 24.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jaden McDaniels",
-    "Team": "MIN",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 24.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Karl-Anthony Towns",
@@ -861,25 +474,25 @@
     "Line": 23.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Brandon Ingram",
-    "Team": "TOR",
+    "Name": "Paul George",
+    "Team": "PHI",
     "Stat": "Pts+Rebs+Asts",
     "Line": 23.5,
-    "Versus": "CLE",
+    "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "RJ Barrett",
-    "Team": "TOR",
-    "Stat": "Points",
+    "Name": "De'Aaron Fox",
+    "Team": "SAS",
+    "Stat": "Pts+Asts",
     "Line": 23.5,
-    "Versus": "CLE",
+    "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Stephon Castle",
@@ -888,61 +501,7 @@
     "Line": 23.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Cade Cunningham",
-    "Team": "DET",
-    "Stat": "FG",
-    "Line": 23.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Paolo Banchero",
-    "Team": "ORL",
-    "Stat": "Points",
-    "Line": 23.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Desmond Bane",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs",
-    "Line": 23.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "De'Aaron Fox",
-    "Team": "SAS",
-    "Stat": "Pts+Asts",
-    "Line": 23.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "VJ Edgecombe",
-    "Team": "PHI",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 22.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Duren",
-    "Team": "DET",
-    "Stat": "Pts+Rebs",
-    "Line": 22.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Ajay Mitchell",
@@ -951,88 +510,16 @@
     "Line": 22.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Desmond Bane",
-    "Team": "ORL",
-    "Stat": "Pts+Asts",
-    "Line": 22.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Collin Murray-Boyles",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 22.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Rudy Gobert",
-    "Team": "MIN",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 22.0,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Scottie Barnes",
-    "Team": "TOR",
-    "Stat": "Points",
-    "Line": 21.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ayo Dosunmu",
-    "Team": "MIN",
-    "Stat": "Pts+Asts",
-    "Line": 21.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Julius Randle",
-    "Team": "MIN",
-    "Stat": "Points",
-    "Line": 21.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ayo Dosunmu",
-    "Team": "MIN",
-    "Stat": "Pts+Rebs",
-    "Line": 21.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jaden McDaniels",
-    "Team": "MIN",
-    "Stat": "Pts+Rebs",
-    "Line": 21.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Suggs",
-    "Team": "ORL",
+    "Name": "VJ Edgecombe",
+    "Team": "PHI",
     "Stat": "Pts+Rebs+Asts",
     "Line": 21.5,
-    "Versus": "DET",
+    "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Austin Reaves",
@@ -1041,7 +528,16 @@
     "Line": 21.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Ayo Dosunmu",
+    "Team": "MIN",
+    "Stat": "Pts+Rebs",
+    "Line": 21.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "De'Aaron Fox",
@@ -1050,124 +546,88 @@
     "Line": 21.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Jaden McDaniels",
+    "Team": "MIN",
+    "Stat": "Pts+Rebs",
+    "Line": 21.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Ayo Dosunmu",
+    "Team": "MIN",
+    "Stat": "Pts+Asts",
+    "Line": 21.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Rudy Gobert",
+    "Team": "MIN",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 21.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Julius Randle",
+    "Team": "MIN",
+    "Stat": "Points",
+    "Line": 21.0,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Naz Reid",
+    "Team": "MIN",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 20.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Jalen Williams",
+    "Team": "OKC",
+    "Stat": "Pts+Asts",
+    "Line": 20.5,
+    "Versus": "LAL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "LeBron James",
+    "Team": "LAL",
+    "Stat": "Points",
+    "Line": 20.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Joel Embiid",
+    "Team": "PHI",
+    "Stat": "FG",
+    "Line": 20.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Paul George",
     "Team": "PHI",
     "Stat": "Pts+Rebs",
-    "Line": 21.0,
+    "Line": 20.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "James Harden",
-    "Team": "CLE",
-    "Stat": "Points",
-    "Line": 20.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Brandon Ingram",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs",
-    "Line": 20.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Williams",
-    "Team": "OKC",
-    "Stat": "Pts+Asts",
-    "Line": 20.5,
-    "Versus": "LAL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ausar Thompson",
-    "Team": "DET",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 20.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jarrett Allen",
-    "Team": "CLE",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 20.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Collin Murray-Boyles",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs",
-    "Line": 20.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Rudy Gobert",
-    "Team": "MIN",
-    "Stat": "Pts+Rebs",
-    "Line": 20.0,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Wendell Carter",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 19.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Williams",
-    "Team": "OKC",
-    "Stat": "Pts+Rebs",
-    "Line": 19.5,
-    "Versus": "LAL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Deandre Ayton",
-    "Team": "LAL",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 19.5,
-    "Versus": "OKC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Tobias Harris",
-    "Team": "DET",
-    "Stat": "Pts+Asts",
-    "Line": 19.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ajay Mitchell",
-    "Team": "OKC",
-    "Stat": "Pts+Rebs",
-    "Line": 19.5,
-    "Versus": "LAL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Josh Hart",
@@ -1176,25 +636,16 @@
     "Line": 19.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Naz Reid",
-    "Team": "MIN",
-    "Stat": "Pts+Rebs+Asts",
+    "Name": "Jalen Williams",
+    "Team": "OKC",
+    "Stat": "Pts+Rebs",
     "Line": 19.5,
-    "Versus": "SAS",
+    "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jaden McDaniels",
-    "Team": "MIN",
-    "Stat": "Pts+Asts",
-    "Line": 19.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Karl-Anthony Towns",
@@ -1203,7 +654,34 @@
     "Line": 19.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Tyrese Maxey",
+    "Team": "PHI",
+    "Stat": "FG",
+    "Line": 19.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Rudy Gobert",
+    "Team": "MIN",
+    "Stat": "Pts+Rebs",
+    "Line": 19.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Jaden McDaniels",
+    "Team": "MIN",
+    "Stat": "Pts+Asts",
+    "Line": 19.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Devin Vassell",
@@ -1212,88 +690,43 @@
     "Line": 19.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Isaiah Hartenstein",
+    "Team": "OKC",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 19.0,
+    "Versus": "LAL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Ajay Mitchell",
+    "Team": "OKC",
+    "Stat": "Pts+Rebs",
+    "Line": 19.0,
+    "Versus": "LAL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Naz Reid",
+    "Team": "MIN",
+    "Stat": "Pts+Rebs",
+    "Line": 19.0,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Paul George",
     "Team": "PHI",
     "Stat": "Pts+Asts",
-    "Line": 19.5,
+    "Line": 18.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jarrett Allen",
-    "Team": "CLE",
-    "Stat": "Pts+Rebs",
-    "Line": 19.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Evan Mobley",
-    "Team": "CLE",
-    "Stat": "Pts+Asts",
-    "Line": 19.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Donovan Mitchell",
-    "Team": "CLE",
-    "Stat": "FG",
-    "Line": 19.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "RJ Barrett",
-    "Team": "TOR",
-    "Stat": "FG",
-    "Line": 18.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Brandon Ingram",
-    "Team": "TOR",
-    "Stat": "Pts+Asts",
-    "Line": 18.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Suggs",
-    "Team": "ORL",
-    "Stat": "Pts+Asts",
-    "Line": 18.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Paolo Banchero",
-    "Team": "ORL",
-    "Stat": "FG",
-    "Line": 18.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Desmond Bane",
-    "Team": "ORL",
-    "Stat": "Points",
-    "Line": 18.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "OG Anunoby",
@@ -1302,25 +735,7 @@
     "Line": 18.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "VJ Edgecombe",
-    "Team": "PHI",
-    "Stat": "Pts+Rebs",
-    "Line": 18.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Chet Holmgren",
-    "Team": "OKC",
-    "Stat": "Pts+Asts",
-    "Line": 18.5,
-    "Versus": "LAL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Ajay Mitchell",
@@ -1329,79 +744,52 @@
     "Line": 18.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Naz Reid",
-    "Team": "MIN",
+    "Name": "Isaiah Hartenstein",
+    "Team": "OKC",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 18.5,
+    "Versus": "LAL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Chet Holmgren",
+    "Team": "OKC",
+    "Stat": "Pts+Asts",
+    "Line": 18.5,
+    "Versus": "LAL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Deandre Ayton",
+    "Team": "LAL",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 18.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "VJ Edgecombe",
+    "Team": "PHI",
     "Stat": "Pts+Rebs",
     "Line": 18.0,
-    "Versus": "SAS",
+    "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jamal Shead",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 17.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Deandre Ayton",
     "Team": "LAL",
     "Stat": "Pts+Rebs",
-    "Line": 17.5,
+    "Line": 18.0,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "OG Anunoby",
-    "Team": "NYK",
-    "Stat": "Points",
-    "Line": 17.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Anthony Black",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 17.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Wendell Carter",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs",
-    "Line": 17.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ausar Thompson",
-    "Team": "DET",
-    "Stat": "Pts+Rebs",
-    "Line": 17.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Tobias Harris",
-    "Team": "DET",
-    "Stat": "Points",
-    "Line": 17.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "De'Aaron Fox",
@@ -1410,16 +798,7 @@
     "Line": 17.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Stephon Castle",
-    "Team": "SAS",
-    "Stat": "Points",
-    "Line": 17.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Victor Wembanyama",
@@ -1428,7 +807,25 @@
     "Line": 17.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Stephon Castle",
+    "Team": "SAS",
+    "Stat": "Points",
+    "Line": 17.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "OG Anunoby",
+    "Team": "NYK",
+    "Stat": "Points",
+    "Line": 17.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Ayo Dosunmu",
@@ -1437,7 +834,16 @@
     "Line": 17.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Devin Vassell",
+    "Team": "SAS",
+    "Stat": "Pts+Rebs",
+    "Line": 17.0,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Jaden McDaniels",
@@ -1446,88 +852,16 @@
     "Line": 17.0,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Jalen Suggs",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs",
-    "Line": 17.0,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ja'Kobe Walter",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 17.0,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Chet Holmgren",
+    "Name": "Shai Gilgeous-Alexander",
     "Team": "OKC",
-    "Stat": "Points",
+    "Stat": "Two Pointers",
     "Line": 16.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Brandon Ingram",
-    "Team": "TOR",
-    "Stat": "Points",
-    "Line": 16.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Evan Mobley",
-    "Team": "CLE",
-    "Stat": "Points",
-    "Line": 16.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Scottie Barnes",
-    "Team": "TOR",
-    "Stat": "FG",
-    "Line": 16.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Devin Vassell",
-    "Team": "SAS",
-    "Stat": "Pts+Rebs",
-    "Line": 16.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Desmond Bane",
-    "Team": "ORL",
-    "Stat": "FG",
-    "Line": 16.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Marcus Smart",
-    "Team": "LAL",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 16.5,
-    "Versus": "OKC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Rui Hachimura",
@@ -1536,16 +870,7 @@
     "Line": 16.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "VJ Edgecombe",
-    "Team": "PHI",
-    "Stat": "Pts+Asts",
-    "Line": 16.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Julius Randle",
@@ -1554,7 +879,16 @@
     "Line": 16.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Chet Holmgren",
+    "Team": "OKC",
+    "Stat": "Points",
+    "Line": 16.5,
+    "Versus": "LAL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Kelly Oubre",
@@ -1563,7 +897,16 @@
     "Line": 16.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Marcus Smart",
+    "Team": "LAL",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 16.0,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Jalen Williams",
@@ -1572,61 +915,34 @@
     "Line": 16.0,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Paul George",
+    "Name": "Josh Hart",
+    "Team": "NYK",
+    "Stat": "Pts+Asts",
+    "Line": 16.0,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Isaiah Hartenstein",
+    "Team": "OKC",
+    "Stat": "Pts+Rebs",
+    "Line": 16.0,
+    "Versus": "LAL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "VJ Edgecombe",
     "Team": "PHI",
-    "Stat": "Points",
+    "Stat": "Pts+Asts",
     "Line": 15.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Dylan Harper",
-    "Team": "SAS",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 15.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Duncan Robinson",
-    "Team": "DET",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 15.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Cade Cunningham",
-    "Team": "DET",
-    "Stat": "Two Pointers",
-    "Line": 15.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jamal Shead",
-    "Team": "TOR",
-    "Stat": "Pts+Asts",
-    "Line": 15.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Mikal Bridges",
-    "Team": "NYK",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 15.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Kelly Oubre",
@@ -1635,70 +951,7 @@
     "Line": 15.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Josh Hart",
-    "Team": "NYK",
-    "Stat": "Pts+Asts",
-    "Line": 15.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Karl-Anthony Towns",
-    "Team": "NYK",
-    "Stat": "Rebs+Asts",
-    "Line": 15.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ja'Kobe Walter",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs",
-    "Line": 15.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Collin Murray-Boyles",
-    "Team": "TOR",
-    "Stat": "Pts+Asts",
-    "Line": 15.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Max Strus",
-    "Team": "CLE",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 15.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Scottie Barnes",
-    "Team": "TOR",
-    "Stat": "Rebs+Asts",
-    "Line": 15.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Isaiah Hartenstein",
-    "Team": "OKC",
-    "Stat": "Pts+Rebs",
-    "Line": 15.5,
-    "Versus": "LAL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Rui Hachimura",
@@ -1707,16 +960,34 @@
     "Line": 15.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Ajay Mitchell",
-    "Team": "OKC",
-    "Stat": "Points",
+    "Name": "Mikal Bridges",
+    "Team": "NYK",
+    "Stat": "Pts+Rebs+Asts",
     "Line": 15.5,
-    "Versus": "LAL",
+    "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Paul George",
+    "Team": "PHI",
+    "Stat": "Points",
+    "Line": 15.0,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Dylan Harper",
+    "Team": "SAS",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 15.0,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Victor Wembanyama",
@@ -1725,7 +996,16 @@
     "Line": 15.0,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Ajay Mitchell",
+    "Team": "OKC",
+    "Stat": "Points",
+    "Line": 15.0,
+    "Versus": "LAL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Devin Vassell",
@@ -1734,16 +1014,25 @@
     "Line": 15.0,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "LeBron James",
-    "Team": "LAL",
+    "Name": "Joel Embiid",
+    "Team": "PHI",
     "Stat": "Rebs+Asts",
     "Line": 14.5,
-    "Versus": "OKC",
+    "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Jalen Brunson",
+    "Team": "NYK",
+    "Stat": "Two Pointers",
+    "Line": 14.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Ayo Dosunmu",
@@ -1752,7 +1041,7 @@
     "Line": 14.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Julian Champagnie",
@@ -1761,34 +1050,7 @@
     "Line": 14.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Duren",
-    "Team": "DET",
-    "Stat": "Pts+Asts",
-    "Line": 14.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Anthony Black",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs",
-    "Line": 14.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jakob Poeltl",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 14.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Jaden McDaniels",
@@ -1797,34 +1059,16 @@
     "Line": 14.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Cade Cunningham",
-    "Team": "DET",
+    "Name": "LeBron James",
+    "Team": "LAL",
     "Stat": "Rebs+Asts",
     "Line": 14.5,
-    "Versus": "ORL",
+    "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Paolo Banchero",
-    "Team": "ORL",
-    "Stat": "Rebs+Asts",
-    "Line": 14.0,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Anthony Black",
-    "Team": "ORL",
-    "Stat": "Pts+Asts",
-    "Line": 14.0,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Marcus Smart",
@@ -1833,43 +1077,16 @@
     "Line": 13.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Jakob Poeltl",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs",
+    "Name": "LeBron James",
+    "Team": "LAL",
+    "Stat": "Two Pointers",
     "Line": 13.5,
-    "Versus": "CLE",
+    "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Naz Reid",
-    "Team": "MIN",
-    "Stat": "Pts+Asts",
-    "Line": 13.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Joel Embiid",
-    "Team": "PHI",
-    "Stat": "Rebs+Asts",
-    "Line": 13.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Julian Champagnie",
-    "Team": "SAS",
-    "Stat": "Pts+Rebs",
-    "Line": 13.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Keldon Johnson",
@@ -1878,25 +1095,7 @@
     "Line": 13.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Paolo Banchero",
-    "Team": "ORL",
-    "Stat": "Two Pointers",
-    "Line": 13.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Duncan Robinson",
-    "Team": "DET",
-    "Stat": "Pts+Rebs",
-    "Line": 13.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "De'Aaron Fox",
@@ -1905,25 +1104,25 @@
     "Line": 13.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Mikal Bridges",
-    "Team": "NYK",
+    "Name": "Julian Champagnie",
+    "Team": "SAS",
     "Stat": "Pts+Rebs",
     "Line": 13.5,
-    "Versus": "PHI",
+    "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Collin Murray-Boyles",
-    "Team": "TOR",
-    "Stat": "Points",
+    "Name": "Naz Reid",
+    "Team": "MIN",
+    "Stat": "Pts+Asts",
     "Line": 13.5,
-    "Versus": "CLE",
+    "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Marcus Smart",
@@ -1932,16 +1131,7 @@
     "Line": 13.0,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Rudy Gobert",
-    "Team": "MIN",
-    "Stat": "Rebs+Asts",
-    "Line": 13.0,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Stephon Castle",
@@ -1950,115 +1140,25 @@
     "Line": 13.0,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Ausar Thompson",
-    "Team": "DET",
-    "Stat": "Pts+Asts",
-    "Line": 12.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jarrett Allen",
-    "Team": "CLE",
-    "Stat": "Pts+Asts",
-    "Line": 12.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Williams",
-    "Team": "OKC",
-    "Stat": "FG",
-    "Line": 12.5,
-    "Versus": "LAL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Cason Wallace",
-    "Team": "OKC",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 12.5,
-    "Versus": "LAL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Rui Hachimura",
-    "Team": "LAL",
-    "Stat": "Pts+Asts",
-    "Line": 12.5,
-    "Versus": "OKC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Suggs",
-    "Team": "ORL",
-    "Stat": "Points",
-    "Line": 12.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Duren",
-    "Team": "DET",
-    "Stat": "Points",
-    "Line": 12.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Suggs",
-    "Team": "ORL",
-    "Stat": "FG",
-    "Line": 12.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Dylan Harper",
-    "Team": "SAS",
+    "Name": "Mikal Bridges",
+    "Team": "NYK",
     "Stat": "Pts+Rebs",
-    "Line": 12.5,
-    "Versus": "MIN",
+    "Line": 13.0,
+    "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Devin Vassell",
-    "Team": "SAS",
+    "Name": "Naz Reid",
+    "Team": "MIN",
     "Stat": "Points",
     "Line": 12.5,
-    "Versus": "MIN",
+    "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Duncan Robinson",
-    "Team": "DET",
-    "Stat": "Pts+Asts",
-    "Line": 12.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Dylan Harper",
-    "Team": "SAS",
-    "Stat": "Pts+Asts",
-    "Line": 12.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Mikal Bridges",
@@ -2067,7 +1167,7 @@
     "Line": 12.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "VJ Edgecombe",
@@ -2076,34 +1176,61 @@
     "Line": 12.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Scottie Barnes",
-    "Team": "TOR",
-    "Stat": "Two Pointers",
+    "Name": "Paul George",
+    "Team": "PHI",
+    "Stat": "FG",
     "Line": 12.5,
-    "Versus": "CLE",
+    "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Josh Hart",
-    "Team": "NYK",
+    "Name": "Dylan Harper",
+    "Team": "SAS",
+    "Stat": "Pts+Rebs",
+    "Line": 12.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Devin Vassell",
+    "Team": "SAS",
+    "Stat": "Points",
+    "Line": 12.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Rudy Gobert",
+    "Team": "MIN",
     "Stat": "Rebs+Asts",
+    "Line": 12.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "OG Anunoby",
+    "Team": "NYK",
+    "Stat": "FG",
     "Line": 12.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Ja'Kobe Walter",
-    "Team": "TOR",
-    "Stat": "Pts+Asts",
+    "Name": "Cason Wallace",
+    "Team": "OKC",
+    "Stat": "Pts+Rebs+Asts",
     "Line": 12.5,
-    "Versus": "CLE",
+    "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Luke Kennard",
@@ -2112,16 +1239,34 @@
     "Line": 12.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Naz Reid",
-    "Team": "MIN",
-    "Stat": "Points",
-    "Line": 12.0,
-    "Versus": "SAS",
+    "Name": "Rui Hachimura",
+    "Team": "LAL",
+    "Stat": "Pts+Asts",
+    "Line": 12.5,
+    "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Jalen Williams",
+    "Team": "OKC",
+    "Stat": "FG",
+    "Line": 12.5,
+    "Versus": "LAL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Dylan Harper",
+    "Team": "SAS",
+    "Stat": "Pts+Asts",
+    "Line": 12.0,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Keldon Johnson",
@@ -2130,97 +1275,7 @@
     "Line": 12.0,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Josh Hart",
-    "Team": "NYK",
-    "Stat": "Points",
-    "Line": 11.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ausar Thompson",
-    "Team": "DET",
-    "Stat": "Rebs+Asts",
-    "Line": 11.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Kelly Oubre",
-    "Team": "PHI",
-    "Stat": "Pts+Asts",
-    "Line": 11.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jarrett Allen",
-    "Team": "CLE",
-    "Stat": "Points",
-    "Line": 11.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ja'Kobe Walter",
-    "Team": "TOR",
-    "Stat": "Points",
-    "Line": 11.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Mitchell Robinson",
-    "Team": "NYK",
-    "Stat": "Pts+Rebs",
-    "Line": 11.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Karl-Anthony Towns",
-    "Team": "NYK",
-    "Stat": "Rebounds",
-    "Line": 11.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jamal Shead",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs",
-    "Line": 11.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Rui Hachimura",
-    "Team": "LAL",
-    "Stat": "Points",
-    "Line": 11.5,
-    "Versus": "OKC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Shai Gilgeous-Alexander",
-    "Team": "OKC",
-    "Stat": "Rebs+Asts",
-    "Line": 11.5,
-    "Versus": "LAL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Luguentz Dort",
@@ -2229,34 +1284,25 @@
     "Line": 11.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Deandre Ayton",
-    "Team": "LAL",
-    "Stat": "Pts+Asts",
-    "Line": 11.5,
-    "Versus": "OKC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Chet Holmgren",
+    "Name": "Shai Gilgeous-Alexander",
     "Team": "OKC",
-    "Stat": "FG",
+    "Stat": "Rebs+Asts",
     "Line": 11.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Evan Mobley",
-    "Team": "CLE",
-    "Stat": "Rebs+Asts",
+    "Name": "Rui Hachimura",
+    "Team": "LAL",
+    "Stat": "Points",
     "Line": 11.5,
-    "Versus": "TOR",
+    "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Mike Conley",
@@ -2265,34 +1311,70 @@
     "Line": 11.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Luke Kornet",
-    "Team": "SAS",
+    "Name": "Mitchell Robinson",
+    "Team": "NYK",
+    "Stat": "Pts+Rebs",
+    "Line": 11.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Josh Hart",
+    "Team": "NYK",
+    "Stat": "Points",
+    "Line": 11.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "VJ Edgecombe",
+    "Team": "PHI",
+    "Stat": "FG",
+    "Line": 11.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Kelly Oubre",
+    "Team": "PHI",
+    "Stat": "Pts+Asts",
+    "Line": 11.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Mitchell Robinson",
+    "Team": "NYK",
     "Stat": "Pts+Rebs+Asts",
     "Line": 11.5,
-    "Versus": "MIN",
+    "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Jalen Duren",
-    "Team": "DET",
-    "Stat": "Rebs+Asts",
+    "Name": "Tyrese Maxey",
+    "Team": "PHI",
+    "Stat": "Two Pointers",
     "Line": 11.5,
-    "Versus": "ORL",
+    "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Julius Randle",
-    "Team": "MIN",
-    "Stat": "Rebs+Asts",
+    "Name": "Karl-Anthony Towns",
+    "Team": "NYK",
+    "Stat": "Rebounds",
     "Line": 11.5,
-    "Versus": "SAS",
+    "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Victor Wembanyama",
@@ -2301,70 +1383,70 @@
     "Line": 11.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "James Harden",
-    "Team": "CLE",
-    "Stat": "Rebs+Asts",
-    "Line": 11.0,
-    "Versus": "TOR",
+    "Name": "Miles McBride",
+    "Team": "NYK",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 10.5,
+    "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Anthony Black",
-    "Team": "ORL",
-    "Stat": "Points",
-    "Line": 11.0,
-    "Versus": "DET",
+    "Name": "Devin Vassell",
+    "Team": "SAS",
+    "Stat": "FG",
+    "Line": 10.5,
+    "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Marcus Smart",
+    "Name": "Jaden McDaniels",
+    "Team": "MIN",
+    "Stat": "Two Pointers",
+    "Line": 10.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Rudy Gobert",
+    "Team": "MIN",
+    "Stat": "Pts+Asts",
+    "Line": 10.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Luke Kornet",
+    "Team": "SAS",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 10.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Deandre Ayton",
+    "Team": "LAL",
+    "Stat": "Pts+Asts",
+    "Line": 10.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Deandre Ayton",
     "Team": "LAL",
     "Stat": "Points",
     "Line": 10.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Tobias Harris",
-    "Team": "DET",
-    "Stat": "Two Pointers",
-    "Line": 10.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jamal Cain",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 10.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Mikal Bridges",
-    "Team": "NYK",
-    "Stat": "Points",
-    "Line": 10.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Duncan Robinson",
-    "Team": "DET",
-    "Stat": "Points",
-    "Line": 10.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Isaiah Hartenstein",
@@ -2373,70 +1455,16 @@
     "Line": 10.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Devin Vassell",
-    "Team": "SAS",
-    "Stat": "FG",
-    "Line": 10.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Rudy Gobert",
-    "Team": "MIN",
-    "Stat": "Pts+Asts",
-    "Line": 10.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Daniss Jenkins",
-    "Team": "DET",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 10.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Tyrese Maxey",
-    "Team": "PHI",
-    "Stat": "Rebs+Asts",
-    "Line": 10.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Deandre Ayton",
+    "Name": "Marcus Smart",
     "Team": "LAL",
     "Stat": "Points",
     "Line": 10.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Max Strus",
-    "Team": "CLE",
-    "Stat": "Pts+Asts",
-    "Line": 10.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Dennis Schr\u00f6der",
-    "Team": "CLE",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 10.0,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Cason Wallace",
@@ -2445,25 +1473,7 @@
     "Line": 10.0,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "RJ Barrett",
-    "Team": "TOR",
-    "Stat": "Rebs+Asts",
-    "Line": 10.0,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Luguentz Dort",
-    "Team": "OKC",
-    "Stat": "Pts+Rebs",
-    "Line": 10.0,
-    "Versus": "LAL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Luke Kennard",
@@ -2472,7 +1482,25 @@
     "Line": 10.0,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Luguentz Dort",
+    "Team": "OKC",
+    "Stat": "Pts+Rebs",
+    "Line": 10.0,
+    "Versus": "LAL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Mikal Bridges",
+    "Team": "NYK",
+    "Stat": "Points",
+    "Line": 10.0,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "De'Aaron Fox",
@@ -2481,196 +1509,16 @@
     "Line": 10.0,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jamal Cain",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs",
-    "Line": 9.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Wendell Carter",
-    "Team": "ORL",
-    "Stat": "Points",
-    "Line": 9.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ausar Thompson",
-    "Team": "DET",
-    "Stat": "Points",
-    "Line": 9.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Shai Gilgeous-Alexander",
-    "Team": "OKC",
-    "Stat": "Free Throws",
-    "Line": 9.5,
-    "Versus": "LAL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Austin Reaves",
-    "Team": "LAL",
-    "Stat": "Rebs+Asts",
-    "Line": 9.5,
-    "Versus": "OKC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Sandro Mamukelashvili",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs",
-    "Line": 9.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ja'Kobe Walter",
-    "Team": "TOR",
-    "Stat": "FG",
-    "Line": 9.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Sandro Mamukelashvili",
-    "Team": "TOR",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 9.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Quentin Grimes",
-    "Team": "PHI",
-    "Stat": "Pts+Rebs",
-    "Line": 9.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Jalen Brunson",
     "Team": "NYK",
-    "Stat": "Rebs+Asts",
+    "Stat": "FG",
     "Line": 9.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Quentin Grimes",
-    "Team": "PHI",
-    "Stat": "Pts+Asts",
-    "Line": 9.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "VJ Edgecombe",
-    "Team": "PHI",
-    "Stat": "Rebs+Asts",
-    "Line": 9.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Kelly Oubre",
-    "Team": "PHI",
-    "Stat": "Points",
-    "Line": 9.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Brandon Ingram",
-    "Team": "TOR",
-    "Stat": "Two Pointers",
-    "Line": 9.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Paolo Banchero",
-    "Team": "ORL",
-    "Stat": "Free Throws",
-    "Line": 9.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Cade Cunningham",
-    "Team": "DET",
-    "Stat": "Free Throws",
-    "Line": 9.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Wendell Carter",
-    "Team": "ORL",
-    "Stat": "Rebs+Asts",
-    "Line": 9.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Duren",
-    "Team": "DET",
-    "Stat": "Rebounds",
-    "Line": 9.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Tristan da Silva",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 9.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Cade Cunningham",
-    "Team": "DET",
-    "Stat": "FG",
-    "Line": 9.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Mike Conley",
-    "Team": "MIN",
-    "Stat": "Pts+Asts",
-    "Line": 9.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Dylan Harper",
@@ -2679,7 +1527,43 @@
     "Line": 9.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Austin Reaves",
+    "Team": "LAL",
+    "Stat": "Rebs+Asts",
+    "Line": 9.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Shai Gilgeous-Alexander",
+    "Team": "OKC",
+    "Stat": "Free Throws",
+    "Line": 9.5,
+    "Versus": "LAL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Kelly Oubre",
+    "Team": "PHI",
+    "Stat": "Points",
+    "Line": 9.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Jalen Brunson",
+    "Team": "NYK",
+    "Stat": "Rebs+Asts",
+    "Line": 9.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Ayo Dosunmu",
@@ -2688,232 +1572,25 @@
     "Line": 9.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Luke Kennard",
-    "Team": "LAL",
-    "Stat": "Pts+Asts",
-    "Line": 9.5,
-    "Versus": "OKC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Suggs",
-    "Team": "ORL",
-    "Stat": "Rebs+Asts",
-    "Line": 9.0,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Evan Mobley",
-    "Team": "CLE",
-    "Stat": "Rebounds",
-    "Line": 9.0,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Collin Murray-Boyles",
-    "Team": "TOR",
-    "Stat": "Rebs+Asts",
-    "Line": 9.0,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Max Strus",
-    "Team": "CLE",
-    "Stat": "Points",
-    "Line": 8.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jamal Shead",
-    "Team": "TOR",
-    "Stat": "Points",
-    "Line": 8.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Collin Murray-Boyles",
-    "Team": "TOR",
-    "Stat": "Two Pointers",
-    "Line": 8.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Cade Cunningham",
-    "Team": "DET",
-    "Stat": "Assists",
-    "Line": 8.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Dennis Schr\u00f6der",
-    "Team": "CLE",
-    "Stat": "Pts+Asts",
-    "Line": 8.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jarrett Allen",
-    "Team": "CLE",
-    "Stat": "Rebs+Asts",
-    "Line": 8.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Isaiah Stewart",
-    "Team": "DET",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 8.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Goga Bitadze",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 8.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Tristan da Silva",
-    "Team": "ORL",
-    "Stat": "Pts+Rebs",
-    "Line": 8.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Duncan Robinson",
-    "Team": "DET",
-    "Stat": "FG",
-    "Line": 8.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Daniss Jenkins",
-    "Team": "DET",
-    "Stat": "Pts+Asts",
-    "Line": 8.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Desmond Bane",
-    "Team": "ORL",
-    "Stat": "Two Pointers",
-    "Line": 8.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jakob Poeltl",
-    "Team": "TOR",
-    "Stat": "Pts+Asts",
-    "Line": 8.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Sam Merrill",
-    "Team": "CLE",
-    "Stat": "Pts+Rebs+Asts",
-    "Line": 8.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Donovan Mitchell",
-    "Team": "CLE",
-    "Stat": "Rebs+Asts",
-    "Line": 8.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Dean Wade",
-    "Team": "CLE",
-    "Stat": "Pts+Rebs",
-    "Line": 8.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Tobias Harris",
-    "Team": "DET",
-    "Stat": "Rebs+Asts",
-    "Line": 8.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Paolo Banchero",
-    "Team": "ORL",
-    "Stat": "Rebounds",
-    "Line": 8.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Deandre Ayton",
-    "Team": "LAL",
-    "Stat": "Rebs+Asts",
-    "Line": 8.5,
-    "Versus": "OKC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Williams",
+    "Name": "Cason Wallace",
     "Team": "OKC",
-    "Stat": "Rebs+Asts",
-    "Line": 8.5,
+    "Stat": "Pts+Asts",
+    "Line": 9.0,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Joel Embiid",
+    "Name": "VJ Edgecombe",
     "Team": "PHI",
-    "Stat": "Rebounds",
-    "Line": 8.5,
+    "Stat": "Rebs+Asts",
+    "Line": 9.0,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Luguentz Dort",
@@ -2922,16 +1599,88 @@
     "Line": 8.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Marcus Smart",
-    "Team": "LAL",
+    "Name": "Julian Champagnie",
+    "Team": "SAS",
+    "Stat": "Points",
+    "Line": 8.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Keldon Johnson",
+    "Team": "SAS",
+    "Stat": "Points",
+    "Line": 8.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Luke Kornet",
+    "Team": "SAS",
+    "Stat": "Pts+Rebs",
+    "Line": 8.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Joel Embiid",
+    "Team": "PHI",
     "Stat": "FG",
     "Line": 8.5,
-    "Versus": "OKC",
+    "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Jordan Clarkson",
+    "Team": "NYK",
+    "Stat": "Pts+Rebs+Asts",
+    "Line": 8.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Kelly Oubre",
+    "Team": "PHI",
+    "Stat": "FG",
+    "Line": 8.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Joel Embiid",
+    "Team": "PHI",
+    "Stat": "Free Throws",
+    "Line": 8.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "OG Anunoby",
+    "Team": "NYK",
+    "Stat": "Rebs+Asts",
+    "Line": 8.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Jalen Williams",
+    "Team": "OKC",
+    "Stat": "Rebs+Asts",
+    "Line": 8.5,
+    "Versus": "LAL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Shai Gilgeous-Alexander",
@@ -2940,7 +1689,43 @@
     "Line": 8.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Marcus Smart",
+    "Team": "LAL",
+    "Stat": "FG",
+    "Line": 8.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Deandre Ayton",
+    "Team": "LAL",
+    "Stat": "Rebs+Asts",
+    "Line": 8.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Mikal Bridges",
+    "Team": "NYK",
+    "Stat": "FG",
+    "Line": 8.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Karl-Anthony Towns",
+    "Team": "NYK",
+    "Stat": "Two Pointers",
+    "Line": 8.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Paul George",
@@ -2949,34 +1734,7 @@
     "Line": 8.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "OG Anunoby",
-    "Team": "NYK",
-    "Stat": "Rebs+Asts",
-    "Line": 8.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ayo Dosunmu",
-    "Team": "MIN",
-    "Stat": "Rebs+Asts",
-    "Line": 8.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Luke Kornet",
-    "Team": "SAS",
-    "Stat": "Pts+Rebs",
-    "Line": 8.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Rudy Gobert",
@@ -2985,115 +1743,25 @@
     "Line": 8.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Dylan Harper",
-    "Team": "SAS",
-    "Stat": "FG",
-    "Line": 8.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Julian Champagnie",
-    "Team": "SAS",
-    "Stat": "Points",
-    "Line": 8.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Keldon Johnson",
-    "Team": "SAS",
-    "Stat": "Points",
-    "Line": 8.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Miles McBride",
-    "Team": "NYK",
-    "Stat": "Pts+Rebs",
-    "Line": 8.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Mike Conley",
-    "Team": "MIN",
-    "Stat": "Pts+Rebs",
-    "Line": 8.0,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ausar Thompson",
-    "Team": "DET",
+    "Name": "Isaiah Hartenstein",
+    "Team": "OKC",
     "Stat": "Rebounds",
     "Line": 8.0,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Scottie Barnes",
-    "Team": "TOR",
-    "Stat": "Assists",
-    "Line": 8.0,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Suggs",
-    "Team": "ORL",
-    "Stat": "3-PT",
-    "Line": 7.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Naz Reid",
-    "Team": "MIN",
-    "Stat": "Rebs+Asts",
-    "Line": 7.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jakob Poeltl",
-    "Team": "TOR",
-    "Stat": "Points",
-    "Line": 7.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Isaiah Stewart",
-    "Team": "DET",
-    "Stat": "Pts+Rebs",
-    "Line": 7.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ajay Mitchell",
-    "Team": "OKC",
-    "Stat": "Rebs+Asts",
-    "Line": 7.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "LeBron James",
+    "Team": "LAL",
+    "Stat": "Assists",
+    "Line": 7.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Luke Kennard",
@@ -3102,16 +1770,7 @@
     "Line": 7.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Wendell Carter",
-    "Team": "ORL",
-    "Stat": "FG",
-    "Line": 7.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Miles McBride",
@@ -3120,106 +1779,52 @@
     "Line": 7.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "LeBron James",
-    "Team": "LAL",
-    "Stat": "Assists",
-    "Line": 7.5,
-    "Versus": "OKC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Dennis Schr\u00f6der",
-    "Team": "CLE",
+    "Name": "Mike Conley",
+    "Team": "MIN",
     "Stat": "Pts+Rebs",
     "Line": 7.5,
-    "Versus": "TOR",
+    "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Jamal Shead",
-    "Team": "TOR",
-    "Stat": "FG",
+    "Name": "Naz Reid",
+    "Team": "MIN",
+    "Stat": "Rebs+Asts",
     "Line": 7.5,
-    "Versus": "CLE",
+    "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Paolo Banchero",
-    "Team": "ORL",
-    "Stat": "FG",
-    "Line": 7.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Cade Cunningham",
-    "Team": "DET",
+    "Name": "Joel Embiid",
+    "Team": "PHI",
     "Stat": "Free Throws",
     "Line": 7.5,
-    "Versus": "ORL",
+    "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Ausar Thompson",
-    "Team": "DET",
-    "Stat": "Two Pointers",
+    "Name": "Ajay Mitchell",
+    "Team": "OKC",
+    "Stat": "Rebs+Asts",
     "Line": 7.5,
-    "Versus": "ORL",
+    "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "RJ Barrett",
-    "Team": "TOR",
-    "Stat": "Free Throws",
-    "Line": 7.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jarrett Allen",
-    "Team": "CLE",
+    "Name": "OG Anunoby",
+    "Team": "NYK",
     "Stat": "Rebounds",
-    "Line": 7.5,
-    "Versus": "TOR",
+    "Line": 7.0,
+    "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Scottie Barnes",
-    "Team": "TOR",
-    "Stat": "FG",
-    "Line": 7.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "James Harden",
-    "Team": "CLE",
-    "Stat": "3-PT",
-    "Line": 7.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jarrett Allen",
-    "Team": "CLE",
-    "Stat": "FG",
-    "Line": 7.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Jaden McDaniels",
@@ -3228,7 +1833,7 @@
     "Line": 7.0,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Stephon Castle",
@@ -3237,115 +1842,106 @@
     "Line": 7.0,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Evan Mobley",
-    "Team": "CLE",
-    "Stat": "Defensive Rebounds",
-    "Line": 7.0,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Wendell Carter",
-    "Team": "ORL",
-    "Stat": "Rebounds",
-    "Line": 7.0,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Julius Randle",
-    "Team": "MIN",
-    "Stat": "Rebounds",
-    "Line": 7.0,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Scottie Barnes",
-    "Team": "TOR",
-    "Stat": "Rebounds",
-    "Line": 7.0,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Desmond Bane",
-    "Team": "ORL",
-    "Stat": "Rebs+Asts",
-    "Line": 7.0,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Cason Wallace",
+    "Name": "Shai Gilgeous-Alexander",
     "Team": "OKC",
-    "Stat": "FG",
-    "Line": 6.5,
+    "Stat": "Assists",
+    "Line": 7.0,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Luguentz Dort",
-    "Team": "OKC",
-    "Stat": "Points",
-    "Line": 6.5,
-    "Versus": "LAL",
+    "Name": "LeBron James",
+    "Team": "LAL",
+    "Stat": "Rebounds",
+    "Line": 7.0,
+    "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Jalen Duren",
-    "Team": "DET",
-    "Stat": "Defensive Rebounds",
-    "Line": 6.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Tobias Harris",
-    "Team": "DET",
-    "Stat": "FG",
-    "Line": 6.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Duncan Robinson",
-    "Team": "DET",
+    "Name": "Jalen Brunson",
+    "Team": "NYK",
     "Stat": "3-PT",
     "Line": 6.5,
-    "Versus": "ORL",
+    "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Dennis Schr\u00f6der",
-    "Team": "CLE",
-    "Stat": "Points",
-    "Line": 6.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Austin Reaves",
     "Team": "LAL",
-    "Stat": "3-PT",
+    "Stat": "FG",
     "Line": 6.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Jalen Brunson",
+    "Team": "NYK",
+    "Stat": "Free Throws",
+    "Line": 6.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Quentin Grimes",
+    "Team": "PHI",
+    "Stat": "Points",
+    "Line": 6.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Paul George",
+    "Team": "PHI",
+    "Stat": "3-PT",
+    "Line": 6.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Jalen Brunson",
+    "Team": "NYK",
+    "Stat": "Two Pointers",
+    "Line": 6.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Jordan Clarkson",
+    "Team": "NYK",
+    "Stat": "Points",
+    "Line": 6.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "OG Anunoby",
+    "Team": "NYK",
+    "Stat": "3-PT",
+    "Line": 6.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Jalen Brunson",
+    "Team": "NYK",
+    "Stat": "Assists",
+    "Line": 6.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "LeBron James",
@@ -3354,16 +1950,25 @@
     "Line": 6.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Ayo Dosunmu",
+    "Name": "Julius Randle",
     "Team": "MIN",
-    "Stat": "FG",
+    "Stat": "Rebounds",
     "Line": 6.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Victor Wembanyama",
+    "Team": "SAS",
+    "Stat": "Free Throws",
+    "Line": 6.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Devin Vassell",
@@ -3372,7 +1977,7 @@
     "Line": 6.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Julian Champagnie",
@@ -3381,25 +1986,34 @@
     "Line": 6.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "James Harden",
-    "Team": "CLE",
-    "Stat": "Assists",
+    "Name": "Ayo Dosunmu",
+    "Team": "MIN",
+    "Stat": "FG",
     "Line": 6.5,
-    "Versus": "TOR",
+    "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Daniss Jenkins",
-    "Team": "DET",
-    "Stat": "Points",
+    "Name": "Mitchell Robinson",
+    "Team": "NYK",
+    "Stat": "Rebounds",
     "Line": 6.5,
-    "Versus": "ORL",
+    "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Luke Kennard",
+    "Team": "LAL",
+    "Stat": "FG",
+    "Line": 6.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Kelly Oubre",
@@ -3408,43 +2022,25 @@
     "Line": 6.5,
     "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Quentin Grimes",
-    "Team": "PHI",
-    "Stat": "Points",
+    "Name": "Cason Wallace",
+    "Team": "OKC",
+    "Stat": "FG",
     "Line": 6.5,
-    "Versus": "NYK",
+    "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Tyrese Maxey",
-    "Team": "PHI",
-    "Stat": "Assists",
+    "Name": "Austin Reaves",
+    "Team": "LAL",
+    "Stat": "3-PT",
     "Line": 6.5,
-    "Versus": "NYK",
+    "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Brunson",
-    "Team": "NYK",
-    "Stat": "Assists",
-    "Line": 6.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Mitchell Robinson",
-    "Team": "NYK",
-    "Stat": "Rebounds",
-    "Line": 6.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Rudy Gobert",
@@ -3453,88 +2049,16 @@
     "Line": 6.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Sam Merrill",
-    "Team": "CLE",
-    "Stat": "Pts+Asts",
+    "Name": "Luguentz Dort",
+    "Team": "OKC",
+    "Stat": "Points",
     "Line": 6.5,
-    "Versus": "TOR",
+    "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ja'Kobe Walter",
-    "Team": "TOR",
-    "Stat": "3-PT",
-    "Line": 6.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Victor Wembanyama",
-    "Team": "SAS",
-    "Stat": "Free Throws",
-    "Line": 6.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Collin Murray-Boyles",
-    "Team": "TOR",
-    "Stat": "Rebounds",
-    "Line": 6.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Evan Mobley",
-    "Team": "CLE",
-    "Stat": "FG",
-    "Line": 6.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Desmond Bane",
-    "Team": "ORL",
-    "Stat": "FG",
-    "Line": 6.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Scottie Barnes",
-    "Team": "TOR",
-    "Stat": "Two Pointers",
-    "Line": 6.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Tobias Harris",
-    "Team": "DET",
-    "Stat": "Rebounds",
-    "Line": 6.0,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jamal Shead",
-    "Team": "TOR",
-    "Stat": "Assists",
-    "Line": 6.0,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "De'Aaron Fox",
@@ -3543,61 +2067,16 @@
     "Line": 6.0,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "RJ Barrett",
-    "Team": "TOR",
-    "Stat": "Rebounds",
-    "Line": 6.0,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Sam Merrill",
-    "Team": "CLE",
-    "Stat": "Points",
+    "Name": "OG Anunoby",
+    "Team": "NYK",
+    "Stat": "Two Pointers",
     "Line": 5.5,
-    "Versus": "TOR",
+    "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Sandro Mamukelashvili",
-    "Team": "TOR",
-    "Stat": "Points",
-    "Line": 5.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jakob Poeltl",
-    "Team": "TOR",
-    "Stat": "Rebounds",
-    "Line": 5.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Paolo Banchero",
-    "Team": "ORL",
-    "Stat": "Assists",
-    "Line": 5.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Naz Reid",
-    "Team": "MIN",
-    "Stat": "Rebounds",
-    "Line": 5.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Mike Conley",
@@ -3606,25 +2085,16 @@
     "Line": 5.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Tristan da Silva",
-    "Team": "ORL",
-    "Stat": "Points",
+    "Name": "VJ Edgecombe",
+    "Team": "PHI",
+    "Stat": "Rebounds",
     "Line": 5.5,
-    "Versus": "DET",
+    "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jamal Cain",
-    "Team": "ORL",
-    "Stat": "FG",
-    "Line": 5.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Marcus Smart",
@@ -3633,7 +2103,7 @@
     "Line": 5.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Austin Reaves",
@@ -3642,34 +2112,25 @@
     "Line": 5.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Jamal Cain",
-    "Team": "ORL",
-    "Stat": "Points",
-    "Line": 5.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Cade Cunningham",
-    "Team": "DET",
+    "Name": "Stephon Castle",
+    "Team": "SAS",
     "Stat": "Rebounds",
     "Line": 5.5,
-    "Versus": "ORL",
+    "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Julius Randle",
-    "Team": "MIN",
-    "Stat": "Two Pointers",
+    "Name": "Victor Wembanyama",
+    "Team": "SAS",
+    "Stat": "3-PT",
     "Line": 5.5,
-    "Versus": "SAS",
+    "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Dylan Harper",
@@ -3678,61 +2139,25 @@
     "Line": 5.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "James Harden",
-    "Team": "CLE",
-    "Stat": "Free Throws",
-    "Line": 5.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "James Harden",
-    "Team": "CLE",
+    "Name": "Julius Randle",
+    "Team": "MIN",
     "Stat": "Two Pointers",
     "Line": 5.5,
-    "Versus": "TOR",
+    "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Jarrett Allen",
-    "Team": "CLE",
-    "Stat": "Defensive Rebounds",
-    "Line": 5.5,
-    "Versus": "TOR",
+    "Name": "Austin Reaves",
+    "Team": "LAL",
+    "Stat": "Assists",
+    "Line": 5.0,
+    "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Stephon Castle",
-    "Team": "SAS",
-    "Stat": "Rebounds",
-    "Line": 5.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Max Strus",
-    "Team": "CLE",
-    "Stat": "3-PT",
-    "Line": 5.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Donovan Mitchell",
-    "Team": "CLE",
-    "Stat": "Two Pointers",
-    "Line": 5.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Julian Champagnie",
@@ -3741,34 +2166,16 @@
     "Line": 5.0,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Donovan Mitchell",
-    "Team": "CLE",
-    "Stat": "Free Throws",
+    "Name": "Cason Wallace",
+    "Team": "OKC",
+    "Stat": "Rebs+Asts",
     "Line": 5.0,
-    "Versus": "TOR",
+    "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ausar Thompson",
-    "Team": "DET",
-    "Stat": "Defensive Rebounds",
-    "Line": 5.0,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Wendell Carter",
-    "Team": "ORL",
-    "Stat": "Defensive Rebounds",
-    "Line": 5.0,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Mikal Bridges",
@@ -3777,7 +2184,34 @@
     "Line": 5.0,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Paul George",
+    "Team": "PHI",
+    "Stat": "Rebounds",
+    "Line": 5.0,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Joel Embiid",
+    "Team": "PHI",
+    "Stat": "Assists",
+    "Line": 5.0,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Rui Hachimura",
+    "Team": "LAL",
+    "Stat": "Rebs+Asts",
+    "Line": 4.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Shai Gilgeous-Alexander",
@@ -3786,61 +2220,7 @@
     "Line": 4.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Chet Holmgren",
-    "Team": "OKC",
-    "Stat": "Two Pointers",
-    "Line": 4.5,
-    "Versus": "LAL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Deandre Ayton",
-    "Team": "LAL",
-    "Stat": "Two Pointers",
-    "Line": 4.5,
-    "Versus": "OKC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Keldon Johnson",
-    "Team": "SAS",
-    "Stat": "Two Pointers",
-    "Line": 4.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Luke Kornet",
-    "Team": "SAS",
-    "Stat": "Points",
-    "Line": 4.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Stephon Castle",
-    "Team": "SAS",
-    "Stat": "Two Pointers",
-    "Line": 4.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jaden McDaniels",
-    "Team": "MIN",
-    "Stat": "Rebounds",
-    "Line": 4.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Naz Reid",
@@ -3849,16 +2229,88 @@
     "Line": 4.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Mitchell Robinson",
+    "Name": "LeBron James",
+    "Team": "LAL",
+    "Stat": "Free Throws",
+    "Line": 4.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Karl-Anthony Towns",
     "Team": "NYK",
-    "Stat": "Points",
+    "Stat": "Free Throws",
     "Line": 4.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Tyrese Maxey",
+    "Team": "PHI",
+    "Stat": "Free Throws",
+    "Line": 4.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Luke Kornet",
+    "Team": "SAS",
+    "Stat": "Points",
+    "Line": 4.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Keldon Johnson",
+    "Team": "SAS",
+    "Stat": "Two Pointers",
+    "Line": 4.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "De'Aaron Fox",
+    "Team": "SAS",
+    "Stat": "Two Pointers",
+    "Line": 4.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Jaden McDaniels",
+    "Team": "MIN",
+    "Stat": "Two Pointers",
+    "Line": 4.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Ayo Dosunmu",
+    "Team": "MIN",
+    "Stat": "Two Pointers",
+    "Line": 4.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Deandre Ayton",
+    "Team": "LAL",
+    "Stat": "FG",
+    "Line": 4.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Josh Hart",
@@ -3867,205 +2319,97 @@
     "Line": 4.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Ayo Dosunmu",
-    "Team": "MIN",
-    "Stat": "Two Pointers",
-    "Line": 4.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Dean Wade",
-    "Team": "CLE",
+    "Name": "Mitchell Robinson",
+    "Team": "NYK",
     "Stat": "Points",
     "Line": 4.5,
-    "Versus": "TOR",
+    "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Jarrett Allen",
-    "Team": "CLE",
-    "Stat": "FG",
+    "Name": "LeBron James",
+    "Team": "LAL",
+    "Stat": "3-PT",
     "Line": 4.5,
-    "Versus": "TOR",
+    "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Sam Merrill",
-    "Team": "CLE",
-    "Stat": "FG",
-    "Line": 4.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Scottie Barnes",
-    "Team": "TOR",
-    "Stat": "Free Throws",
-    "Line": 4.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Dean Wade",
-    "Team": "CLE",
-    "Stat": "Rebs+Asts",
-    "Line": 4.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Devin Vassell",
-    "Team": "SAS",
+    "Name": "Chet Holmgren",
+    "Team": "OKC",
     "Stat": "Two Pointers",
     "Line": 4.5,
-    "Versus": "MIN",
+    "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Julius Randle",
-    "Team": "MIN",
+    "Name": "Luguentz Dort",
+    "Team": "OKC",
     "Stat": "3-PT",
     "Line": 4.5,
-    "Versus": "SAS",
+    "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "De'Aaron Fox",
-    "Team": "SAS",
-    "Stat": "Two Pointers",
-    "Line": 4.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Julian Champagnie",
-    "Team": "SAS",
-    "Stat": "3-PT",
-    "Line": 4.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Julius Randle",
-    "Team": "MIN",
-    "Stat": "Assists",
-    "Line": 4.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "De'Aaron Fox",
-    "Team": "SAS",
-    "Stat": "3-PT",
-    "Line": 4.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Isaiah Stewart",
-    "Team": "DET",
-    "Stat": "Points",
-    "Line": 4.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Duncan Robinson",
-    "Team": "DET",
-    "Stat": "Rebs+Asts",
-    "Line": 4.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Suggs",
-    "Team": "ORL",
-    "Stat": "FG",
-    "Line": 4.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Rui Hachimura",
     "Team": "LAL",
-    "Stat": "Rebs+Asts",
+    "Stat": "3-PT",
     "Line": 4.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Deandre Ayton",
+    "Name": "Rui Hachimura",
     "Team": "LAL",
     "Stat": "FG",
     "Line": 4.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Donovan Mitchell",
-    "Team": "CLE",
-    "Stat": "Assists",
-    "Line": 4.0,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "James Harden",
-    "Team": "CLE",
-    "Stat": "Rebounds",
-    "Line": 4.0,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Donovan Mitchell",
-    "Team": "CLE",
-    "Stat": "Rebounds",
-    "Line": 4.0,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ayo Dosunmu",
-    "Team": "MIN",
-    "Stat": "Assists",
-    "Line": 4.0,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ayo Dosunmu",
+    "Name": "Jaden McDaniels",
     "Team": "MIN",
     "Stat": "Rebounds",
-    "Line": 4.0,
+    "Line": 4.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Julius Randle",
+    "Team": "MIN",
+    "Stat": "3-PT",
+    "Line": 4.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Stephon Castle",
+    "Team": "SAS",
+    "Stat": "Two Pointers",
+    "Line": 4.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Austin Reaves",
+    "Team": "LAL",
+    "Stat": "Rebounds",
+    "Line": 4.0,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Devin Vassell",
@@ -4074,25 +2418,52 @@
     "Line": 4.0,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Dean Wade",
-    "Team": "CLE",
-    "Stat": "FG",
+    "Name": "Ayo Dosunmu",
+    "Team": "MIN",
+    "Stat": "Assists",
     "Line": 4.0,
-    "Versus": "TOR",
+    "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Max Strus",
-    "Team": "CLE",
+    "Name": "Ajay Mitchell",
+    "Team": "OKC",
     "Stat": "Rebounds",
     "Line": 4.0,
-    "Versus": "TOR",
+    "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Ayo Dosunmu",
+    "Team": "MIN",
+    "Stat": "Rebounds",
+    "Line": 4.0,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Shai Gilgeous-Alexander",
+    "Team": "OKC",
+    "Stat": "Rebounds",
+    "Line": 4.0,
+    "Versus": "LAL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Tyrese Maxey",
+    "Team": "PHI",
+    "Stat": "Rebounds",
+    "Line": 4.0,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "De'Aaron Fox",
@@ -4101,16 +2472,7 @@
     "Line": 4.0,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Desmond Bane",
-    "Team": "ORL",
-    "Stat": "Rebounds",
-    "Line": 4.0,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Luguentz Dort",
@@ -4119,43 +2481,25 @@
     "Line": 4.0,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Marcus Smart",
-    "Team": "LAL",
-    "Stat": "Personal Fouls",
-    "Line": 3.5,
-    "Versus": "OKC",
+    "Name": "Karl-Anthony Towns",
+    "Team": "NYK",
+    "Stat": "Assists",
+    "Line": 4.0,
+    "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Collin Murray-Boyles",
-    "Team": "TOR",
-    "Stat": "Personal Fouls",
-    "Line": 3.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Desmond Bane",
-    "Team": "ORL",
-    "Stat": "Free Throws",
-    "Line": 3.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Victor Wembanyama",
+    "Name": "Luke Kornet",
     "Team": "SAS",
-    "Stat": "Blocked Shots",
+    "Stat": "Two Pointers",
     "Line": 3.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Julius Randle",
@@ -4164,7 +2508,7 @@
     "Line": 3.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Keldon Johnson",
@@ -4173,7 +2517,7 @@
     "Line": 3.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Luke Kornet",
@@ -4182,115 +2526,34 @@
     "Line": 3.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Rudy Gobert",
-    "Team": "MIN",
-    "Stat": "FG",
-    "Line": 3.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Dennis Schr\u00f6der",
-    "Team": "CLE",
-    "Stat": "Rebs+Asts",
-    "Line": 3.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Collin Murray-Boyles",
-    "Team": "TOR",
-    "Stat": "Free Throws",
-    "Line": 3.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ja'Kobe Walter",
-    "Team": "TOR",
-    "Stat": "Rebounds",
-    "Line": 3.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Dean Wade",
-    "Team": "CLE",
-    "Stat": "Rebounds",
-    "Line": 3.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jarrett Allen",
-    "Team": "CLE",
-    "Stat": "Free Throws",
-    "Line": 3.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Collin Murray-Boyles",
-    "Team": "TOR",
-    "Stat": "Defensive Rebounds",
-    "Line": 3.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Austin Reaves",
-    "Team": "LAL",
-    "Stat": "Turnovers",
-    "Line": 3.5,
-    "Versus": "OKC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "RJ Barrett",
-    "Team": "TOR",
-    "Stat": "Turnovers",
-    "Line": 3.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "RJ Barrett",
-    "Team": "TOR",
-    "Stat": "Assists",
-    "Line": 3.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Rui Hachimura",
-    "Team": "LAL",
-    "Stat": "Rebounds",
-    "Line": 3.5,
-    "Versus": "OKC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Sam Merrill",
-    "Team": "CLE",
+    "Name": "Kelly Oubre",
+    "Team": "PHI",
     "Stat": "3-PT",
     "Line": 3.5,
-    "Versus": "TOR",
+    "Versus": "NYK",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Kelly Oubre",
+    "Team": "PHI",
+    "Stat": "FG",
+    "Line": 3.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Mikal Bridges",
+    "Team": "NYK",
+    "Stat": "3-PT",
+    "Line": 3.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Ajay Mitchell",
@@ -4299,124 +2562,79 @@
     "Line": 3.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Javonte Green",
-    "Team": "DET",
-    "Stat": "Points",
-    "Line": 3.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Collin Murray-Boyles",
-    "Team": "TOR",
-    "Stat": "Offensive Rebounds",
-    "Line": 3.0,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Evan Mobley",
-    "Team": "CLE",
-    "Stat": "Dunks",
-    "Line": 3.0,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Duren",
-    "Team": "DET",
-    "Stat": "Offensive Rebounds",
-    "Line": 3.0,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ausar Thompson",
-    "Team": "DET",
-    "Stat": "Offensive Rebounds",
-    "Line": 3.0,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Naz Reid",
-    "Team": "MIN",
-    "Stat": "Two Pointers",
-    "Line": 2.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Dylan Harper",
-    "Team": "SAS",
-    "Stat": "Assists",
-    "Line": 2.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Duncan Robinson",
-    "Team": "DET",
-    "Stat": "Personal Fouls",
-    "Line": 2.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Duncan Robinson",
-    "Team": "DET",
-    "Stat": "Rebounds",
-    "Line": 2.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Shai Gilgeous-Alexander",
+    "Name": "Jalen Williams",
     "Team": "OKC",
-    "Stat": "Turnovers",
-    "Line": 2.5,
+    "Stat": "Free Throws",
+    "Line": 3.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Paolo Banchero",
-    "Team": "ORL",
-    "Stat": "Personal Fouls",
-    "Line": 2.5,
-    "Versus": "DET",
+    "Name": "Victor Wembanyama",
+    "Team": "SAS",
+    "Stat": "Blocked Shots",
+    "Line": 3.5,
+    "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Victor Wembanyama",
+    "Team": "SAS",
+    "Stat": "Dunks",
+    "Line": 3.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Rui Hachimura",
+    "Team": "LAL",
+    "Stat": "Rebounds",
+    "Line": 3.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Marcus Smart",
+    "Team": "LAL",
+    "Stat": "Personal Fouls",
+    "Line": 3.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Luke Kennard",
     "Team": "LAL",
-    "Stat": "FG",
+    "Stat": "3-PT",
+    "Line": 3.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Luke Kennard",
+    "Team": "LAL",
+    "Stat": "Rebounds",
     "Line": 2.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Luguentz Dort",
+    "Name": "Jalen Williams",
     "Team": "OKC",
-    "Stat": "FG",
+    "Stat": "Free Throws",
     "Line": 2.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Mikal Bridges",
@@ -4425,16 +2643,7 @@
     "Line": 2.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Donovan Mitchell",
-    "Team": "CLE",
-    "Stat": "Turnovers",
-    "Line": 2.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Jalen Brunson",
@@ -4443,88 +2652,16 @@
     "Line": 2.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Rudy Gobert",
-    "Team": "MIN",
-    "Stat": "Free Throws",
-    "Line": 2.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Sam Merrill",
-    "Team": "CLE",
-    "Stat": "Rebs+Asts",
-    "Line": 2.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Brandon Ingram",
-    "Team": "TOR",
-    "Stat": "Assists",
-    "Line": 2.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "James Harden",
-    "Team": "CLE",
+    "Name": "Isaiah Hartenstein",
+    "Team": "OKC",
     "Stat": "Personal Fouls",
     "Line": 2.5,
-    "Versus": "TOR",
+    "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jamal Shead",
-    "Team": "TOR",
-    "Stat": "Personal Fouls",
-    "Line": 2.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Karl-Anthony Towns",
-    "Team": "NYK",
-    "Stat": "Turnovers",
-    "Line": 2.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Quentin Grimes",
-    "Team": "PHI",
-    "Stat": "Rebounds",
-    "Line": 2.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ayo Dosunmu",
-    "Team": "MIN",
-    "Stat": "Free Throws",
-    "Line": 2.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Luke Kennard",
-    "Team": "LAL",
-    "Stat": "Rebounds",
-    "Line": 2.5,
-    "Versus": "OKC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Marcus Smart",
@@ -4533,16 +2670,115 @@
     "Line": 2.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Jaden McDaniels",
+    "Name": "Ayo Dosunmu",
     "Team": "MIN",
     "Stat": "Free Throws",
     "Line": 2.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Tyrese Maxey",
+    "Team": "PHI",
+    "Stat": "Personal Fouls",
+    "Line": 2.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Rudy Gobert",
+    "Team": "MIN",
+    "Stat": "Free Throws",
+    "Line": 2.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Ayo Dosunmu",
+    "Team": "MIN",
+    "Stat": "Free Throws",
+    "Line": 2.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Mikal Bridges",
+    "Team": "NYK",
+    "Stat": "Two Pointers",
+    "Line": 2.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Quentin Grimes",
+    "Team": "PHI",
+    "Stat": "Rebounds",
+    "Line": 2.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Josh Hart",
+    "Team": "NYK",
+    "Stat": "Personal Fouls",
+    "Line": 2.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Josh Hart",
+    "Team": "NYK",
+    "Stat": "Two Pointers",
+    "Line": 2.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Luguentz Dort",
+    "Team": "OKC",
+    "Stat": "Personal Fouls",
+    "Line": 2.5,
+    "Versus": "LAL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Luke Kennard",
+    "Team": "LAL",
+    "Stat": "FG",
+    "Line": 2.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Luguentz Dort",
+    "Team": "OKC",
+    "Stat": "FG",
+    "Line": 2.5,
+    "Versus": "LAL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Jaden McDaniels",
+    "Team": "MIN",
+    "Stat": "Assists",
+    "Line": 2.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "De'Aaron Fox",
@@ -4551,340 +2787,34 @@
     "Line": 2.5,
     "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Jaden McDaniels",
     "Team": "MIN",
-    "Stat": "Assists",
+    "Stat": "Free Throws",
     "Line": 2.5,
     "Versus": "SAS",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Anthony Black",
-    "Team": "ORL",
-    "Stat": "Assists",
-    "Line": 2.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ausar Thompson",
-    "Team": "DET",
-    "Stat": "Personal Fouls",
-    "Line": 2.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Tristan da Silva",
-    "Team": "ORL",
-    "Stat": "Rebounds",
-    "Line": 2.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Tristan da Silva",
-    "Team": "ORL",
+    "Name": "Keldon Johnson",
+    "Team": "SAS",
     "Stat": "Two Pointers",
     "Line": 2.5,
-    "Versus": "DET",
+    "Versus": "MIN",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Wendell Carter",
-    "Team": "ORL",
-    "Stat": "Free Throws",
-    "Line": 2.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Wendell Carter",
-    "Team": "ORL",
-    "Stat": "Offensive Rebounds",
-    "Line": 2.0,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jarrett Allen",
-    "Team": "CLE",
-    "Stat": "Dunks",
-    "Line": 2.0,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "OG Anunoby",
     "Team": "NYK",
-    "Stat": "Turnovers",
-    "Line": 1.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Dean Wade",
-    "Team": "CLE",
-    "Stat": "FG",
-    "Line": 1.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Dennis Schr\u00f6der",
-    "Team": "CLE",
-    "Stat": "Two Pointers",
-    "Line": 1.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jamal Cain",
-    "Team": "ORL",
-    "Stat": "Free Throws",
-    "Line": 1.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Wendell Carter",
-    "Team": "ORL",
-    "Stat": "Blocked Shots",
-    "Line": 1.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "VJ Edgecombe",
-    "Team": "PHI",
-    "Stat": "Turnovers",
-    "Line": 1.5,
-    "Versus": "NYK",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Miles McBride",
-    "Team": "NYK",
-    "Stat": "3-PT",
-    "Line": 1.5,
-    "Versus": "PHI",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jakob Poeltl",
-    "Team": "TOR",
-    "Stat": "Free Throws",
-    "Line": 1.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ausar Thompson",
-    "Team": "DET",
     "Stat": "Dunks",
-    "Line": 1.5,
-    "Versus": "ORL",
+    "Line": 2.0,
+    "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Shai Gilgeous-Alexander",
-    "Team": "OKC",
-    "Stat": "3-PT",
-    "Line": 1.5,
-    "Versus": "LAL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Paolo Banchero",
-    "Team": "ORL",
-    "Stat": "3-PT",
-    "Line": 1.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Suggs",
-    "Team": "ORL",
-    "Stat": "Steals",
-    "Line": 1.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "De'Aaron Fox",
-    "Team": "SAS",
-    "Stat": "3-PT",
-    "Line": 1.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Luke Kornet",
-    "Team": "SAS",
-    "Stat": "Personal Fouls",
-    "Line": 1.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Rudy Gobert",
-    "Team": "MIN",
-    "Stat": "Free Throws",
-    "Line": 1.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Luke Kornet",
-    "Team": "SAS",
-    "Stat": "Free Throws",
-    "Line": 1.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Devin Vassell",
-    "Team": "SAS",
-    "Stat": "Free Throws",
-    "Line": 1.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Naz Reid",
-    "Team": "MIN",
-    "Stat": "3-PT",
-    "Line": 1.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Rudy Gobert",
-    "Team": "MIN",
-    "Stat": "Assists",
-    "Line": 1.5,
-    "Versus": "SAS",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Williams",
-    "Team": "OKC",
-    "Stat": "Turnovers",
-    "Line": 1.5,
-    "Versus": "LAL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Rui Hachimura",
-    "Team": "LAL",
-    "Stat": "Free Throws",
-    "Line": 1.5,
-    "Versus": "OKC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Ja'Kobe Walter",
-    "Team": "TOR",
-    "Stat": "Free Throws",
-    "Line": 1.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Collin Murray-Boyles",
-    "Team": "TOR",
-    "Stat": "Turnovers",
-    "Line": 1.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Evan Mobley",
-    "Team": "CLE",
-    "Stat": "Blocked Shots",
-    "Line": 1.5,
-    "Versus": "TOR",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Isaiah Stewart",
-    "Team": "DET",
-    "Stat": "Free Throws",
-    "Line": 1.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Goga Bitadze",
-    "Team": "ORL",
-    "Stat": "FG",
-    "Line": 1.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Isaiah Stewart",
-    "Team": "DET",
-    "Stat": "FG",
-    "Line": 1.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Chet Holmgren",
-    "Team": "OKC",
-    "Stat": "Assists",
-    "Line": 1.5,
-    "Versus": "LAL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Daniss Jenkins",
-    "Team": "DET",
-    "Stat": "Free Throws",
-    "Line": 1.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Cason Wallace",
@@ -4893,169 +2823,214 @@
     "Line": 1.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Devin Vassell",
-    "Team": "SAS",
-    "Stat": "Blocked Shots",
-    "Line": 0.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Julian Champagnie",
-    "Team": "SAS",
-    "Stat": "Turnovers",
-    "Line": 0.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Keldon Johnson",
-    "Team": "SAS",
-    "Stat": "Turnovers",
-    "Line": 0.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jamal Cain",
-    "Team": "ORL",
-    "Stat": "Turnovers",
-    "Line": 0.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Isaiah Stewart",
-    "Team": "DET",
-    "Stat": "Dunks",
-    "Line": 0.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Isaiah Stewart",
-    "Team": "DET",
-    "Stat": "Turnovers",
-    "Line": 0.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Isaiah Stewart",
-    "Team": "DET",
-    "Stat": "Free Throws",
-    "Line": 0.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Goga Bitadze",
-    "Team": "ORL",
-    "Stat": "Free Throws",
-    "Line": 0.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Goga Bitadze",
-    "Team": "ORL",
-    "Stat": "Turnovers",
-    "Line": 0.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Anthony Black",
-    "Team": "ORL",
-    "Stat": "Blocked Shots",
-    "Line": 0.5,
-    "Versus": "DET",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Julian Champagnie",
-    "Team": "SAS",
-    "Stat": "Free Throws",
-    "Line": 0.5,
-    "Versus": "MIN",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Daniss Jenkins",
-    "Team": "DET",
-    "Stat": "3-PT",
-    "Line": 0.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jalen Duren",
-    "Team": "DET",
-    "Stat": "Steals",
-    "Line": 0.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Brandon Ingram",
-    "Team": "TOR",
-    "Stat": "Blocked Shots",
-    "Line": 0.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jamal Shead",
-    "Team": "TOR",
-    "Stat": "Free Throws",
-    "Line": 0.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Luke Kennard",
-    "Team": "LAL",
-    "Stat": "Free Throws",
-    "Line": 0.5,
-    "Versus": "OKC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Luke Kennard",
-    "Team": "LAL",
-    "Stat": "Free Throws",
-    "Line": 0.5,
-    "Versus": "OKC",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Shai Gilgeous-Alexander",
     "Team": "OKC",
-    "Stat": "Blocked Shots",
-    "Line": 0.5,
+    "Stat": "3-PT",
+    "Line": 1.5,
     "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Rui Hachimura",
+    "Team": "LAL",
+    "Stat": "Free Throws",
+    "Line": 1.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Chet Holmgren",
+    "Team": "OKC",
+    "Stat": "Assists",
+    "Line": 1.5,
+    "Versus": "LAL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Quentin Grimes",
+    "Team": "PHI",
+    "Stat": "Free Throws",
+    "Line": 1.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "VJ Edgecombe",
+    "Team": "PHI",
+    "Stat": "Turnovers",
+    "Line": 1.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Marcus Smart",
+    "Team": "LAL",
+    "Stat": "Free Throws",
+    "Line": 1.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Jalen Williams",
+    "Team": "OKC",
+    "Stat": "Turnovers",
+    "Line": 1.5,
+    "Versus": "LAL",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Jordan Clarkson",
+    "Team": "NYK",
+    "Stat": "Rebounds",
+    "Line": 1.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Miles McBride",
+    "Team": "NYK",
+    "Stat": "Assists",
+    "Line": 1.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Miles McBride",
+    "Team": "NYK",
+    "Stat": "Rebounds",
+    "Line": 1.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Naz Reid",
+    "Team": "MIN",
+    "Stat": "3-PT",
+    "Line": 1.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "De'Aaron Fox",
+    "Team": "SAS",
+    "Stat": "3-PT",
+    "Line": 1.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Miles McBride",
+    "Team": "NYK",
+    "Stat": "Two Pointers",
+    "Line": 1.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "OG Anunoby",
+    "Team": "NYK",
+    "Stat": "Turnovers",
+    "Line": 1.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Miles McBride",
+    "Team": "NYK",
+    "Stat": "3-PT",
+    "Line": 1.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Devin Vassell",
+    "Team": "SAS",
+    "Stat": "Free Throws",
+    "Line": 1.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Luke Kornet",
+    "Team": "SAS",
+    "Stat": "Free Throws",
+    "Line": 1.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Mike Conley",
+    "Team": "MIN",
+    "Stat": "FG",
+    "Line": 1.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Rudy Gobert",
+    "Team": "MIN",
+    "Stat": "Assists",
+    "Line": 1.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Rudy Gobert",
+    "Team": "MIN",
+    "Stat": "Free Throws",
+    "Line": 1.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Kelly Oubre",
+    "Team": "PHI",
+    "Stat": "Dunks",
+    "Line": 0.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "VJ Edgecombe",
+    "Team": "PHI",
+    "Stat": "Dunks",
+    "Line": 0.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Rui Hachimura",
+    "Team": "LAL",
+    "Stat": "Free Throws",
+    "Line": 0.5,
+    "Versus": "OKC",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Austin Reaves",
@@ -5064,25 +3039,88 @@
     "Line": 0.5,
     "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Brandon Ingram",
-    "Team": "TOR",
-    "Stat": "Steals",
+    "Name": "Shai Gilgeous-Alexander",
+    "Team": "OKC",
+    "Stat": "Blocked Shots",
     "Line": 0.5,
-    "Versus": "CLE",
+    "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Dennis Schr\u00f6der",
-    "Team": "CLE",
-    "Stat": "3-PT",
+    "Name": "Luke Kennard",
+    "Team": "LAL",
+    "Stat": "Free Throws",
     "Line": 0.5,
-    "Versus": "TOR",
+    "Versus": "OKC",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Devin Vassell",
+    "Team": "SAS",
+    "Stat": "Blocked Shots",
+    "Line": 0.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Julius Randle",
+    "Team": "MIN",
+    "Stat": "Dunks",
+    "Line": 0.5,
+    "Versus": "SAS",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Stephon Castle",
+    "Team": "SAS",
+    "Stat": "Dunks",
+    "Line": 0.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Julian Champagnie",
+    "Team": "SAS",
+    "Stat": "Turnovers",
+    "Line": 0.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Julian Champagnie",
+    "Team": "SAS",
+    "Stat": "Free Throws",
+    "Line": 0.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Keldon Johnson",
+    "Team": "SAS",
+    "Stat": "Turnovers",
+    "Line": 0.5,
+    "Versus": "MIN",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Miles McBride",
+    "Team": "NYK",
+    "Stat": "Two Pointers",
+    "Line": 0.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Miles McBride",
@@ -5091,7 +3129,34 @@
     "Line": 0.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Mikal Bridges",
+    "Team": "NYK",
+    "Stat": "Free Throws",
+    "Line": 0.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Joel Embiid",
+    "Team": "PHI",
+    "Stat": "Steals",
+    "Line": 0.5,
+    "Versus": "NYK",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
+  },
+  {
+    "Name": "Mitchell Robinson",
+    "Team": "NYK",
+    "Stat": "Turnovers",
+    "Line": 0.5,
+    "Versus": "PHI",
+    "Odds_Type": "Standard",
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
     "Name": "Mikal Bridges",
@@ -5100,42 +3165,15 @@
     "Line": 0.5,
     "Versus": "PHI",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   },
   {
-    "Name": "Jakob Poeltl",
-    "Team": "TOR",
-    "Stat": "Steals",
+    "Name": "Luguentz Dort",
+    "Team": "OKC",
+    "Stat": "Turnovers",
     "Line": 0.5,
-    "Versus": "CLE",
+    "Versus": "LAL",
     "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Jamal Shead",
-    "Team": "TOR",
-    "Stat": "Free Throws",
-    "Line": 0.5,
-    "Versus": "CLE",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Duncan Robinson",
-    "Team": "DET",
-    "Stat": "Free Throws",
-    "Line": 0.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
-  },
-  {
-    "Name": "Duncan Robinson",
-    "Team": "DET",
-    "Stat": "Steals",
-    "Line": 0.5,
-    "Versus": "ORL",
-    "Odds_Type": "Standard",
-    "Scraped_At": "2026-05-03 12:25"
+    "Scraped_At": "2026-05-04 00:04"
   }
 ]
